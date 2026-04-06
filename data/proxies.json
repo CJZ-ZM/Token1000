@@ -1,0 +1,146 @@
+{
+  "providers": [
+    {
+      "id": "chatanywhere",
+      "name": "ChatAnywhere",
+      "url": "https://chatanywhere.tech",
+      "models": ["GPT-4o", "GPT-4-turbo", "Claude-3.5-Sonnet", "Claude-3.5-Haiku", "DeepSeek-V3"],
+      "pricing": {
+        "gpt4o_input": 2.0,
+        "gpt4o_output": 8.0,
+        "gpt4o_mini_input": 0.5,
+        "gpt4o_mini_output": 2.0,
+        "claude35_input": 1.5,
+        "claude35_output": 7.5,
+        "deepseek_input": 0.1,
+        "deepseek_output": 0.3
+      },
+      "stability": 4,
+      "speed": 4,
+      "features": ["国内直连", "按量计费", "API文档完善"],
+      "description": "老牌中转站，稳定性好，支持模型多"
+    },
+    {
+      "id": "closeai",
+      "name": "CloseAI",
+      "url": "https://closeai.fakeopen.com",
+      "models": ["GPT-4o", "GPT-4o-mini", "Claude-3.5-Sonnet"],
+      "pricing": {
+        "gpt4o_input": 2.5,
+        "gpt4o_output": 10.0,
+        "gpt4o_mini_input": 0.6,
+        "gpt4o_mini_output": 2.4,
+        "claude35_input": 2.0,
+        "claude35_output": 10.0
+      },
+      "stability": 3,
+      "speed": 5,
+      "features": ["速度快", "支持Claude"],
+      "description": "速度快，但价格略高"
+    },
+    {
+      "id": "openai-sb",
+      "name": "OpenAI SB",
+      "url": "https://openai-sb.com",
+      "models": ["GPT-4o", "GPT-4-turbo", "Claude-3.5-Sonnet", "Gemini"],
+      "pricing": {
+        "gpt4o_input": 1.8,
+        "gpt4o_output": 7.2,
+        "gpt4o_mini_input": 0.4,
+        "gpt4o_mini_output": 1.6,
+        "claude35_input": 1.3,
+        "claude35_output": 6.5,
+        "gemini_input": 0.5,
+        "gemini_output": 1.5
+      },
+      "stability": 3,
+      "speed": 3,
+      "features": ["价格低", "模型全"],
+      "description": "价格优势明显，但稳定性一般"
+    },
+    {
+      "id": "api2d",
+      "name": "API2D",
+      "url": "https://api2d.com",
+      "models": ["GPT-4o", "Claude-3.5-Sonnet", "Claude-3-Haiku"],
+      "pricing": {
+        "gpt4o_input": 2.2,
+        "gpt4o_output": 8.8,
+        "claude35_input": 1.8,
+        "claude35_output": 9.0,
+        "claude3_haiku_input": 0.2,
+        "claude3_haiku_output": 0.6
+      },
+      "stability": 5,
+      "speed": 4,
+      "features": ["稳定可靠", "客服响应快"],
+      "description": "稳定性极佳，企业用户首选"
+    },
+    {
+      "id": "magic-api",
+      "name": "MagicAPI",
+      "url": "https://magic-api.top",
+      "models": ["GPT-4o", "Claude-3.5-Sonnet", "DeepSeek-V3", "Qwen"],
+      "pricing": {
+        "gpt4o_input": 1.5,
+        "gpt4o_output": 6.0,
+        "claude35_input": 1.2,
+        "claude35_output": 6.0,
+        "deepseek_input": 0.08,
+        "deepseek_output": 0.24
+      },
+      "stability": 4,
+      "speed": 4,
+      "features": ["性价比高", "支持DeepSeek"],
+      "description": "DeepSeek支持好，价格便宜"
+    },
+    {
+      "id": "aiproxy",
+      "name": "AIProxy",
+      "url": "https://aiproxy.io",
+      "models": ["GPT-4o", "Claude-3.5-Sonnet"],
+      "pricing": {
+        "gpt4o_input": 2.3,
+        "gpt4o_output": 9.2,
+        "claude35_input": 1.6,
+        "claude35_output": 8.0
+      },
+      "stability": 4,
+      "speed": 5,
+      "features": ["速度快", "延迟低"],
+      "description": "延迟极低，适合实时对话场景"
+    },
+    {
+      "id": "groqproxy",
+      "name": "GroqProxy",
+      "url": "https://groqproxy.com",
+      "models": ["Llama-3", "Mixtral", "Gemma"],
+      "pricing": {
+        "llama3_input": 0.1,
+        "llama3_output": 0.3,
+        "mixtral_input": 0.2,
+        "mixtral_output": 0.6
+      },
+      "stability": 4,
+      "speed": 5,
+      "features": ["开源模型", "Groq加速"],
+      "description": "专注开源模型，Groq硬件加速"
+    },
+    {
+      "id": "cloudflare-ai",
+      "name": "Cloudflare AI",
+      "url": "https://cloudflare-ai.com",
+      "models": ["Claude-3.5-Sonnet", "Llama-3", "Stable Diffusion"],
+      "pricing": {
+        "claude35_input": 1.4,
+        "claude35_output": 7.0,
+        "llama3_input": 0.08,
+        "llama3_output": 0.24
+      },
+      "stability": 5,
+      "speed": 3,
+      "features": ["Cloudflare边缘", "稳定可靠"],
+      "description": "Cloudflare全球节点，稳定性极佳"
+    }
+  ]
+}
