@@ -1,57 +1,244 @@
 {
   "providers": [
     {
-      "id": "chatanywhere",
-      "name": "ChatAnywhere",
-      "url": "https://chatanywhere.tech",
-      "models": ["GPT-4o", "GPT-4-turbo", "Claude-3.5-Sonnet", "Claude-3.5-Haiku", "DeepSeek-V3"],
+      "id": "siliconflow",
+      "name": "SiliconFlow（硅基流动）",
+      "url": "https://siliconflow.cn",
+      "models": ["OpenAI", "Claude", "DeepSeek", "GLM", "Qwen", "ERNIE", "Baichuan", "MiniMax", "Moonshot"],
+      "tier": 1,
       "pricing": {
         "gpt4o_input": 2.0,
         "gpt4o_output": 8.0,
-        "gpt4o_mini_input": 0.5,
-        "gpt4o_mini_output": 2.0,
-        "claude35_input": 1.5,
-        "claude35_output": 7.5,
         "deepseek_input": 0.1,
         "deepseek_output": 0.3
       },
-      "stability": 4,
+      "stability": 5,
       "speed": 4,
-      "features": ["国内直连", "按量计费", "API文档完善"],
-      "description": "老牌中转站，稳定性好，支持模型多"
+      "features": ["40+模型", "国内直连", "按量计费", "模型最全"],
+      "description": "国内最大AI模型聚合平台之一，支持40+主流模型"
     },
     {
-      "id": "closeai",
-      "name": "CloseAI",
-      "url": "https://closeai.fakeopen.com",
-      "models": ["GPT-4o", "GPT-4o-mini", "Claude-3.5-Sonnet"],
+      "id": "zhipuai",
+      "name": "智谱AI（Zhipu）",
+      "url": "https://zhipuai.cn",
+      "models": ["GLM-4", "GLM-4V", "ChatGLM"],
+      "tier": 1,
       "pricing": {
-        "gpt4o_input": 2.5,
-        "gpt4o_output": 10.0,
-        "gpt4o_mini_input": 0.6,
-        "gpt4o_mini_output": 2.4,
-        "claude35_input": 2.0,
-        "claude35_output": 10.0
+        "glm4_input": 1.0,
+        "glm4_output": 3.0,
+        "glm4v_input": 3.0,
+        "glm4v_output": 9.0
       },
-      "stability": 3,
+      "stability": 5,
+      "speed": 4,
+      "features": ["国产大模型", "免费额度", "ChatGLM出品"],
+      "description": "北京智谱华章科技出品，国产自研大模型，有免费额度"
+    },
+    {
+      "id": "deepseek",
+      "name": "DeepSeek",
+      "url": "https://deepseek.com",
+      "models": ["DeepSeek-V3", "DeepSeek-Coder", "DeepSeek-VL"],
+      "tier": 1,
+      "pricing": {
+        "deepseek_input": 0.1,
+        "deepseek_output": 0.3,
+        "deepseek_coder_input": 0.14,
+        "deepseek_coder_output": 0.28
+      },
+      "stability": 5,
       "speed": 5,
-      "features": ["速度快", "支持Claude"],
-      "description": "速度快，但价格略高"
+      "features": ["API价格最低", "开源模型强劲", "Coder能力强"],
+      "description": "国内头部，API价格最低之一，开源模型强劲"
+    },
+    {
+      "id": "moonshot",
+      "name": "Moonshot AI（月之暗面）",
+      "url": "https://moonshot.cn",
+      "models": ["moonshot-v1-128k", "moonshot-v1-32k", "moonshot-v1-8k"],
+      "tier": 1,
+      "pricing": {
+        "moonshot_input": 0.6,
+        "moonshot_output": 1.8
+      },
+      "stability": 5,
+      "speed": 4,
+      "features": ["Kimi爆款", "长上下文", "估值最高AI创业"],
+      "description": "爆款产品Kimi，估值最高AI创业公司之一"
+    },
+    {
+      "id": "minimax",
+      "name": "MiniMax",
+      "url": "https://minimax.chat",
+      "models": ["minimax-series"],
+      "tier": 1,
+      "pricing": {
+        "minimax_input": 0.5,
+        "minimax_output": 1.5
+      },
+      "stability": 4,
+      "speed": 4,
+      "features": ["国内头部", "语音合成强"],
+      "description": "国内头部大模型公司，语音合成能力突出"
+    },
+    {
+      "id": "baichuan",
+      "name": "百川智能",
+      "url": "https://baichuan-ai.com",
+      "models": ["Baichuan4", "Baichuan3"],
+      "tier": 1,
+      "pricing": {
+        "baichuan_input": 1.0,
+        "baichuan_output": 3.0
+      },
+      "stability": 4,
+      "speed": 4,
+      "features": ["国产大模型", "百川出品"],
+      "description": "国内头部大模型厂商"
+    },
+    {
+      "id": "tongyi",
+      "name": "阿里云通义千问",
+      "url": "https://tongyi.aliyun.com",
+      "models": ["qwen-turbo", "qwen-plus", "qwen-max"],
+      "tier": 1,
+      "pricing": {
+        "qwen_turbo_input": 0.3,
+        "qwen_turbo_output": 0.9,
+        "qwen_plus_input": 1.0,
+        "qwen_plus_output": 3.0,
+        "qwen_max_input": 20.0,
+        "qwen_max_output": 60.0
+      },
+      "stability": 5,
+      "speed": 5,
+      "features": ["阿里生态", "Qwen自研", "生态完善"],
+      "description": "阿里自研大模型，生态完善"
+    },
+    {
+      "id": "wenxin",
+      "name": "百度文心一言",
+      "url": "https://yiyan.baidu.com",
+      "models": ["ERNIE-4", "ERNIE-3.5", "ERNIE-Speed"],
+      "tier": 1,
+      "pricing": {
+        "ernie4_input": 15.0,
+        "ernie4_output": 60.0,
+        "ernie35_input": 1.0,
+        "ernie35_output": 3.0
+      },
+      "stability": 5,
+      "speed": 4,
+      "features": ["百度生态", "ERNIE自研", "生态成熟"],
+      "description": "百度自研，生态成熟"
+    },
+    {
+      "id": "cohere",
+      "name": "Cohere",
+      "url": "https://cohere.com",
+      "models": ["Command", "Command-R", "Embed"],
+      "tier": 1,
+      "pricing": {
+        "command_input": 3.0,
+        "command_output": 15.0,
+        "embed_input": 0.1
+      },
+      "stability": 5,
+      "speed": 4,
+      "features": ["国际头部", "Embed很强", "多语言"],
+      "description": "国际头部，API聚合能力强"
+    },
+    {
+      "id": "anthropic",
+      "name": "Anthropic（官方）",
+      "url": "https://anthropic.com",
+      "models": ["Claude-3.5-Sonnet", "Claude-3-Opus", "Claude-3-Haiku"],
+      "tier": 1,
+      "pricing": {
+        "claude35_sonnet_input": 3.0,
+        "claude35_sonnet_output": 15.0,
+        "claude3_opus_input": 15.0,
+        "claude3_opus_output": 75.0,
+        "claude3_haiku_input": 0.25,
+        "claude3_haiku_output": 1.25
+      },
+      "stability": 5,
+      "speed": 4,
+      "features": ["官方渠道", "Claude全系"],
+      "description": "Claude官方渠道，最稳定但价格高"
+    },
+    {
+      "id": "one-api",
+      "name": "one-api",
+      "url": "https://github.com/songquanpeng/one-api",
+      "models": ["OpenAI", "Azure", "Claude", "Gemini", "DeepSeek", "豆包"],
+      "tier": 2,
+      "pricing": {},
+      "stability": 4,
+      "speed": 4,
+      "features": ["开源⭐31k", "自托管标准", "LLM管理分发"],
+      "description": "开源⭐31,469，自托管最广泛使用的LLM API管理分发系统"
+    },
+    {
+      "id": "zzz-api",
+      "name": "智增增（zzz-api）",
+      "url": "https://zzz-api.com",
+      "models": ["OpenAI", "Claude", "Gemini", "xAI", "百度", "阿里"],
+      "tier": 2,
+      "pricing": {
+        "gpt4o_input": 2.0,
+        "gpt4o_output": 8.0,
+        "claude35_input": 1.5,
+        "claude35_output": 7.5
+      },
+      "stability": 4,
+      "speed": 4,
+      "features": ["开源⭐926", "支持o1/gpt-5/sora", "商业运营"],
+      "description": "开源，商业运营，支持最新模型"
+    },
+    {
+      "id": "ds2api",
+      "name": "ds2api",
+      "url": "https://dsproxy.cjack.top",
+      "models": ["DeepSeek", "GPT", "Claude"],
+      "tier": 2,
+      "pricing": {
+        "deepseek_input": 0.1,
+        "deepseek_output": 0.3,
+        "gpt4o_input": 2.0,
+        "gpt4o_output": 8.0
+      },
+      "stability": 4,
+      "speed": 4,
+      "features": ["开源⭐846", "多账号轮询"],
+      "description": "开源项目，多账号轮询"
+    },
+    {
+      "id": "jinaai",
+      "name": "Jina AI",
+      "url": "https://jina.ai",
+      "models": ["Jina", "Reader", "Reranker"],
+      "tier": 2,
+      "pricing": {
+        "jina_reader_input": 0.1,
+        "jina_reranker_input": 0.2
+      },
+      "stability": 5,
+      "speed": 5,
+      "features": ["开源工具生态", "Reader强", "SEO工具"],
+      "description": "开源工具生态完善，SEO工具突出"
     },
     {
       "id": "openai-sb",
       "name": "OpenAI SB",
       "url": "https://openai-sb.com",
       "models": ["GPT-4o", "GPT-4-turbo", "Claude-3.5-Sonnet", "Gemini"],
+      "tier": 2,
       "pricing": {
         "gpt4o_input": 1.8,
         "gpt4o_output": 7.2,
-        "gpt4o_mini_input": 0.4,
-        "gpt4o_mini_output": 1.6,
         "claude35_input": 1.3,
-        "claude35_output": 6.5,
-        "gemini_input": 0.5,
-        "gemini_output": 1.5
+        "claude35_output": 6.5
       },
       "stability": 3,
       "speed": 3,
@@ -59,17 +246,181 @@
       "description": "价格优势明显，但稳定性一般"
     },
     {
+      "id": "chatanywhere",
+      "name": "ChatAnywhere",
+      "url": "https://chatanywhere.tech",
+      "models": ["GPT-4o", "GPT-4-turbo", "Claude-3.5-Sonnet", "DeepSeek-V3"],
+      "tier": 2,
+      "pricing": {
+        "gpt4o_input": 2.0,
+        "gpt4o_output": 8.0,
+        "deepseek_input": 0.1,
+        "deepseek_output": 0.3
+      },
+      "stability": 4,
+      "speed": 4,
+      "features": ["国内直连", "按量计费", "老牌"],
+      "description": "老牌中转站，稳定性好"
+    },
+    {
+      "id": "openai-proxy",
+      "name": "openai-proxy",
+      "url": "https://openai.aihey.cc",
+      "models": ["OpenAI", "Claude"],
+      "tier": 2,
+      "pricing": {},
+      "stability": 3,
+      "speed": 3,
+      "features": ["开源⭐411", "CF Worker方案"],
+      "description": "开源项目，Cloudflare Worker方案，需自备API Key"
+    },
+    {
+      "id": "openrouter",
+      "name": "OpenRouter",
+      "url": "https://openrouter.ai",
+      "models": ["100+模型", "OpenAI", "Claude", "Mistral", "Llama"],
+      "tier": 2,
+      "pricing": {
+        "gpt4o_input": 2.5,
+        "gpt4o_output": 10.0
+      },
+      "stability": 5,
+      "speed": 4,
+      "features": ["100+模型", "国际聚合", "统一接口"],
+      "description": "国际聚合平台，100+模型"
+    },
+    {
+      "id": "groq",
+      "name": "Groq",
+      "url": "https://groq.com",
+      "models": ["Llama-3", "Mixtral", "Gemma"],
+      "tier": 2,
+      "pricing": {
+        "llama3_input": 0.1,
+        "llama3_output": 0.3,
+        "mixtral_input": 0.2,
+        "mixtral_output": 0.6
+      },
+      "stability": 5,
+      "speed": 5,
+      "features": ["超快推理", "Groq硬件"],
+      "description": "超快推理速度，Groq硬件加速"
+    },
+    {
+      "id": "mistral",
+      "name": "Mistral AI",
+      "url": "https://mistral.ai",
+      "models": ["Mistral", "Mixtral", "Mistral-Nemo"],
+      "tier": 2,
+      "pricing": {
+        "mistral_input": 0.3,
+        "mistral_output": 0.9,
+        "mixtral_input": 0.2,
+        "mixtral_output": 0.6
+      },
+      "stability": 5,
+      "speed": 4,
+      "features": ["欧洲最强开源", "Mixtral强"],
+      "description": "欧洲最强开源模型厂商"
+    },
+    {
+      "id": "together",
+      "name": "Together AI",
+      "url": "https://together.ai",
+      "models": ["Llama-3", "Mixtral", "Qwen", "DeepSeek"],
+      "tier": 2,
+      "pricing": {
+        "llama3_input": 0.1,
+        "llama3_output": 0.3
+      },
+      "stability": 5,
+      "speed": 4,
+      "features": ["开源模型", "国际平台"],
+      "description": "国际平台，专注开源模型"
+    },
+    {
+      "id": "fireworks",
+      "name": "Fireworks AI",
+      "url": "https://fireworks.ai",
+      "models": ["Llama-3", "Mixtral", "Qwen", "DeepSeek"],
+      "tier": 2,
+      "pricing": {
+        "llama3_input": 0.1,
+        "llama3_output": 0.3
+      },
+      "stability": 5,
+      "speed": 5,
+      "features": ["超快推理", "开源模型"],
+      "description": "超快推理，专注开源模型"
+    },
+    {
+      "id": "stability",
+      "name": "Stability AI",
+      "url": "https://stability.ai",
+      "models": ["Stable Diffusion", "StableLM"],
+      "tier": 2,
+      "pricing": {
+        "sd3_input": 0.5,
+        "sd3_output": 1.5
+      },
+      "stability": 4,
+      "speed": 3,
+      "features": ["图像生成", "Stable Diffusion"],
+      "description": "Stable Diffusion图像生成"
+    },
+    {
+      "id": "replicate",
+      "name": "Replicate",
+      "url": "https://replicate.com",
+      "models": ["100+开源模型"],
+      "tier": 2,
+      "pricing": {
+        "llama3_input": 0.1,
+        "llama3_output": 0.3
+      },
+      "stability": 4,
+      "speed": 4,
+      "features": ["100+开源模型", "易用"],
+      "description": "100+开源模型，国际平台"
+    },
+    {
+      "id": "spark",
+      "name": "科大讯飞星火",
+      "url": "https://xfyun.cn",
+      "models": ["星火大模型"],
+      "tier": 2,
+      "pricing": {
+        "spark_input": 0.5,
+        "spark_output": 1.5
+      },
+      "stability": 4,
+      "speed": 4,
+      "features": ["语音+大模型", "垂直领域强"],
+      "description": "语音+大模型，垂直领域强"
+    },
+    {
+      "id": "laf",
+      "name": "Laf",
+      "url": "https://laf.run",
+      "models": ["多模型"],
+      "tier": 2,
+      "pricing": {},
+      "stability": 4,
+      "speed": 4,
+      "features": ["开源云开发", "LLM集成"],
+      "description": "开源云开发平台，含LLM集成"
+    },
+    {
       "id": "api2d",
       "name": "API2D",
       "url": "https://api2d.com",
       "models": ["GPT-4o", "Claude-3.5-Sonnet", "Claude-3-Haiku"],
+      "tier": 2,
       "pricing": {
         "gpt4o_input": 2.2,
         "gpt4o_output": 8.8,
         "claude35_input": 1.8,
-        "claude35_output": 9.0,
-        "claude3_haiku_input": 0.2,
-        "claude3_haiku_output": 0.6
+        "claude35_output": 9.0
       },
       "stability": 5,
       "speed": 4,
@@ -81,24 +432,41 @@
       "name": "MagicAPI",
       "url": "https://magic-api.top",
       "models": ["GPT-4o", "Claude-3.5-Sonnet", "DeepSeek-V3", "Qwen"],
+      "tier": 2,
       "pricing": {
         "gpt4o_input": 1.5,
         "gpt4o_output": 6.0,
-        "claude35_input": 1.2,
-        "claude35_output": 6.0,
         "deepseek_input": 0.08,
         "deepseek_output": 0.24
       },
       "stability": 4,
       "speed": 4,
-      "features": ["性价比高", "支持DeepSeek"],
+      "features": ["性价比高", "DeepSeek支持好"],
       "description": "DeepSeek支持好，价格便宜"
+    },
+    {
+      "id": "closeai",
+      "name": "CloseAI",
+      "url": "https://closeai.fakeopen.com",
+      "models": ["GPT-4o", "GPT-4o-mini", "Claude-3.5-Sonnet"],
+      "tier": 2,
+      "pricing": {
+        "gpt4o_input": 2.5,
+        "gpt4o_output": 10.0,
+        "claude35_input": 2.0,
+        "claude35_output": 10.0
+      },
+      "stability": 3,
+      "speed": 5,
+      "features": ["速度快", "支持Claude"],
+      "description": "速度快，但价格略高"
     },
     {
       "id": "aiproxy",
       "name": "AIProxy",
       "url": "https://aiproxy.io",
       "models": ["GPT-4o", "Claude-3.5-Sonnet"],
+      "tier": 2,
       "pricing": {
         "gpt4o_input": 2.3,
         "gpt4o_output": 9.2,
@@ -108,29 +476,14 @@
       "stability": 4,
       "speed": 5,
       "features": ["速度快", "延迟低"],
-      "description": "延迟极低，适合实时对话场景"
-    },
-    {
-      "id": "groqproxy",
-      "name": "GroqProxy",
-      "url": "https://groqproxy.com",
-      "models": ["Llama-3", "Mixtral", "Gemma"],
-      "pricing": {
-        "llama3_input": 0.1,
-        "llama3_output": 0.3,
-        "mixtral_input": 0.2,
-        "mixtral_output": 0.6
-      },
-      "stability": 4,
-      "speed": 5,
-      "features": ["开源模型", "Groq加速"],
-      "description": "专注开源模型，Groq硬件加速"
+      "description": "延迟极低，适合实时对话"
     },
     {
       "id": "cloudflare-ai",
       "name": "Cloudflare AI",
       "url": "https://cloudflare-ai.com",
       "models": ["Claude-3.5-Sonnet", "Llama-3", "Stable Diffusion"],
+      "tier": 2,
       "pricing": {
         "claude35_input": 1.4,
         "claude35_output": 7.0,
@@ -141,6 +494,55 @@
       "speed": 3,
       "features": ["Cloudflare边缘", "稳定可靠"],
       "description": "Cloudflare全球节点，稳定性极佳"
+    },
+    {
+      "id": "groqproxy",
+      "name": "GroqProxy",
+      "url": "https://groqproxy.com",
+      "models": ["Llama-3", "Mixtral", "Gemma"],
+      "tier": 2,
+      "pricing": {
+        "llama3_input": 0.1,
+        "llama3_output": 0.3
+      },
+      "stability": 4,
+      "speed": 5,
+      "features": ["开源模型", "Groq加速"],
+      "description": "专注开源模型，Groq硬件加速"
+    },
+    {
+      "id": "chatglm",
+      "name": "ChatGLM（面壁）",
+      "url": "https://chatglm.cn",
+      "models": ["GLM系列"],
+      "tier": 2,
+      "pricing": {
+        "glm4_input": 1.0,
+        "glm4_output": 3.0
+      },
+      "stability": 4,
+      "speed": 4,
+      "features": ["清华系", "国产大模型"],
+      "description": "清华系，国产大模型"
+    },
+    {
+      "id": " volcengine",
+      "name": "火山引擎",
+      "url": "https://volcengine.com",
+      "models": ["豆包", "云雀"],
+      "tier": 1,
+      "pricing": {
+        "doubao_input": 0.3,
+        "doubao_output": 0.9
+      },
+      "stability": 5,
+      "speed": 5,
+      "features": ["字节跳动", "豆包大模型"],
+      "description": "字节跳动旗下，豆包大模型"
     }
-  ]
+  ],
+  "lastUpdated": "2026-04-06",
+  "totalCount": 32,
+  "tier1Count": 12,
+  "tier2Count": 20
 }
