@@ -1,0 +1,54 @@
+{
+  "guides": [
+    {
+      "id": "getting-started",
+      "title": "5分钟快速上手：如何使用 API 中转站",
+      "category": "入门",
+      "description": "手把手教你注册、获取 API Key、完成第一次 API 调用",
+      "provider": "通用",
+      "difficulty": "入门",
+      "readTime": "5分钟",
+      "publishedAt": "2026-04-06"
+    },
+    {
+      "id": "openai-proxy",
+      "title": "OpenAI API 中转站接入教程",
+      "category": "接入教程",
+      "description": "以 SiliconFlow 为例，详解如何接入 OpenAI 全系列模型",
+      "provider": "SiliconFlow",
+      "difficulty": "入门",
+      "readTime": "8分钟",
+      "publishedAt": "2026-04-06"
+    },
+    {
+      "id": "claude-access",
+      "title": "国内使用 Claude API 完整指南",
+      "category": "接入教程",
+      "description": "无需翻墙，通过中转站使用 Claude 3.5 Sonnet",
+      "provider": "通用",
+      "difficulty": "入门",
+      "readTime": "10分钟",
+      "publishedAt": "2026-04-06"
+    },
+    {
+      "id": "deepseek-guide",
+      "title": "DeepSeek API 中转 - 价格最低的方案",
+      "category": "省钱攻略",
+      "description": "DeepSeek API 价格仅为官方 1/10，详细接入指南",
+      "provider": "DeepSeek",
+      "difficulty": "入门",
+      "readTime": "6分钟",
+      "publishedAt": "2026-04-06"
+    },
+    {
+      "id": "best-practices",
+      "title": "API 中转站使用最佳实践",
+      "category": "进阶",
+      "description": "如何选择合适的中转站、如何避免常见问题",
+      "provider": "通用",
+      "difficulty": "进阶",
+      "readTime": "12分钟",
+      "publishedAt": "2026-04-06"
+    }
+  ]
+}

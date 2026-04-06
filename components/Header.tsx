@@ -30,6 +30,12 @@ export default function Header() {
             <Link href="/jiage" className="text-gray-600 hover:text-blue-500 transition-colors">
               价格对比
             </Link>
+            <Link href="/guides" className="text-gray-600 hover:text-blue-500 transition-colors">
+              教程
+            </Link>
+            <Link href="/alerts" className="text-gray-600 hover:text-blue-500 transition-colors">
+              价格变动
+            </Link>
           </div>
 
           {/* Mobile menu button */}
@@ -73,6 +79,20 @@ export default function Header() {
                 onClick={() => setMobileMenuOpen(false)}
               >
                 价格对比
+              </Link>
+              <Link 
+                href="/guides" 
+                className="text-gray-600 hover:text-blue-500 transition-colors py-2"
+                onClick={() => setMobileMenuOpen(false)}
+              >
+                教程
+              </Link>
+              <Link 
+                href="/alerts" 
+                className="text-gray-600 hover:text-blue-500 transition-colors py-2"
+                onClick={() => setMobileMenuOpen(false)}
+              >
+                价格变动
               </Link>
             </div>
           </div>

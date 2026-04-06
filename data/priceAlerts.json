@@ -1,0 +1,15 @@
+{
+  "alerts": [
+    {
+      "id": "deepseek-price-drop",
+      "provider": "DeepSeek",
+      "model": "DeepSeek-V3",
+      "type": "price_drop",
+      "change": "-20%",
+      "oldPrice": 0.1,
+      "newPrice": 0.08,
+      "date": "2026-04-06",
+      "description": "DeepSeek-V3 输入价格从 $0.1 降至 $0.08"
+    }
+  ]
+}
