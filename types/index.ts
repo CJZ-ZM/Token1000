@@ -12,6 +12,7 @@ export interface Provider {
   speed: number;
   features: string[];
   description: string;
+  status?: 'online' | 'offline' | 'unknown';
 }
 
 export interface ProvidersData {

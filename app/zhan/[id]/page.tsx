@@ -1,6 +1,7 @@
 import { notFound } from 'next/navigation';
 import Link from 'next/link';
 import { loadProviders, getProviderById, getPriceForModel } from '@/lib/data';
+import { ProviderStatus } from '@/components/ProviderStatus';
 import type { Metadata } from 'next';
 
 interface Props {
@@ -70,7 +71,10 @@ export default async function ProviderDetailPage({ params }: Props) {
         <div className="bg-white rounded-xl shadow-sm p-8 mb-8">
           <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-4">
             <div>
-              <h1 className="text-3xl font-bold text-gray-900 mb-2">{provider.name}</h1>
+              <div className="flex items-center gap-3 mb-2">
+                <h1 className="text-3xl font-bold text-gray-900">{provider.name}</h1>
+                <ProviderStatus providerId={provider.id} />
+              </div>
               <p className="text-gray-600 mb-4">{provider.description}</p>
               
               <div className="flex flex-wrap gap-4 text-sm">
