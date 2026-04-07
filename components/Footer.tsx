@@ -13,7 +13,7 @@ export default function Footer() {
               <span className="text-xl font-bold text-white">Token1000</span>
             </div>
             <p className="text-sm text-gray-400">
-              中文大模型 API 中转站导航平台，帮您找到最便宜、最稳定的 API 服务。
+              大模型 API 中转站导航平台，帮您找到最便宜、最稳定的 API 服务。
             </p>
           </div>
 

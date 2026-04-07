@@ -33,7 +33,7 @@ export default function HomePage() {
               Token1000
             </h1>
             <p className="text-xl md:text-2xl text-blue-100 mb-4">
-              中文大模型 API 中转站导航
+              大模型 API 中转站导航
             </p>
             <p className="text-blue-200 mb-10">
               收录全网热门中转站，实时比价，帮您找到最便宜、最稳定的 API 服务
