@@ -14,162 +14,10 @@
       "stability": 4,
       "speed": 4,
       "features": [
-        "中转站"
+        "API中转"
       ],
       "description": "4SAPI - 大模型API中转服务",
-      "status": "unknown"
-    },
-    {
-      "id": "siliconflow",
-      "name": "SiliconFlow",
-      "url": "https://cloud.siliconflow.cn",
-      "models": [
-        "OpenAI",
-        "Claude",
-        "DeepSeek"
-      ],
-      "tier": 1,
-      "pricing": {},
-      "stability": 4,
-      "speed": 4,
-      "features": [
-        "中转站"
-      ],
-      "description": "SiliconFlow - 大模型API中转服务",
-      "status": "unknown"
-    },
-    {
-      "id": "lingya-api",
-      "name": "灵艺 API",
-      "url": "https://api.lingyaai.cn",
-      "models": [
-        "OpenAI",
-        "Claude",
-        "DeepSeek"
-      ],
-      "tier": 2,
-      "pricing": {},
-      "stability": 4,
-      "speed": 4,
-      "features": [
-        "中转站"
-      ],
-      "description": "灵艺 API - 大模型API中转服务",
-      "status": "unknown"
-    },
-    {
-      "id": "147api",
-      "name": "147API",
-      "url": "https://147api.com",
-      "models": [
-        "OpenAI",
-        "Claude",
-        "DeepSeek"
-      ],
-      "tier": 2,
-      "pricing": {},
-      "stability": 4,
-      "speed": 4,
-      "features": [
-        "中转站"
-      ],
-      "description": "147API - 大模型API中转服务",
-      "status": "unknown"
-    },
-    {
-      "id": "poloapi",
-      "name": "PoloAPI",
-      "url": "https://poloapi.top",
-      "models": [
-        "OpenAI",
-        "Claude",
-        "DeepSeek"
-      ],
-      "tier": 2,
-      "pricing": {},
-      "stability": 4,
-      "speed": 4,
-      "features": [
-        "中转站"
-      ],
-      "description": "PoloAPI - 大模型API中转服务",
-      "status": "unknown"
-    },
-    {
-      "id": "one-api",
-      "name": "One API",
-      "url": "https://github.com/songquanpeng/one-api",
-      "models": [
-        "OpenAI",
-        "Claude",
-        "DeepSeek"
-      ],
-      "tier": 2,
-      "pricing": {},
-      "stability": 4,
-      "speed": 4,
-      "features": [
-        "中转站"
-      ],
-      "description": "One API - 大模型API中转服务",
-      "status": "unknown"
-    },
-    {
-      "id": "new-api",
-      "name": "New API",
-      "url": "https://github.com/Calcium-Ion/new-api",
-      "models": [
-        "OpenAI",
-        "Claude",
-        "DeepSeek"
-      ],
-      "tier": 2,
-      "pricing": {},
-      "stability": 4,
-      "speed": 4,
-      "features": [
-        "中转站"
-      ],
-      "description": "New API - 大模型API中转服务",
-      "status": "unknown"
-    },
-    {
-      "id": "simple-one-api",
-      "name": "Simple-One-API",
-      "url": "https://github.com/fruitbars/simple-one-api",
-      "models": [
-        "OpenAI",
-        "Claude",
-        "DeepSeek"
-      ],
-      "tier": 2,
-      "pricing": {},
-      "stability": 4,
-      "speed": 4,
-      "features": [
-        "中转站"
-      ],
-      "description": "Simple-One-API - 大模型API中转服务",
-      "status": "unknown"
-    },
-    {
-      "id": "mn-api",
-      "name": "MN API",
-      "url": "https://www.mnapi.com",
-      "models": [
-        "OpenAI",
-        "Claude",
-        "DeepSeek"
-      ],
-      "tier": 2,
-      "pricing": {},
-      "stability": 4,
-      "speed": 4,
-      "features": [
-        "中转站"
-      ],
-      "description": "MN API - 大模型API中转服务",
-      "status": "unknown"
+      "status": "online"
     },
     {
       "id": "aihubmix",
@@ -185,371 +33,10 @@
       "stability": 4,
       "speed": 4,
       "features": [
-        "中转站"
+        "API中转"
       ],
       "description": "AIHubMix - 大模型API中转服务",
-      "status": "unknown"
-    },
-    {
-      "id": "ph8-api",
-      "name": "PH8 API",
-      "url": "https://ph8api.com",
-      "models": [
-        "OpenAI",
-        "Claude",
-        "DeepSeek"
-      ],
-      "tier": 2,
-      "pricing": {},
-      "stability": 4,
-      "speed": 4,
-      "features": [
-        "中转站"
-      ],
-      "description": "PH8 API - 大模型API中转服务",
-      "status": "unknown"
-    },
-    {
-      "id": "metapi",
-      "name": "MetAPI",
-      "url": "https://metapi.dev",
-      "models": [
-        "OpenAI",
-        "Claude",
-        "DeepSeek"
-      ],
-      "tier": 2,
-      "pricing": {},
-      "stability": 4,
-      "speed": 4,
-      "features": [
-        "中转站"
-      ],
-      "description": "MetAPI - 大模型API中转服务",
-      "status": "unknown"
-    },
-    {
-      "id": "xingchen-api",
-      "name": "星辰中转 API",
-      "url": "https://api.whatai.cc",
-      "models": [
-        "OpenAI",
-        "Claude",
-        "DeepSeek"
-      ],
-      "tier": 2,
-      "pricing": {},
-      "stability": 4,
-      "speed": 4,
-      "features": [
-        "中转站"
-      ],
-      "description": "星辰中转 API - 大模型API中转服务",
-      "status": "unknown"
-    },
-    {
-      "id": "weelinking",
-      "name": "Weelinking",
-      "url": "https://api.weelinking.com",
-      "models": [
-        "OpenAI",
-        "Claude",
-        "DeepSeek"
-      ],
-      "tier": 2,
-      "pricing": {},
-      "stability": 4,
-      "speed": 4,
-      "features": [
-        "中转站"
-      ],
-      "description": "Weelinking - 大模型API中转服务",
-      "status": "unknown"
-    },
-    {
-      "id": "jeniya",
-      "name": "Jeniya",
-      "url": "https://jeniya.top",
-      "models": [
-        "OpenAI",
-        "Claude",
-        "DeepSeek"
-      ],
-      "tier": 2,
-      "pricing": {},
-      "stability": 4,
-      "speed": 4,
-      "features": [
-        "中转站"
-      ],
-      "description": "Jeniya - 大模型API中转服务",
-      "status": "unknown"
-    },
-    {
-      "id": "aiapi96",
-      "name": "AI API96",
-      "url": "https://aiapi96.com",
-      "models": [
-        "OpenAI",
-        "Claude",
-        "DeepSeek"
-      ],
-      "tier": 2,
-      "pricing": {},
-      "stability": 4,
-      "speed": 4,
-      "features": [
-        "中转站"
-      ],
-      "description": "AI API96 - 大模型API中转服务",
-      "status": "unknown"
-    },
-    {
-      "id": "maxfly-api",
-      "name": "MaxFly-API-Station",
-      "url": "https://maxfly-api-station.github.io",
-      "models": [
-        "OpenAI",
-        "Claude",
-        "DeepSeek"
-      ],
-      "tier": 2,
-      "pricing": {},
-      "stability": 4,
-      "speed": 4,
-      "features": [
-        "中转站"
-      ],
-      "description": "MaxFly-API-Station - 大模型API中转服务",
-      "status": "unknown"
-    },
-    {
-      "id": "tsnapi",
-      "name": "TSNAPI",
-      "url": "https://tsnapi.github.io/tsn-api/",
-      "models": [
-        "OpenAI",
-        "Claude",
-        "DeepSeek"
-      ],
-      "tier": 2,
-      "pricing": {},
-      "stability": 4,
-      "speed": 4,
-      "features": [
-        "中转站"
-      ],
-      "description": "TSNAPI - 大模型API中转服务",
-      "status": "unknown"
-    },
-    {
-      "id": "jia-api",
-      "name": "Jia-API",
-      "url": "https://jia-api.github.io/",
-      "models": [
-        "OpenAI",
-        "Claude",
-        "DeepSeek"
-      ],
-      "tier": 2,
-      "pricing": {},
-      "stability": 4,
-      "speed": 4,
-      "features": [
-        "中转站"
-      ],
-      "description": "Jia-API - 大模型API中转服务",
-      "status": "unknown"
-    },
-    {
-      "id": "qu-api",
-      "name": "Qu-API",
-      "url": "https://qu-api.github.io/api_1e1s/",
-      "models": [
-        "OpenAI",
-        "Claude",
-        "DeepSeek"
-      ],
-      "tier": 2,
-      "pricing": {},
-      "stability": 4,
-      "speed": 4,
-      "features": [
-        "中转站"
-      ],
-      "description": "Qu-API - 大模型API中转服务",
-      "status": "unknown"
-    },
-    {
-      "id": "dmxapi",
-      "name": "DMXAPI",
-      "url": "https://www.dmxapi.cn",
-      "models": [
-        "OpenAI",
-        "Claude",
-        "DeepSeek"
-      ],
-      "tier": 2,
-      "pricing": {},
-      "stability": 4,
-      "speed": 4,
-      "features": [
-        "中转站"
-      ],
-      "description": "DMXAPI - 大模型API中转服务",
-      "status": "unknown"
-    },
-    {
-      "id": "n1n-ai",
-      "name": "N1N.ai",
-      "url": "https://n1n.ai",
-      "models": [
-        "OpenAI",
-        "Claude",
-        "DeepSeek"
-      ],
-      "tier": 2,
-      "pricing": {},
-      "stability": 4,
-      "speed": 4,
-      "features": [
-        "中转站"
-      ],
-      "description": "N1N.ai - 大模型API中转服务",
-      "status": "unknown"
-    },
-    {
-      "id": "kkclouds",
-      "name": "KK云计算",
-      "url": "https://www.kkclouds.com",
-      "models": [
-        "OpenAI",
-        "Claude",
-        "DeepSeek"
-      ],
-      "tier": 2,
-      "pricing": {},
-      "stability": 4,
-      "speed": 4,
-      "features": [
-        "中转站"
-      ],
-      "description": "KK云计算 - 大模型API中转服务",
-      "status": "unknown"
-    },
-    {
-      "id": "all-api-hub",
-      "name": "All API Hub",
-      "url": "https://all-api-hub.qixing1217.top",
-      "models": [
-        "OpenAI",
-        "Claude",
-        "DeepSeek"
-      ],
-      "tier": 2,
-      "pricing": {},
-      "stability": 4,
-      "speed": 4,
-      "features": [
-        "中转站"
-      ],
-      "description": "All API Hub - 大模型API中转服务",
-      "status": "unknown"
-    },
-    {
-      "id": "airapi",
-      "name": "AirAPI",
-      "url": "https://airapi.ai",
-      "models": [
-        "OpenAI",
-        "Claude",
-        "DeepSeek"
-      ],
-      "tier": 2,
-      "pricing": {},
-      "stability": 4,
-      "speed": 4,
-      "features": [
-        "中转站"
-      ],
-      "description": "AirAPI - 大模型API中转服务",
-      "status": "unknown"
-    },
-    {
-      "id": "apiyi",
-      "name": "APIyi",
-      "url": "https://docs.apiyi.com",
-      "models": [
-        "OpenAI",
-        "Claude",
-        "DeepSeek"
-      ],
-      "tier": 2,
-      "pricing": {},
-      "stability": 4,
-      "speed": 4,
-      "features": [
-        "中转站"
-      ],
-      "description": "APIyi - 大模型API中转服务",
-      "status": "unknown"
-    },
-    {
-      "id": "openi-relay",
-      "name": "OpenI大模型中转站",
-      "url": "https://ai123.one",
-      "models": [
-        "OpenAI",
-        "Claude",
-        "DeepSeek"
-      ],
-      "tier": 2,
-      "pricing": {},
-      "stability": 4,
-      "speed": 4,
-      "features": [
-        "中转站"
-      ],
-      "description": "OpenI大模型中转站 - 大模型API中转服务",
-      "status": "unknown"
-    },
-    {
-      "id": "openai-proxy-relay",
-      "name": "OpenAI-Proxy",
-      "url": "https://api.openai-proxy.com",
-      "models": [
-        "OpenAI",
-        "Claude",
-        "DeepSeek"
-      ],
-      "tier": 2,
-      "pricing": {},
-      "stability": 4,
-      "speed": 4,
-      "features": [
-        "中转站"
-      ],
-      "description": "OpenAI-Proxy - 大模型API中转服务",
-      "status": "unknown"
-    },
-    {
-      "id": "ohmygpt",
-      "name": "OhMyGPT",
-      "url": "https://www.ohmygpt.com",
-      "models": [
-        "OpenAI",
-        "Claude",
-        "DeepSeek"
-      ],
-      "tier": 2,
-      "pricing": {},
-      "stability": 4,
-      "speed": 4,
-      "features": [
-        "中转站"
-      ],
-      "description": "OhMyGPT - 大模型API中转服务",
-      "status": "unknown"
+      "status": "online"
     },
     {
       "id": "api2d",
@@ -565,15 +52,15 @@
       "stability": 4,
       "speed": 4,
       "features": [
-        "中转站"
+        "API中转"
       ],
       "description": "API2D - 大模型API中转服务",
-      "status": "unknown"
+      "status": "online"
     },
     {
-      "id": "closeai",
-      "name": "CloseAI",
-      "url": "https://closeai.com",
+      "id": "apiyi",
+      "name": "APIyi",
+      "url": "https://docs.apiyi.com",
       "models": [
         "OpenAI",
         "Claude",
@@ -584,15 +71,15 @@
       "stability": 4,
       "speed": 4,
       "features": [
-        "中转站"
+        "API中转"
       ],
-      "description": "CloseAI - 大模型API中转服务",
-      "status": "unknown"
+      "description": "APIyi - 大模型API中转服务",
+      "status": "online"
     },
     {
-      "id": "openai-next",
-      "name": "OpenAI Next",
-      "url": "https://openai.nextweb.fun",
+      "id": "airapi",
+      "name": "AirAPI",
+      "url": "https://airapi.ai",
       "models": [
         "OpenAI",
         "Claude",
@@ -603,15 +90,15 @@
       "stability": 4,
       "speed": 4,
       "features": [
-        "中转站"
+        "API中转"
       ],
-      "description": "OpenAI Next - 大模型API中转服务",
-      "status": "unknown"
+      "description": "AirAPI - 大模型API中转服务",
+      "status": "online"
     },
     {
-      "id": "ai-proxy",
-      "name": "AI-Proxy",
-      "url": "https://ai-proxy.net",
+      "id": "all-api-hub",
+      "name": "All API Hub",
+      "url": "https://all-api-hub.qixing1217.top",
       "models": [
         "OpenAI",
         "Claude",
@@ -622,200 +109,10 @@
       "stability": 4,
       "speed": 4,
       "features": [
-        "中转站"
+        "API中转"
       ],
-      "description": "AI-Proxy - 大模型API中转服务",
-      "status": "unknown"
-    },
-    {
-      "id": "chatanywhere",
-      "name": "ChatAnywhere",
-      "url": "https://chatanywhere.academy",
-      "models": [
-        "OpenAI",
-        "Claude",
-        "DeepSeek"
-      ],
-      "tier": 2,
-      "pricing": {},
-      "stability": 4,
-      "speed": 4,
-      "features": [
-        "中转站"
-      ],
-      "description": "ChatAnywhere - 大模型API中转服务",
-      "status": "unknown"
-    },
-    {
-      "id": "chatfree",
-      "name": "ChatFree",
-      "url": "https://chatfree.app",
-      "models": [
-        "OpenAI",
-        "Claude",
-        "DeepSeek"
-      ],
-      "tier": 2,
-      "pricing": {},
-      "stability": 4,
-      "speed": 4,
-      "features": [
-        "中转站"
-      ],
-      "description": "ChatFree - 大模型API中转服务",
-      "status": "unknown"
-    },
-    {
-      "id": "openai-hub",
-      "name": "OpenAI Hub",
-      "url": "https://openai-hub.com",
-      "models": [
-        "OpenAI",
-        "Claude",
-        "DeepSeek"
-      ],
-      "tier": 2,
-      "pricing": {},
-      "stability": 4,
-      "speed": 4,
-      "features": [
-        "中转站"
-      ],
-      "description": "OpenAI Hub - 大模型API中转服务",
-      "status": "unknown"
-    },
-    {
-      "id": "proxyai",
-      "name": "ProxyAI",
-      "url": "https://proxyai.cn",
-      "models": [
-        "OpenAI",
-        "Claude",
-        "DeepSeek"
-      ],
-      "tier": 2,
-      "pricing": {},
-      "stability": 4,
-      "speed": 4,
-      "features": [
-        "中转站"
-      ],
-      "description": "ProxyAI - 大模型API中转服务",
-      "status": "unknown"
-    },
-    {
-      "id": "fastgpt-api",
-      "name": "FastGPT API",
-      "url": "https://fastapi.ai",
-      "models": [
-        "OpenAI",
-        "Claude",
-        "DeepSeek"
-      ],
-      "tier": 2,
-      "pricing": {},
-      "stability": 4,
-      "speed": 4,
-      "features": [
-        "中转站"
-      ],
-      "description": "FastGPT API - 大模型API中转服务",
-      "status": "unknown"
-    },
-    {
-      "id": "easygpt",
-      "name": "EasyGPT",
-      "url": "https://easygpt.pro",
-      "models": [
-        "OpenAI",
-        "Claude",
-        "DeepSeek"
-      ],
-      "tier": 2,
-      "pricing": {},
-      "stability": 4,
-      "speed": 4,
-      "features": [
-        "中转站"
-      ],
-      "description": "EasyGPT - 大模型API中转服务",
-      "status": "unknown"
-    },
-    {
-      "id": "gogpt",
-      "name": "GoGPT",
-      "url": "https://gogpt.plus",
-      "models": [
-        "OpenAI",
-        "Claude",
-        "DeepSeek"
-      ],
-      "tier": 2,
-      "pricing": {},
-      "stability": 4,
-      "speed": 4,
-      "features": [
-        "中转站"
-      ],
-      "description": "GoGPT - 大模型API中转服务",
-      "status": "unknown"
-    },
-    {
-      "id": "cloudai",
-      "name": "CloudAI",
-      "url": "https://cloudai.pro",
-      "models": [
-        "OpenAI",
-        "Claude",
-        "DeepSeek"
-      ],
-      "tier": 2,
-      "pricing": {},
-      "stability": 4,
-      "speed": 4,
-      "features": [
-        "中转站"
-      ],
-      "description": "CloudAI - 大模型API中转服务",
-      "status": "unknown"
-    },
-    {
-      "id": "maxai",
-      "name": "MaxAI",
-      "url": "https://maxai.api",
-      "models": [
-        "OpenAI",
-        "Claude",
-        "DeepSeek"
-      ],
-      "tier": 2,
-      "pricing": {},
-      "stability": 4,
-      "speed": 4,
-      "features": [
-        "中转站"
-      ],
-      "description": "MaxAI - 大模型API中转服务",
-      "status": "unknown"
-    },
-    {
-      "id": "topapi",
-      "name": "TopAPI",
-      "url": "https://topapi.ai",
-      "models": [
-        "OpenAI",
-        "Claude",
-        "DeepSeek"
-      ],
-      "tier": 2,
-      "pricing": {},
-      "stability": 4,
-      "speed": 4,
-      "features": [
-        "中转站"
-      ],
-      "description": "TopAPI - 大模型API中转服务",
-      "status": "unknown"
+      "description": "All API Hub - 大模型API中转服务",
+      "status": "online"
     },
     {
       "id": "bestai",
@@ -831,10 +128,257 @@
       "stability": 4,
       "speed": 4,
       "features": [
-        "中转站"
+        "API中转"
       ],
       "description": "BestAI - 大模型API中转服务",
-      "status": "unknown"
+      "status": "online"
+    },
+    {
+      "id": "chatanywhere",
+      "name": "ChatAnywhere",
+      "url": "https://chatanywhere.tech",
+      "models": [
+        "OpenAI",
+        "Claude",
+        "DeepSeek"
+      ],
+      "tier": 2,
+      "pricing": {},
+      "stability": 4,
+      "speed": 4,
+      "features": [
+        "API中转"
+      ],
+      "description": "ChatAnywhere - 大模型API中转服务",
+      "status": "online"
+    },
+    {
+      "id": "chatfree",
+      "name": "ChatFree",
+      "url": "https://chatfree.app",
+      "models": [
+        "OpenAI",
+        "Claude",
+        "DeepSeek"
+      ],
+      "tier": 2,
+      "pricing": {},
+      "stability": 4,
+      "speed": 4,
+      "features": [
+        "API中转"
+      ],
+      "description": "ChatFree - 大模型API中转服务",
+      "status": "online"
+    },
+    {
+      "id": "cloudai",
+      "name": "CloudAI",
+      "url": "https://cloudai.pro",
+      "models": [
+        "OpenAI",
+        "Claude",
+        "DeepSeek"
+      ],
+      "tier": 2,
+      "pricing": {},
+      "stability": 4,
+      "speed": 4,
+      "features": [
+        "API中转"
+      ],
+      "description": "CloudAI - 大模型API中转服务",
+      "status": "online"
+    },
+    {
+      "id": "dmxapi",
+      "name": "DMXAPI",
+      "url": "https://www.dmxapi.cn",
+      "models": [
+        "OpenAI",
+        "Claude",
+        "DeepSeek"
+      ],
+      "tier": 2,
+      "pricing": {},
+      "stability": 4,
+      "speed": 4,
+      "features": [
+        "API中转"
+      ],
+      "description": "DMXAPI - 大模型API中转服务",
+      "status": "online"
+    },
+    {
+      "id": "fastgpt-api",
+      "name": "FastGPT API",
+      "url": "https://fastapi.ai",
+      "models": [
+        "OpenAI",
+        "Claude",
+        "DeepSeek"
+      ],
+      "tier": 2,
+      "pricing": {},
+      "stability": 4,
+      "speed": 4,
+      "features": [
+        "API中转"
+      ],
+      "description": "FastGPT API - 大模型API中转服务",
+      "status": "online"
+    },
+    {
+      "id": "fireworks",
+      "name": "Fireworks AI",
+      "url": "https://fireworks.ai",
+      "models": [
+        "OpenAI",
+        "Claude",
+        "DeepSeek"
+      ],
+      "tier": 2,
+      "pricing": {},
+      "stability": 4,
+      "speed": 4,
+      "features": [
+        "API中转"
+      ],
+      "description": "Fireworks AI - 大模型API中转服务",
+      "status": "online"
+    },
+    {
+      "id": "gogpt",
+      "name": "GoGPT",
+      "url": "https://gogpt.plus",
+      "models": [
+        "OpenAI",
+        "Claude",
+        "DeepSeek"
+      ],
+      "tier": 2,
+      "pricing": {},
+      "stability": 4,
+      "speed": 4,
+      "features": [
+        "API中转"
+      ],
+      "description": "GoGPT - 大模型API中转服务",
+      "status": "online"
+    },
+    {
+      "id": "groq",
+      "name": "Groq",
+      "url": "https://groq.com",
+      "models": [
+        "OpenAI",
+        "Claude",
+        "DeepSeek"
+      ],
+      "tier": 2,
+      "pricing": {},
+      "stability": 4,
+      "speed": 4,
+      "features": [
+        "API中转"
+      ],
+      "description": "Groq - 大模型API中转服务",
+      "status": "online"
+    },
+    {
+      "id": "jeniya",
+      "name": "Jeniya",
+      "url": "https://jeniya.top",
+      "models": [
+        "OpenAI",
+        "Claude",
+        "DeepSeek"
+      ],
+      "tier": 2,
+      "pricing": {},
+      "stability": 4,
+      "speed": 4,
+      "features": [
+        "API中转"
+      ],
+      "description": "Jeniya - 大模型API中转服务",
+      "status": "online"
+    },
+    {
+      "id": "jia-api",
+      "name": "Jia-API",
+      "url": "https://jia-api.github.io/",
+      "models": [
+        "OpenAI",
+        "Claude",
+        "DeepSeek"
+      ],
+      "tier": 2,
+      "pricing": {},
+      "stability": 4,
+      "speed": 4,
+      "features": [
+        "API中转"
+      ],
+      "description": "Jia-API - 大模型API中转服务",
+      "status": "online"
+    },
+    {
+      "id": "jinaai",
+      "name": "Jina AI",
+      "url": "https://jina.ai",
+      "models": [
+        "OpenAI",
+        "Claude",
+        "DeepSeek"
+      ],
+      "tier": 2,
+      "pricing": {},
+      "stability": 4,
+      "speed": 4,
+      "features": [
+        "API中转"
+      ],
+      "description": "Jina AI - 大模型API中转服务",
+      "status": "online"
+    },
+    {
+      "id": "kkclouds",
+      "name": "KK云计算",
+      "url": "https://www.kkclouds.com",
+      "models": [
+        "OpenAI",
+        "Claude",
+        "DeepSeek"
+      ],
+      "tier": 2,
+      "pricing": {},
+      "stability": 4,
+      "speed": 4,
+      "features": [
+        "API中转"
+      ],
+      "description": "KK云计算 - 大模型API中转服务",
+      "status": "online"
+    },
+    {
+      "id": "laf",
+      "name": "Laf",
+      "url": "https://laf.run",
+      "models": [
+        "OpenAI",
+        "Claude",
+        "DeepSeek"
+      ],
+      "tier": 2,
+      "pricing": {},
+      "stability": 4,
+      "speed": 4,
+      "features": [
+        "API中转"
+      ],
+      "description": "Laf - 大模型API中转服务",
+      "status": "online"
     },
     {
       "id": "linkai",
@@ -850,15 +394,15 @@
       "stability": 4,
       "speed": 4,
       "features": [
-        "中转站"
+        "API中转"
       ],
       "description": "LinkAI - 大模型API中转服务",
-      "status": "unknown"
+      "status": "online"
     },
     {
-      "id": "smartapi",
-      "name": "SmartAPI",
-      "url": "https://smartapi.ai",
+      "id": "maxfly-api",
+      "name": "MaxFly-API-Station",
+      "url": "https://maxfly-api-station.github.io",
       "models": [
         "OpenAI",
         "Claude",
@@ -869,15 +413,15 @@
       "stability": 4,
       "speed": 4,
       "features": [
-        "中转站"
+        "API中转"
       ],
-      "description": "SmartAPI - 大模型API中转服务",
-      "status": "unknown"
+      "description": "MaxFly-API-Station - 大模型API中转服务",
+      "status": "online"
     },
     {
-      "id": "quickai",
-      "name": "QuickAI",
-      "url": "https://quickai.pro",
+      "id": "mistral",
+      "name": "Mistral AI",
+      "url": "https://mistral.ai",
       "models": [
         "OpenAI",
         "Claude",
@@ -888,14 +432,394 @@
       "stability": 4,
       "speed": 4,
       "features": [
-        "中转站"
+        "API中转"
       ],
-      "description": "QuickAI - 大模型API中转服务",
-      "status": "unknown"
+      "description": "Mistral AI - 大模型API中转服务",
+      "status": "online"
+    },
+    {
+      "id": "n1n-ai",
+      "name": "N1N.ai",
+      "url": "https://n1n.ai",
+      "models": [
+        "OpenAI",
+        "Claude",
+        "DeepSeek"
+      ],
+      "tier": 2,
+      "pricing": {},
+      "stability": 4,
+      "speed": 4,
+      "features": [
+        "API中转"
+      ],
+      "description": "N1N.ai - 大模型API中转服务",
+      "status": "online"
+    },
+    {
+      "id": "ohmygpt",
+      "name": "OhMyGPT",
+      "url": "https://www.ohmygpt.com",
+      "models": [
+        "OpenAI",
+        "Claude",
+        "DeepSeek"
+      ],
+      "tier": 2,
+      "pricing": {},
+      "stability": 4,
+      "speed": 4,
+      "features": [
+        "API中转"
+      ],
+      "description": "OhMyGPT - 大模型API中转服务",
+      "status": "online"
+    },
+    {
+      "id": "openai-hub",
+      "name": "OpenAI Hub",
+      "url": "https://openai-hub.com",
+      "models": [
+        "OpenAI",
+        "Claude",
+        "DeepSeek"
+      ],
+      "tier": 2,
+      "pricing": {},
+      "stability": 4,
+      "speed": 4,
+      "features": [
+        "API中转"
+      ],
+      "description": "OpenAI Hub - 大模型API中转服务",
+      "status": "online"
+    },
+    {
+      "id": "openai-next",
+      "name": "OpenAI Next",
+      "url": "https://openai.nextweb.fun",
+      "models": [
+        "OpenAI",
+        "Claude",
+        "DeepSeek"
+      ],
+      "tier": 2,
+      "pricing": {},
+      "stability": 4,
+      "speed": 4,
+      "features": [
+        "API中转"
+      ],
+      "description": "OpenAI Next - 大模型API中转服务",
+      "status": "online"
+    },
+    {
+      "id": "openai-sb",
+      "name": "OpenAI SB",
+      "url": "https://openai-sb.com",
+      "models": [
+        "OpenAI",
+        "Claude",
+        "DeepSeek"
+      ],
+      "tier": 2,
+      "pricing": {},
+      "stability": 4,
+      "speed": 4,
+      "features": [
+        "API中转"
+      ],
+      "description": "OpenAI SB - 大模型API中转服务",
+      "status": "online"
+    },
+    {
+      "id": "openi-relay",
+      "name": "OpenI大模型中转站",
+      "url": "https://ai123.one",
+      "models": [
+        "OpenAI",
+        "Claude",
+        "DeepSeek"
+      ],
+      "tier": 2,
+      "pricing": {},
+      "stability": 4,
+      "speed": 4,
+      "features": [
+        "API中转"
+      ],
+      "description": "OpenI大模型中转站 - 大模型API中转服务",
+      "status": "online"
+    },
+    {
+      "id": "openrouter",
+      "name": "OpenRouter",
+      "url": "https://openrouter.ai",
+      "models": [
+        "OpenAI",
+        "Claude",
+        "DeepSeek"
+      ],
+      "tier": 2,
+      "pricing": {},
+      "stability": 4,
+      "speed": 4,
+      "features": [
+        "API中转"
+      ],
+      "description": "OpenRouter - 大模型API中转服务",
+      "status": "online"
+    },
+    {
+      "id": "poloapi",
+      "name": "PoloAPI",
+      "url": "https://poloapi.top",
+      "models": [
+        "OpenAI",
+        "Claude",
+        "DeepSeek"
+      ],
+      "tier": 2,
+      "pricing": {},
+      "stability": 4,
+      "speed": 4,
+      "features": [
+        "API中转"
+      ],
+      "description": "PoloAPI - 大模型API中转服务",
+      "status": "online"
+    },
+    {
+      "id": "qu-api",
+      "name": "Qu-API",
+      "url": "https://qu-api.github.io/api_1e1s/",
+      "models": [
+        "OpenAI",
+        "Claude",
+        "DeepSeek"
+      ],
+      "tier": 2,
+      "pricing": {},
+      "stability": 4,
+      "speed": 4,
+      "features": [
+        "API中转"
+      ],
+      "description": "Qu-API - 大模型API中转服务",
+      "status": "online"
+    },
+    {
+      "id": "replicate",
+      "name": "Replicate",
+      "url": "https://replicate.com",
+      "models": [
+        "OpenAI",
+        "Claude",
+        "DeepSeek"
+      ],
+      "tier": 2,
+      "pricing": {},
+      "stability": 4,
+      "speed": 4,
+      "features": [
+        "API中转"
+      ],
+      "description": "Replicate - 大模型API中转服务",
+      "status": "online"
+    },
+    {
+      "id": "siliconflow",
+      "name": "SiliconFlow（硅基流动）",
+      "url": "https://siliconflow.cn",
+      "models": [
+        "OpenAI",
+        "Claude",
+        "DeepSeek"
+      ],
+      "tier": 1,
+      "pricing": {},
+      "stability": 4,
+      "speed": 4,
+      "features": [
+        "API中转"
+      ],
+      "description": "SiliconFlow（硅基流动） - 大模型API中转服务",
+      "status": "online"
+    },
+    {
+      "id": "simple-one-api",
+      "name": "Simple-One-API",
+      "url": "https://github.com/fruitbars/simple-one-api",
+      "models": [
+        "OpenAI",
+        "Claude",
+        "DeepSeek"
+      ],
+      "tier": 2,
+      "pricing": {},
+      "stability": 4,
+      "speed": 4,
+      "features": [
+        "API中转"
+      ],
+      "description": "Simple-One-API - 大模型API中转服务",
+      "status": "online"
+    },
+    {
+      "id": "stability",
+      "name": "Stability AI",
+      "url": "https://stability.ai",
+      "models": [
+        "OpenAI",
+        "Claude",
+        "DeepSeek"
+      ],
+      "tier": 2,
+      "pricing": {},
+      "stability": 4,
+      "speed": 4,
+      "features": [
+        "API中转"
+      ],
+      "description": "Stability AI - 大模型API中转服务",
+      "status": "online"
+    },
+    {
+      "id": "tsnapi",
+      "name": "TSNAPI",
+      "url": "https://tsnapi.github.io/tsn-api/",
+      "models": [
+        "OpenAI",
+        "Claude",
+        "DeepSeek"
+      ],
+      "tier": 2,
+      "pricing": {},
+      "stability": 4,
+      "speed": 4,
+      "features": [
+        "API中转"
+      ],
+      "description": "TSNAPI - 大模型API中转服务",
+      "status": "online"
+    },
+    {
+      "id": "together",
+      "name": "Together AI",
+      "url": "https://together.ai",
+      "models": [
+        "OpenAI",
+        "Claude",
+        "DeepSeek"
+      ],
+      "tier": 2,
+      "pricing": {},
+      "stability": 4,
+      "speed": 4,
+      "features": [
+        "API中转"
+      ],
+      "description": "Together AI - 大模型API中转服务",
+      "status": "online"
+    },
+    {
+      "id": "weelinking",
+      "name": "Weelinking",
+      "url": "https://api.weelinking.com",
+      "models": [
+        "OpenAI",
+        "Claude",
+        "DeepSeek"
+      ],
+      "tier": 2,
+      "pricing": {},
+      "stability": 4,
+      "speed": 4,
+      "features": [
+        "API中转"
+      ],
+      "description": "Weelinking - 大模型API中转服务",
+      "status": "online"
+    },
+    {
+      "id": "ds2api",
+      "name": "ds2api",
+      "url": "https://dsproxy.cjack.top",
+      "models": [
+        "OpenAI",
+        "Claude",
+        "DeepSeek"
+      ],
+      "tier": 2,
+      "pricing": {},
+      "stability": 4,
+      "speed": 4,
+      "features": [
+        "API中转"
+      ],
+      "description": "ds2api - 大模型API中转服务",
+      "status": "online"
+    },
+    {
+      "id": "one-api",
+      "name": "one-api",
+      "url": "https://github.com/songquanpeng/one-api",
+      "models": [
+        "OpenAI",
+        "Claude",
+        "DeepSeek"
+      ],
+      "tier": 2,
+      "pricing": {},
+      "stability": 4,
+      "speed": 4,
+      "features": [
+        "API中转"
+      ],
+      "description": "one-api - 大模型API中转服务",
+      "status": "online"
+    },
+    {
+      "id": "xingchen-api",
+      "name": "星辰中转 API",
+      "url": "https://api.whatai.cc",
+      "models": [
+        "OpenAI",
+        "Claude",
+        "DeepSeek"
+      ],
+      "tier": 2,
+      "pricing": {},
+      "stability": 4,
+      "speed": 4,
+      "features": [
+        "API中转"
+      ],
+      "description": "星辰中转 API - 大模型API中转服务",
+      "status": "online"
+    },
+    {
+      "id": "lingya-api",
+      "name": "灵艺 API",
+      "url": "https://api.lingyaai.cn",
+      "models": [
+        "OpenAI",
+        "Claude",
+        "DeepSeek"
+      ],
+      "tier": 2,
+      "pricing": {},
+      "stability": 4,
+      "speed": 4,
+      "features": [
+        "API中转"
+      ],
+      "description": "灵艺 API - 大模型API中转服务",
+      "status": "online"
     }
   ],
   "lastUpdated": "2026-04-07",
-  "totalCount": 47,
+  "totalCount": 43,
   "tier1Count": 1,
-  "tier2Count": 46
+  "tier2Count": 42
 }
