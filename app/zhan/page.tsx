@@ -9,26 +9,30 @@ import SearchBar from '@/components/SearchBar';
 const SORT_OPTIONS = [
   { value: 'stability', label: '稳定性' },
   { value: 'speed', label: '速度' },
+  { value: 'rating', label: '评分' },
   { value: 'price', label: '价格' },
 ];
 
 function ZhanContent() {
   const searchParams = useSearchParams();
   const initialQuery = searchParams.get('q') || '';
-  
+  const initialTier = searchParams.get('tier') || 'all';
+
   const [search, setSearch] = useState(initialQuery);
   const [selectedModel, setSelectedModel] = useState('全部');
-  const [sortBy, setSortBy] = useState<'stability' | 'speed' | 'price'>('stability');
+  const [tierFilter, setTierFilter] = useState<string>(initialTier);
+  const [sortBy, setSortBy] = useState<'stability' | 'speed' | 'price' | 'rating'>('stability');
 
   const allModels = getAllModels();
   
   const providers = useMemo(() => {
     let filtered = filterProviders(
       selectedModel !== '全部' ? selectedModel : undefined,
-      search || undefined
+      search || undefined,
+      tierFilter !== 'all' ? tierFilter : undefined
     );
     return sortProviders(filtered, sortBy);
-  }, [search, selectedModel, sortBy]);
+  }, [search, selectedModel, sortBy, tierFilter]);
 
   return (
     <div className="bg-gray-50 min-h-screen">
@@ -37,6 +41,31 @@ function ZhanContent() {
         <div className="mb-8">
           <h1 className="text-3xl font-bold text-gray-900 mb-2">中转站目录</h1>
           <p className="text-gray-600">浏览所有收录的中转站，支持按模型筛选和排序</p>
+        </div>
+
+        {/* Risk Filter */}
+        <div className="bg-white rounded-xl shadow-sm p-6 mb-6">
+          <label className="text-sm text-gray-600 mb-3 block">风险等级：</label>
+          <div className="flex flex-wrap gap-2">
+            {[
+              { value: 'all', label: '全部', color: 'bg-gray-100 text-gray-600 hover:bg-gray-200' },
+              { value: 'recommended', label: '⭐ 推荐', color: 'bg-blue-50 text-blue-700 hover:bg-blue-100' },
+              { value: 'standard', label: '普通', color: 'bg-gray-100 text-gray-600 hover:bg-gray-200' },
+              { value: 'suspicious', label: '❓ 可疑', color: 'bg-yellow-50 text-yellow-700 hover:bg-yellow-100' },
+            ].map(option => (
+              <button
+                key={option.value}
+                onClick={() => setTierFilter(option.value)}
+                className={`px-4 py-2 rounded-full text-sm font-medium transition-colors ${
+                  tierFilter === option.value
+                    ? 'bg-blue-500 text-white'
+                    : option.color
+                }`}
+              >
+                {option.label}
+              </button>
+            ))}
+          </div>
         </div>
 
         {/* Filters */}

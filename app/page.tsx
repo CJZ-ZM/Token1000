@@ -1,8 +1,7 @@
 'use client';
 
 import Link from 'next/link';
-import { loadProviders } from '@/lib/data';
-import { priceAlerts } from '@/lib/priceAlerts';
+import { loadProviders, getRecommendedProviders, getDangerProviders } from '@/lib/data';
 import ProviderCard from '@/components/ProviderCard';
 import SearchBar from '@/components/SearchBar';
 import { useRouter } from 'next/navigation';
@@ -10,12 +9,9 @@ import { useRouter } from 'next/navigation';
 export default function HomePage() {
   const router = useRouter();
   const providers = loadProviders();
-  const featuredProviders = [...providers]
-    .sort((a, b) => b.stability - a.stability)
-    .slice(0, 3);
-
-  const totalModels = new Set(providers.flatMap(p => p.models)).size;
-  const avgStability = (providers.reduce((sum, p) => sum + p.stability, 0) / providers.length).toFixed(1);
+  const recommendedProviders = getRecommendedProviders();
+  const dangerProviders = getDangerProviders();
+  const featuredProviders = recommendedProviders.slice(0, 3);
 
   const handleSearch = (query: string) => {
     if (query) {
@@ -25,61 +21,111 @@ export default function HomePage() {
 
   return (
     <div>
-      {/* Hero Section */}
-      <section className="bg-gradient-to-br from-blue-600 via-blue-500 to-blue-700 text-white">
+      {/* Hero Section - 聚焦避坑痛点 */}
+      <section className="bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 md:py-28">
-          <div className="text-center max-w-3xl mx-auto">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
-              Token1000
+          <div className="max-w-3xl mx-auto text-center">
+            <div className="inline-flex items-center gap-2 px-4 py-1.5 bg-red-500/20 border border-red-500/30 rounded-full text-red-300 text-sm font-medium mb-6">
+              <span className="w-2 h-2 rounded-full bg-red-400 animate-pulse" />
+              已发现 {dangerProviders.length} 家中转站存在高风险
+            </div>
+
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
+              你在用的那家
+              <br />
+              <span className="text-blue-400">API 中转站</span>，还活着吗？
             </h1>
-            <p className="text-xl md:text-2xl text-blue-100 mb-4">
-              大模型 API 中转站导航
+            <p className="text-xl text-gray-400 mb-4">
+              跑路、涨价、稳定性崩盘——这些问题我们帮你盯着。
             </p>
-            <p className="text-blue-200 mb-10">
-              收录全网热门中转站，实时比价，帮您找到最便宜、最稳定的 API 服务
+            <p className="text-gray-500 mb-10">
+              帮用户避坑、找靠谱省钱渠道的导航平台
             </p>
 
-            <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6 max-w-md mx-auto">
-              <p className="text-sm text-blue-100 mb-3">快速搜索</p>
-              <SearchBar 
+            <div className="bg-white/5 backdrop-blur-sm rounded-2xl p-6 max-w-lg mx-auto border border-white/10">
+              <p className="text-sm text-gray-400 mb-3">🔍 搜索中转站或模型</p>
+              <SearchBar
                 onSearch={handleSearch}
                 placeholder="搜索中转站名称或模型..."
               />
             </div>
+
+            <div className="flex flex-col sm:flex-row gap-4 justify-center mt-8">
+              <Link
+                href="/bikeng"
+                className="inline-flex items-center justify-center gap-2 px-6 py-3 bg-red-500 text-white rounded-xl hover:bg-red-600 transition-colors font-medium"
+              >
+                🚨 查看避坑记录
+              </Link>
+              <Link
+                href="/zhan"
+                className="inline-flex items-center justify-center gap-2 px-6 py-3 bg-white/10 text-white rounded-xl hover:bg-white/20 transition-colors font-medium border border-white/20"
+              >
+                📋 浏览 {providers.length} 家中转站
+              </Link>
+            </div>
           </div>
         </div>
       </section>
 
-      {/* Stats Section */}
-      <section className="bg-white py-12 shadow-sm">
+      {/* Stats */}
+      <section className="bg-white border-b border-gray-200">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-3 gap-8 text-center">
-            <div>
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-6 py-10">
+            <div className="text-center">
               <div className="text-3xl md:text-4xl font-bold text-blue-600">{providers.length}</div>
-              <div className="text-gray-600 mt-1">收录中转站</div>
+              <div className="text-sm text-gray-600 mt-1">收录中转站</div>
             </div>
-            <div>
-              <div className="text-3xl md:text-4xl font-bold text-blue-600">{totalModels}</div>
-              <div className="text-gray-600 mt-1">支持模型</div>
+            <div className="text-center">
+              <div className="text-3xl md:text-4xl font-bold text-green-600">{recommendedProviders.length}</div>
+              <div className="text-sm text-gray-600 mt-1">已验证推荐</div>
             </div>
-            <div>
-              <div className="text-3xl md:text-4xl font-bold text-blue-600">{avgStability}</div>
-              <div className="text-gray-600 mt-1">平均稳定性评分</div>
+            <div className="text-center">
+              <div className="text-3xl md:text-4xl font-bold text-red-600">{dangerProviders.length}</div>
+              <div className="text-sm text-gray-600 mt-1">高风险勿入</div>
+            </div>
+            <div className="text-center">
+              <div className="text-3xl md:text-4xl font-bold text-yellow-600">
+                {providers.filter(p => p.riskLevel === 'watch').length}
+              </div>
+              <div className="text-sm text-gray-600 mt-1">需观察</div>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Featured Providers */}
+      {/* 🚨 避坑专区 - 核心差异化 */}
+      {dangerProviders.length > 0 && (
+        <section className="py-14 bg-red-50 border-y border-red-100">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="flex items-center justify-between mb-6">
+              <div>
+                <h2 className="text-2xl font-bold text-gray-900">🚨 高风险预警</h2>
+                <p className="text-sm text-gray-600 mt-1">以下中转站疑似跑路或存在重大风险，请立即停用</p>
+              </div>
+              <Link href="/bikeng" className="text-red-600 hover:text-red-700 font-medium text-sm flex items-center gap-1">
+                全部避坑记录 →
+              </Link>
+            </div>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+              {dangerProviders.map(p => (
+                <ProviderCard key={p.id} provider={p} />
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
+
+      {/* 推荐服务商 */}
       <section className="py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex justify-between items-center mb-8">
-            <h2 className="text-2xl font-bold text-gray-900">推荐服务商</h2>
-            <Link href="/zhan" className="text-blue-500 hover:text-blue-600 flex items-center gap-1">
-              查看全部
-              <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-              </svg>
+          <div className="flex items-center justify-between mb-8">
+            <div>
+              <h2 className="text-2xl font-bold text-gray-900">⭐ 已验证推荐</h2>
+              <p className="text-sm text-gray-600 mt-1">经过 Token1000 验证，稳定性好、用户口碑佳</p>
+            </div>
+            <Link href="/zhan?tier=recommended" className="text-blue-500 hover:text-blue-600 flex items-center gap-1 font-medium text-sm">
+              查看全部 →
             </Link>
           </div>
 
@@ -91,76 +137,46 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Features */}
-      <section className="bg-gray-100 py-16">
+      {/* 价值主张 */}
+      <section className="bg-gray-900 text-white py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-2xl font-bold text-gray-900 text-center mb-12">为什么选择 Token1000</h2>
+          <h2 className="text-2xl font-bold text-center mb-12">为什么用户选择 Token1000</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div className="bg-white rounded-xl p-6 shadow-sm">
-              <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-4">
-                <svg className="w-6 h-6 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
-                </svg>
-              </div>
-              <h3 className="text-lg font-semibold text-gray-900 mb-2">实时价格对比</h3>
-              <p className="text-gray-600 text-sm">整合全网主流中转站的价格数据，一目了然找到最低价</p>
+            <div className="bg-gray-800/50 rounded-2xl p-6 border border-gray-700">
+              <div className="text-3xl mb-4">🛡️</div>
+              <h3 className="text-lg font-semibold mb-2">有人帮你避坑</h3>
+              <p className="text-gray-400 text-sm">
+                跑路预警、涨价监控、稳定性追踪——你不需要自己盯着每家中转站，我们帮你盯。
+              </p>
             </div>
-
-            <div className="bg-white rounded-xl p-6 shadow-sm">
-              <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-4">
-                <svg className="w-6 h-6 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
-                </svg>
-              </div>
-              <h3 className="text-lg font-semibold text-gray-900 mb-2">稳定性监测</h3>
-              <p className="text-gray-600 text-sm">基于真实用户反馈，持续追踪各服务商稳定性表现</p>
+            <div className="bg-gray-800/50 rounded-2xl p-6 border border-gray-700">
+              <div className="text-3xl mb-4">📊</div>
+              <h3 className="text-lg font-semibold mb-2">真实数据驱动</h3>
+              <p className="text-gray-400 text-sm">
+                不是官网宣传，不是软文，是真实用户反馈 + 主动探测的数据。所有人都能看到每家中转站的真实评分。
+              </p>
             </div>
-
-            <div className="bg-white rounded-xl p-6 shadow-sm">
-              <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-4">
-                <svg className="w-6 h-6 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
-                </svg>
-              </div>
-              <h3 className="text-lg font-semibold text-gray-900 mb-2">接入教程</h3>
-              <p className="text-gray-600 text-sm">提供详细的对接文档和常见问题解答，快速上手</p>
+            <div className="bg-gray-800/50 rounded-2xl p-6 border border-gray-700">
+              <div className="text-3xl mb-4">💰</div>
+              <h3 className="text-lg font-semibold mb-2">帮你省钱</h3>
+              <p className="text-gray-400 text-sm">
+                一个地方对比所有中转站价格，找到最适合你用量和预算的方案，不花冤枉钱。
+              </p>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Price Alerts */}
-      {priceAlerts.alerts.length > 0 && (
-        <section className="py-16 bg-gray-50">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 className="text-2xl font-bold mb-6">📢 最新价格变动</h2>
-            <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
-              {priceAlerts.alerts.slice(0, 3).map((alert) => (
-                <div key={alert.id} className="bg-white rounded-lg border border-gray-200 p-4">
-                  <div className="flex items-center gap-2 mb-2">
-                    <span className={`px-2 py-0.5 text-xs rounded-full ${
-                      alert.type === 'price_drop' ? 'bg-green-100 text-green-700' : 'bg-red-100 text-red-700'
-                    }`}>
-                      {alert.type === 'price_drop' ? '📉 降价' : '📈 涨价'}
-                    </span>
-                  </div>
-                  <p className="font-semibold">{alert.provider} - {alert.model}</p>
-                  <p className="text-sm text-gray-500">{alert.description}</p>
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
-      )}
-
-      {/* CTA */}
+      {/* 价格对比 CTA */}
       <section className="py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-2xl font-bold text-gray-900 mb-4">开始比价</h2>
-          <p className="text-gray-600 mb-8">浏览全部收录的中转站，比较价格和稳定性</p>
-          <Link 
-            href="/jiage" 
-            className="inline-flex items-center gap-2 px-6 py-3 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition-colors font-medium"
+          <p className="text-gray-600 mb-8 max-w-xl mx-auto">
+            对比各家中转站的主流模型价格，找到性价比最高的方案
+          </p>
+          <Link
+            href="/jiage"
+            className="inline-flex items-center gap-2 px-8 py-4 bg-blue-500 text-white rounded-xl hover:bg-blue-600 transition-colors font-medium text-lg"
           >
             查看价格对比表
             <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">

@@ -29,6 +29,21 @@ export default function Footer() {
               <li>
                 <Link href="/jiage" className="hover:text-blue-400 transition-colors">价格对比</Link>
               </li>
+              <li>
+                <Link href="/bikeng" className="hover:text-red-400 transition-colors">避坑专区</Link>
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h3 className="text-white font-semibold mb-4">帮助与声明</h3>
+            <ul className="space-y-2 text-sm">
+              <li>
+                <Link href="/bikeng" className="hover:text-red-400 transition-colors">避坑专区</Link>
+              </li>
+              <li>
+                <Link href="/guides" className="hover:text-blue-400 transition-colors">接入教程</Link>
+              </li>
             </ul>
           </div>
 

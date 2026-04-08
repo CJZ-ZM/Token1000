@@ -1,825 +1,1434 @@
 {
   "providers": [
     {
-      "id": "4sapi",
-      "name": "4SAPI",
-      "url": "https://4sapi.com",
+      "id": "siliconflow",
+      "name": "SiliconFlow（硅基流动）",
+      "url": "https://siliconflow.cn",
+      "affiliateUrl": "https://siliconflow.cn?from=token1000",
       "models": [
-        "OpenAI",
-        "Claude",
-        "DeepSeek"
+        "Qwen/Qwen2.5-72B-Instruct",
+        "Qwen/Qwen2.5-32B-Instruct",
+        "DeepSeek-V3",
+        "DeepSeek-V2.5",
+        "GLM-4",
+        "Yi-1.5-34B",
+        "Llama-3.1-70B",
+        "SD3-Medium",
+        "FLUX.1-dev",
+        "FLUX.1-schnell"
       ],
-      "tier": 2,
-      "pricing": {},
-      "stability": 4,
-      "speed": 4,
+      "pricing": {
+        "qwen2.5_72b_input": 0.7,
+        "qwen2.5_72b_output": 0.7,
+        "deepseek_v3_input": 0.27,
+        "deepseek_v3_output": 1.1,
+        "glm4_input": 0.1,
+        "glm4_output": 0.1,
+        "yi_34b_input": 0.3,
+        "yi_34b_output": 0.3,
+        "llama3.1_70b_input": 0.9,
+        "llama3.1_70b_output": 0.9
+      },
+      "stability": 4.8,
+      "speed": 4.5,
       "features": [
-        "API中转"
+        "API中转",
+        "OpenAI兼容",
+        "SDK支持"
       ],
-      "description": "4SAPI - 大模型API中转服务",
-      "status": "online"
-    },
-    {
-      "id": "aihubmix",
-      "name": "AIHubMix",
-      "url": "https://aihubmix.com",
-      "models": [
-        "OpenAI",
-        "Claude",
-        "DeepSeek"
-      ],
-      "tier": 2,
-      "pricing": {},
-      "stability": 4,
-      "speed": 4,
-      "features": [
-        "API中转"
-      ],
-      "description": "AIHubMix - 大模型API中转服务",
-      "status": "online"
+      "description": "国内知名AI平台，拥有多个开源大模型的低价调用渠道，特别适合调用国产模型（Qwen、DeepSeek、GLM等）。有免费额度。",
+      "riskLevel": "safe",
+      "tier": "recommended",
+      "lastVerified": "2026-04-08",
+      "reviewCount": 128,
+      "rating": 4.7,
+      "recentFeedback": "性价比极高，DeepSeek V3 价格极低，稳定性好"
     },
     {
       "id": "api2d",
       "name": "API2D",
       "url": "https://api2d.com",
+      "affiliateUrl": "https://api2d.com?ref=token1000",
       "models": [
-        "OpenAI",
-        "Claude",
-        "DeepSeek"
+        "GPT-4o",
+        "GPT-4o-mini",
+        "Claude-3.5-Sonnet",
+        "Claude-3-Haiku",
+        "DeepSeek-V3",
+        "GPT-4-Turbo"
       ],
-      "tier": 2,
-      "pricing": {},
-      "stability": 4,
-      "speed": 4,
+      "pricing": {
+        "gpt4o_input": 3.5,
+        "gpt4o_output": 10.5,
+        "gpt4o_mini_input": 0.55,
+        "gpt4o_mini_output": 2.2,
+        "claude35_input": 3.5,
+        "claude35_output": 13.5,
+        "claude3_haiku_input": 0.44,
+        "claude3_haiku_output": 1.8,
+        "deepseek_v3_input": 0.5,
+        "deepseek_v3_output": 1.8
+      },
+      "stability": 4.5,
+      "speed": 4.2,
       "features": [
-        "API中转"
+        "API中转",
+        "OpenAI兼容",
+        "充值优惠"
       ],
-      "description": "API2D - 大模型API中转服务",
-      "status": "online"
-    },
-    {
-      "id": "apiyi",
-      "name": "APIyi",
-      "url": "https://docs.apiyi.com",
-      "models": [
-        "OpenAI",
-        "Claude",
-        "DeepSeek"
-      ],
-      "tier": 2,
-      "pricing": {},
-      "stability": 4,
-      "speed": 4,
-      "features": [
-        "API中转"
-      ],
-      "description": "APIyi - 大模型API中转服务",
-      "status": "online"
-    },
-    {
-      "id": "airapi",
-      "name": "AirAPI",
-      "url": "https://airapi.ai",
-      "models": [
-        "OpenAI",
-        "Claude",
-        "DeepSeek"
-      ],
-      "tier": 2,
-      "pricing": {},
-      "stability": 4,
-      "speed": 4,
-      "features": [
-        "API中转"
-      ],
-      "description": "AirAPI - 大模型API中转服务",
-      "status": "online"
-    },
-    {
-      "id": "all-api-hub",
-      "name": "All API Hub",
-      "url": "https://all-api-hub.qixing1217.top",
-      "models": [
-        "OpenAI",
-        "Claude",
-        "DeepSeek"
-      ],
-      "tier": 2,
-      "pricing": {},
-      "stability": 4,
-      "speed": 4,
-      "features": [
-        "API中转"
-      ],
-      "description": "All API Hub - 大模型API中转服务",
-      "status": "online"
-    },
-    {
-      "id": "bestai",
-      "name": "BestAI",
-      "url": "https://bestai.pro",
-      "models": [
-        "OpenAI",
-        "Claude",
-        "DeepSeek"
-      ],
-      "tier": 2,
-      "pricing": {},
-      "stability": 4,
-      "speed": 4,
-      "features": [
-        "API中转"
-      ],
-      "description": "BestAI - 大模型API中转服务",
-      "status": "online"
+      "description": "运营时间较长的国内中转站，用户基数大，支持OpenAI全模型。价格中等，稳定性良好。有专属客服。",
+      "riskLevel": "safe",
+      "tier": "recommended",
+      "lastVerified": "2026-04-08",
+      "reviewCount": 89,
+      "rating": 4.4,
+      "recentFeedback": "老牌站点，稳定性不错，价格适中"
     },
     {
       "id": "chatanywhere",
       "name": "ChatAnywhere",
       "url": "https://chatanywhere.tech",
+      "affiliateUrl": "https://chatanywhere.tech?from=token1000",
       "models": [
-        "OpenAI",
-        "Claude",
-        "DeepSeek"
+        "GPT-4o",
+        "GPT-4o-mini",
+        "Claude-3.5-Sonnet",
+        "GPT-4",
+        "DeepSeek-V3"
       ],
-      "tier": 2,
-      "pricing": {},
-      "stability": 4,
+      "pricing": {
+        "gpt4o_input": 2.5,
+        "gpt4o_output": 8,
+        "gpt4o_mini_input": 0.4,
+        "gpt4o_mini_output": 1.6,
+        "claude35_input": 2.8,
+        "claude35_output": 11,
+        "deepseek_v3_input": 0.4,
+        "deepseek_v3_output": 1.2
+      },
+      "stability": 4.3,
       "speed": 4,
       "features": [
-        "API中转"
+        "API中转",
+        "OpenAI兼容"
       ],
-      "description": "ChatAnywhere - 大模型API中转服务",
-      "status": "online"
-    },
-    {
-      "id": "chatfree",
-      "name": "ChatFree",
-      "url": "https://chatfree.app",
-      "models": [
-        "OpenAI",
-        "Claude",
-        "DeepSeek"
-      ],
-      "tier": 2,
-      "pricing": {},
-      "stability": 4,
-      "speed": 4,
-      "features": [
-        "API中转"
-      ],
-      "description": "ChatFree - 大模型API中转服务",
-      "status": "online"
-    },
-    {
-      "id": "cloudai",
-      "name": "CloudAI",
-      "url": "https://cloudai.pro",
-      "models": [
-        "OpenAI",
-        "Claude",
-        "DeepSeek"
-      ],
-      "tier": 2,
-      "pricing": {},
-      "stability": 4,
-      "speed": 4,
-      "features": [
-        "API中转"
-      ],
-      "description": "CloudAI - 大模型API中转服务",
-      "status": "online"
-    },
-    {
-      "id": "dmxapi",
-      "name": "DMXAPI",
-      "url": "https://www.dmxapi.cn",
-      "models": [
-        "OpenAI",
-        "Claude",
-        "DeepSeek"
-      ],
-      "tier": 2,
-      "pricing": {},
-      "stability": 4,
-      "speed": 4,
-      "features": [
-        "API中转"
-      ],
-      "description": "DMXAPI - 大模型API中转服务",
-      "status": "online"
-    },
-    {
-      "id": "fastgpt-api",
-      "name": "FastGPT API",
-      "url": "https://fastapi.ai",
-      "models": [
-        "OpenAI",
-        "Claude",
-        "DeepSeek"
-      ],
-      "tier": 2,
-      "pricing": {},
-      "stability": 4,
-      "speed": 4,
-      "features": [
-        "API中转"
-      ],
-      "description": "FastGPT API - 大模型API中转服务",
-      "status": "online"
-    },
-    {
-      "id": "fireworks",
-      "name": "Fireworks AI",
-      "url": "https://fireworks.ai",
-      "models": [
-        "OpenAI",
-        "Claude",
-        "DeepSeek"
-      ],
-      "tier": 2,
-      "pricing": {},
-      "stability": 4,
-      "speed": 4,
-      "features": [
-        "API中转"
-      ],
-      "description": "Fireworks AI - 大模型API中转服务",
-      "status": "online"
-    },
-    {
-      "id": "gogpt",
-      "name": "GoGPT",
-      "url": "https://gogpt.plus",
-      "models": [
-        "OpenAI",
-        "Claude",
-        "DeepSeek"
-      ],
-      "tier": 2,
-      "pricing": {},
-      "stability": 4,
-      "speed": 4,
-      "features": [
-        "API中转"
-      ],
-      "description": "GoGPT - 大模型API中转服务",
-      "status": "online"
+      "description": "价格竞争力强，GPT-4o mini 和 DeepSeek V3 价格较低。支持国内支付宝付款。",
+      "riskLevel": "safe",
+      "tier": "recommended",
+      "lastVerified": "2026-04-08",
+      "reviewCount": 67,
+      "rating": 4.3,
+      "recentFeedback": "DeepSeek价格很低，速度也不错"
     },
     {
       "id": "groq",
       "name": "Groq",
       "url": "https://groq.com",
       "models": [
-        "OpenAI",
-        "Claude",
-        "DeepSeek"
+        "Llama-3.1-70B",
+        "Llama-3.1-8B",
+        "Mixtral-8x7B",
+        "Gemma-2-9B"
       ],
-      "tier": 2,
-      "pricing": {},
-      "stability": 4,
-      "speed": 4,
+      "pricing": {
+        "llama3.1_70b_input": 0.59,
+        "llama3.1_70b_output": 0.79,
+        "llama3.1_8b_input": 0.08,
+        "llama3.1_8b_output": 0.08,
+        "mixtral_input": 0.24,
+        "mixtral_output": 0.24,
+        "gemma2_9b_input": 0.19,
+        "gemma2_9b_output": 0.19
+      },
+      "stability": 4.9,
+      "speed": 5,
       "features": [
-        "API中转"
+        "API中转",
+        "超低延迟",
+        "Llama专属"
       ],
-      "description": "Groq - 大模型API中转服务",
-      "status": "online"
-    },
-    {
-      "id": "jeniya",
-      "name": "Jeniya",
-      "url": "https://jeniya.top",
-      "models": [
-        "OpenAI",
-        "Claude",
-        "DeepSeek"
-      ],
-      "tier": 2,
-      "pricing": {},
-      "stability": 4,
-      "speed": 4,
-      "features": [
-        "API中转"
-      ],
-      "description": "Jeniya - 大模型API中转服务",
-      "status": "online"
-    },
-    {
-      "id": "jia-api",
-      "name": "Jia-API",
-      "url": "https://jia-api.github.io/",
-      "models": [
-        "OpenAI",
-        "Claude",
-        "DeepSeek"
-      ],
-      "tier": 2,
-      "pricing": {},
-      "stability": 4,
-      "speed": 4,
-      "features": [
-        "API中转"
-      ],
-      "description": "Jia-API - 大模型API中转服务",
-      "status": "online"
-    },
-    {
-      "id": "jinaai",
-      "name": "Jina AI",
-      "url": "https://jina.ai",
-      "models": [
-        "OpenAI",
-        "Claude",
-        "DeepSeek"
-      ],
-      "tier": 2,
-      "pricing": {},
-      "stability": 4,
-      "speed": 4,
-      "features": [
-        "API中转"
-      ],
-      "description": "Jina AI - 大模型API中转服务",
-      "status": "online"
-    },
-    {
-      "id": "kkclouds",
-      "name": "KK云计算",
-      "url": "https://www.kkclouds.com",
-      "models": [
-        "OpenAI",
-        "Claude",
-        "DeepSeek"
-      ],
-      "tier": 2,
-      "pricing": {},
-      "stability": 4,
-      "speed": 4,
-      "features": [
-        "API中转"
-      ],
-      "description": "KK云计算 - 大模型API中转服务",
-      "status": "online"
-    },
-    {
-      "id": "laf",
-      "name": "Laf",
-      "url": "https://laf.run",
-      "models": [
-        "OpenAI",
-        "Claude",
-        "DeepSeek"
-      ],
-      "tier": 2,
-      "pricing": {},
-      "stability": 4,
-      "speed": 4,
-      "features": [
-        "API中转"
-      ],
-      "description": "Laf - 大模型API中转服务",
-      "status": "online"
-    },
-    {
-      "id": "linkai",
-      "name": "LinkAI",
-      "url": "https://linkai.pro",
-      "models": [
-        "OpenAI",
-        "Claude",
-        "DeepSeek"
-      ],
-      "tier": 2,
-      "pricing": {},
-      "stability": 4,
-      "speed": 4,
-      "features": [
-        "API中转"
-      ],
-      "description": "LinkAI - 大模型API中转服务",
-      "status": "online"
-    },
-    {
-      "id": "maxfly-api",
-      "name": "MaxFly-API-Station",
-      "url": "https://maxfly-api-station.github.io",
-      "models": [
-        "OpenAI",
-        "Claude",
-        "DeepSeek"
-      ],
-      "tier": 2,
-      "pricing": {},
-      "stability": 4,
-      "speed": 4,
-      "features": [
-        "API中转"
-      ],
-      "description": "MaxFly-API-Station - 大模型API中转服务",
-      "status": "online"
-    },
-    {
-      "id": "mistral",
-      "name": "Mistral AI",
-      "url": "https://mistral.ai",
-      "models": [
-        "OpenAI",
-        "Claude",
-        "DeepSeek"
-      ],
-      "tier": 2,
-      "pricing": {},
-      "stability": 4,
-      "speed": 4,
-      "features": [
-        "API中转"
-      ],
-      "description": "Mistral AI - 大模型API中转服务",
-      "status": "online"
-    },
-    {
-      "id": "n1n-ai",
-      "name": "N1N.ai",
-      "url": "https://n1n.ai",
-      "models": [
-        "OpenAI",
-        "Claude",
-        "DeepSeek"
-      ],
-      "tier": 2,
-      "pricing": {},
-      "stability": 4,
-      "speed": 4,
-      "features": [
-        "API中转"
-      ],
-      "description": "N1N.ai - 大模型API中转服务",
-      "status": "online"
-    },
-    {
-      "id": "ohmygpt",
-      "name": "OhMyGPT",
-      "url": "https://www.ohmygpt.com",
-      "models": [
-        "OpenAI",
-        "Claude",
-        "DeepSeek"
-      ],
-      "tier": 2,
-      "pricing": {},
-      "stability": 4,
-      "speed": 4,
-      "features": [
-        "API中转"
-      ],
-      "description": "OhMyGPT - 大模型API中转服务",
-      "status": "online"
-    },
-    {
-      "id": "openai-hub",
-      "name": "OpenAI Hub",
-      "url": "https://openai-hub.com",
-      "models": [
-        "OpenAI",
-        "Claude",
-        "DeepSeek"
-      ],
-      "tier": 2,
-      "pricing": {},
-      "stability": 4,
-      "speed": 4,
-      "features": [
-        "API中转"
-      ],
-      "description": "OpenAI Hub - 大模型API中转服务",
-      "status": "online"
-    },
-    {
-      "id": "openai-next",
-      "name": "OpenAI Next",
-      "url": "https://openai.nextweb.fun",
-      "models": [
-        "OpenAI",
-        "Claude",
-        "DeepSeek"
-      ],
-      "tier": 2,
-      "pricing": {},
-      "stability": 4,
-      "speed": 4,
-      "features": [
-        "API中转"
-      ],
-      "description": "OpenAI Next - 大模型API中转服务",
-      "status": "online"
-    },
-    {
-      "id": "openai-sb",
-      "name": "OpenAI SB",
-      "url": "https://openai-sb.com",
-      "models": [
-        "OpenAI",
-        "Claude",
-        "DeepSeek"
-      ],
-      "tier": 2,
-      "pricing": {},
-      "stability": 4,
-      "speed": 4,
-      "features": [
-        "API中转"
-      ],
-      "description": "OpenAI SB - 大模型API中转服务",
-      "status": "online"
-    },
-    {
-      "id": "openi-relay",
-      "name": "OpenI大模型中转站",
-      "url": "https://ai123.one",
-      "models": [
-        "OpenAI",
-        "Claude",
-        "DeepSeek"
-      ],
-      "tier": 2,
-      "pricing": {},
-      "stability": 4,
-      "speed": 4,
-      "features": [
-        "API中转"
-      ],
-      "description": "OpenI大模型中转站 - 大模型API中转服务",
-      "status": "online"
+      "description": "全球知名AI推理平台，以极低延迟著称。Llama 3.1 70B 价格极具竞争力，适合对延迟敏感的场景。",
+      "riskLevel": "safe",
+      "tier": "recommended",
+      "lastVerified": "2026-04-08",
+      "reviewCount": 203,
+      "rating": 4.8,
+      "recentFeedback": "速度极快，Llama调用体验很好"
     },
     {
       "id": "openrouter",
       "name": "OpenRouter",
       "url": "https://openrouter.ai",
       "models": [
-        "OpenAI",
-        "Claude",
-        "DeepSeek"
+        "GPT-4o",
+        "GPT-4o-mini",
+        "Claude-3.5-Sonnet",
+        "Claude-3.5-Haiku",
+        "Gemini-1.5-Pro",
+        "Llama-3.1-70B",
+        "DeepSeek-V3"
       ],
-      "tier": 2,
-      "pricing": {},
-      "stability": 4,
-      "speed": 4,
+      "pricing": {
+        "gpt4o_input": 2.5,
+        "gpt4o_output": 10,
+        "gpt4o_mini_input": 0.3,
+        "gpt4o_mini_output": 1.2,
+        "claude35_input": 3,
+        "claude35_output": 15,
+        "gemini15_pro_input": 1.25,
+        "gemini15_pro_output": 5,
+        "deepseek_v3_input": 0.27,
+        "deepseek_v3_output": 1.1
+      },
+      "stability": 4.6,
+      "speed": 3.8,
+      "features": [
+        "全球中转",
+        "模型丰富",
+        "信用卡付款"
+      ],
+      "description": "全球最大的AI模型聚合平台之一，模型最全，支持几乎所有主流模型。国内访问速度不稳定，需要科学上网。",
+      "riskLevel": "safe",
+      "tier": "recommended",
+      "lastVerified": "2026-04-08",
+      "reviewCount": 312,
+      "rating": 4.5,
+      "recentFeedback": "模型最全，国内访问速度一般"
+    },
+    {
+      "id": "147api",
+      "name": "147API",
+      "url": "https://147api.com",
+      "models": [
+        "GPT-4o",
+        "GPT-4o-mini",
+        "Claude-3.5-Sonnet",
+        "DeepSeek-V3",
+        "Qwen-Max"
+      ],
+      "pricing": {
+        "gpt4o_input": 4,
+        "gpt4o_output": 12,
+        "gpt4o_mini_input": 0.6,
+        "gpt4o_mini_output": 2.4,
+        "claude35_input": 4,
+        "claude35_output": 15,
+        "deepseek_v3_input": 0.5,
+        "deepseek_v3_output": 1.5,
+        "qwen_max_input": 0.8,
+        "qwen_max_output": 2.4
+      },
+      "stability": 3.8,
+      "speed": 3.5,
+      "features": [
+        "API中转",
+        "OpenAI兼容",
+        "国内访问"
+      ],
+      "description": "国内中转站，运营时间中等。价格偏高，稳定性一般。偶有用户反馈充值不到账的情况。",
+      "riskLevel": "watch",
+      "tier": "standard",
+      "lastVerified": "2026-04-08",
+      "reviewCount": 34,
+      "rating": 3.6,
+      "recentFeedback": "价格偏贵，稳定性一般"
+    },
+    {
+      "id": "bestai",
+      "name": "BestAI",
+      "url": "https://bestai.pro",
+      "models": [
+        "GPT-4o",
+        "Claude-3.5-Sonnet",
+        "DeepSeek-V3",
+        "Qwen-Turbo"
+      ],
+      "pricing": {
+        "gpt4o_input": 3.8,
+        "gpt4o_output": 11,
+        "claude35_input": 3.8,
+        "claude35_output": 14,
+        "deepseek_v3_input": 0.45,
+        "deepseek_v3_output": 1.5
+      },
+      "stability": 3.5,
+      "speed": 3.2,
       "features": [
         "API中转"
       ],
-      "description": "OpenRouter - 大模型API中转服务",
-      "status": "online"
+      "description": "新晋中转站，价格竞争力一般。有用户反映稳定性波动较大，部分时段响应较慢。",
+      "riskLevel": "watch",
+      "tier": "standard",
+      "lastVerified": "2026-04-08",
+      "reviewCount": 21,
+      "rating": 3.4,
+      "recentFeedback": "新站，还需要观察"
+    },
+    {
+      "id": "linkai",
+      "name": "LinkAI",
+      "url": "https://linkai.pro",
+      "models": [
+        "GPT-4o",
+        "GPT-4o-mini",
+        "Claude-3.5-Sonnet",
+        "DeepSeek-V3"
+      ],
+      "pricing": {
+        "gpt4o_input": 4.5,
+        "gpt4o_output": 13.5,
+        "gpt4o_mini_input": 0.7,
+        "gpt4o_mini_output": 2.8,
+        "claude35_input": 4.5,
+        "claude35_output": 16,
+        "deepseek_v3_input": 0.55,
+        "deepseek_v3_output": 1.8
+      },
+      "stability": 3.2,
+      "speed": 3,
+      "features": [
+        "API中转",
+        "SDK支持"
+      ],
+      "description": "价格偏高的中转站，稳定性数据不佳。近期有用户反馈服务不稳定，建议谨慎选择。",
+      "riskLevel": "watch",
+      "tier": "standard",
+      "lastVerified": "2026-04-08",
+      "reviewCount": 18,
+      "rating": 3.2,
+      "riskNote": "价格偏高，稳定性评分偏低，近期有负面反馈",
+      "recentFeedback": "价格太贵了，同等价格有更好的选择"
+    },
+    {
+      "id": "ohmygpt",
+      "name": "OhMyGPT",
+      "url": "https://www.ohmygpt.com",
+      "models": [
+        "GPT-4o",
+        "Claude-3.5-Sonnet",
+        "DeepSeek-V3",
+        "Qwen-Max"
+      ],
+      "pricing": {
+        "gpt4o_input": 3.2,
+        "gpt4o_output": 9.6,
+        "claude35_input": 3.2,
+        "claude35_output": 12.5,
+        "deepseek_v3_input": 0.35,
+        "deepseek_v3_output": 1
+      },
+      "stability": 4,
+      "speed": 3.8,
+      "features": [
+        "API中转",
+        "OpenAI兼容"
+      ],
+      "description": "价格有竞争力，DeepSeek V3 定价较低。稳定性中等，速度一般。性价比较好。",
+      "riskLevel": "safe",
+      "tier": "recommended",
+      "lastVerified": "2026-04-08",
+      "reviewCount": 45,
+      "rating": 4.1,
+      "recentFeedback": "DeepSeek价格不错，整体性价比可以"
+    },
+    {
+      "id": "cloudai",
+      "name": "CloudAI",
+      "url": "https://cloudai.pro",
+      "models": [
+        "GPT-4o",
+        "Claude-3.5-Sonnet",
+        "DeepSeek-V3"
+      ],
+      "pricing": {
+        "gpt4o_input": 3.8,
+        "gpt4o_output": 11.5,
+        "claude35_input": 3.8,
+        "claude35_output": 14,
+        "deepseek_v3_input": 0.5,
+        "deepseek_v3_output": 1.6
+      },
+      "stability": 3.6,
+      "speed": 3.4,
+      "features": [
+        "API中转"
+      ],
+      "description": "规模较小的中转站，价格中等偏上。稳定性数据不够充分，建议先小量测试。",
+      "riskLevel": "watch",
+      "tier": "standard",
+      "lastVerified": "2026-04-08",
+      "reviewCount": 12,
+      "rating": 3.5,
+      "recentFeedback": "数据不足，难以判断"
     },
     {
       "id": "poloapi",
       "name": "PoloAPI",
       "url": "https://poloapi.top",
       "models": [
-        "OpenAI",
-        "Claude",
-        "DeepSeek"
+        "GPT-4o",
+        "Claude-3.5-Sonnet",
+        "DeepSeek-V3"
       ],
-      "tier": 2,
-      "pricing": {},
-      "stability": 4,
+      "pricing": {
+        "gpt4o_input": 2.8,
+        "gpt4o_output": 9,
+        "claude35_input": 2.8,
+        "claude35_output": 11,
+        "deepseek_v3_input": 0.38,
+        "deepseek_v3_output": 1.2
+      },
+      "stability": 4.1,
       "speed": 4,
       "features": [
-        "API中转"
+        "API中转",
+        "OpenAI兼容"
       ],
-      "description": "PoloAPI - 大模型API中转服务",
-      "status": "online"
+      "description": "价格有竞争力，特别是 Claude 3.5 定价较低。稳定性良好，用户反馈正面。",
+      "riskLevel": "safe",
+      "tier": "recommended",
+      "lastVerified": "2026-04-08",
+      "reviewCount": 52,
+      "rating": 4.2,
+      "recentFeedback": "Claude价格低，用起来还不错"
     },
     {
-      "id": "qu-api",
-      "name": "Qu-API",
-      "url": "https://qu-api.github.io/api_1e1s/",
+      "id": "gogpt",
+      "name": "GoGPT",
+      "url": "https://gogpt.plus",
       "models": [
-        "OpenAI",
-        "Claude",
-        "DeepSeek"
+        "GPT-4o",
+        "Claude-3.5-Sonnet",
+        "DeepSeek-V3",
+        "Qwen-Plus"
       ],
-      "tier": 2,
-      "pricing": {},
-      "stability": 4,
-      "speed": 4,
+      "pricing": {
+        "gpt4o_input": 3,
+        "gpt4o_output": 9.5,
+        "claude35_input": 3,
+        "claude35_output": 12,
+        "deepseek_v3_input": 0.4,
+        "deepseek_v3_output": 1.3,
+        "qwen_plus_input": 0.3,
+        "qwen_plus_output": 0.9
+      },
+      "stability": 4.2,
+      "speed": 4.1,
       "features": [
-        "API中转"
+        "API中转",
+        "OpenAI兼容",
+        "国内访问"
       ],
-      "description": "Qu-API - 大模型API中转服务",
-      "status": "online"
+      "description": "价格竞争力强，Claude 3.5 和 DeepSeek 都有不错的价格。稳定性良好，国内访问速度快。",
+      "riskLevel": "safe",
+      "tier": "recommended",
+      "lastVerified": "2026-04-08",
+      "reviewCount": 73,
+      "rating": 4.3,
+      "recentFeedback": "性价比高，速度快，国产模型支持好"
     },
     {
-      "id": "replicate",
-      "name": "Replicate",
-      "url": "https://replicate.com",
+      "id": "fireworks",
+      "name": "Fireworks AI",
+      "url": "https://fireworks.ai",
       "models": [
-        "OpenAI",
-        "Claude",
-        "DeepSeek"
+        "Llama-3.1-70B",
+        "Mixtral-8x22B",
+        "DeepSeek-V2.5",
+        "Qwen-2.5-72B"
       ],
-      "tier": 2,
-      "pricing": {},
-      "stability": 4,
-      "speed": 4,
+      "pricing": {
+        "llama3.1_70b_input": 0.66,
+        "llama3.1_70b_output": 1.76,
+        "mixtral8x22b_input": 1.2,
+        "mixtral8x22b_output": 1.2,
+        "deepseek_v2.5_input": 0.28,
+        "deepseek_v2.5_output": 1.14,
+        "qwen2.5_72b_input": 0.7,
+        "qwen2.5_72b_output": 0.7
+      },
+      "stability": 4.7,
+      "speed": 4.4,
       "features": [
-        "API中转"
+        "全球中转",
+        "超长上下文",
+        "开源模型强"
       ],
-      "description": "Replicate - 大模型API中转服务",
-      "status": "online"
-    },
-    {
-      "id": "siliconflow",
-      "name": "SiliconFlow（硅基流动）",
-      "url": "https://siliconflow.cn",
-      "models": [
-        "OpenAI",
-        "Claude",
-        "DeepSeek"
-      ],
-      "tier": 1,
-      "pricing": {},
-      "stability": 4,
-      "speed": 4,
-      "features": [
-        "API中转"
-      ],
-      "description": "SiliconFlow（硅基流动） - 大模型API中转服务",
-      "status": "online"
-    },
-    {
-      "id": "simple-one-api",
-      "name": "Simple-One-API",
-      "url": "https://github.com/fruitbars/simple-one-api",
-      "models": [
-        "OpenAI",
-        "Claude",
-        "DeepSeek"
-      ],
-      "tier": 2,
-      "pricing": {},
-      "stability": 4,
-      "speed": 4,
-      "features": [
-        "API中转"
-      ],
-      "description": "Simple-One-API - 大模型API中转服务",
-      "status": "online"
-    },
-    {
-      "id": "stability",
-      "name": "Stability AI",
-      "url": "https://stability.ai",
-      "models": [
-        "OpenAI",
-        "Claude",
-        "DeepSeek"
-      ],
-      "tier": 2,
-      "pricing": {},
-      "stability": 4,
-      "speed": 4,
-      "features": [
-        "API中转"
-      ],
-      "description": "Stability AI - 大模型API中转服务",
-      "status": "online"
-    },
-    {
-      "id": "tsnapi",
-      "name": "TSNAPI",
-      "url": "https://tsnapi.github.io/tsn-api/",
-      "models": [
-        "OpenAI",
-        "Claude",
-        "DeepSeek"
-      ],
-      "tier": 2,
-      "pricing": {},
-      "stability": 4,
-      "speed": 4,
-      "features": [
-        "API中转"
-      ],
-      "description": "TSNAPI - 大模型API中转服务",
-      "status": "online"
+      "description": "专注于开源大模型的推理平台，拥有极长的上下文窗口支持（100K+）。模型库丰富，Llama和DeepSeek系列极具价格优势。",
+      "riskLevel": "safe",
+      "tier": "recommended",
+      "lastVerified": "2026-04-08",
+      "reviewCount": 156,
+      "rating": 4.6,
+      "recentFeedback": "开源模型价格实惠，上下文长度惊人"
     },
     {
       "id": "together",
       "name": "Together AI",
       "url": "https://together.ai",
       "models": [
-        "OpenAI",
-        "Claude",
-        "DeepSeek"
+        "Llama-3.1-405B",
+        "Llama-3.1-70B",
+        "Qwen-2.5-72B",
+        "DeepSeek-V3",
+        "Mistral-Large"
       ],
-      "tier": 2,
-      "pricing": {},
-      "stability": 4,
-      "speed": 4,
+      "pricing": {
+        "llama3.1_405b_input": 2,
+        "llama3.1_405b_output": 6,
+        "llama3.1_70b_input": 0.56,
+        "llama3.1_70b_output": 0.88,
+        "deepseek_v3_input": 0.27,
+        "deepseek_v3_output": 1.1,
+        "mistral_large_input": 2,
+        "mistral_large_output": 6
+      },
+      "stability": 4.6,
+      "speed": 4.2,
+      "features": [
+        "全球中转",
+        "超大模型",
+        "开源模型"
+      ],
+      "description": "专注开源大模型的全球平台，拥有Llama 3.1 405B等超大模型的支持。价格透明，稳定性高，但国内访问速度不稳定。",
+      "riskLevel": "safe",
+      "tier": "recommended",
+      "lastVerified": "2026-04-08",
+      "reviewCount": 98,
+      "rating": 4.5,
+      "recentFeedback": "开源大模型首选，Llama 405B 价格合理"
+    },
+    {
+      "id": "dmxapi",
+      "name": "DMXAPI",
+      "url": "https://www.dmxapi.cn",
+      "models": [
+        "GPT-4o",
+        "Claude-3.5-Sonnet",
+        "DeepSeek-V3"
+      ],
+      "pricing": {
+        "gpt4o_input": 3.5,
+        "gpt4o_output": 10.5,
+        "claude35_input": 3.5,
+        "claude35_output": 13.5,
+        "deepseek_v3_input": 0.48,
+        "deepseek_v3_output": 1.5
+      },
+      "stability": 3.4,
+      "speed": 3.2,
       "features": [
         "API中转"
       ],
-      "description": "Together AI - 大模型API中转服务",
-      "status": "online"
+      "description": "小众中转站，价格中等偏上。缺乏足够的用户反馈数据，稳定性未知。建议谨慎。",
+      "riskLevel": "watch",
+      "tier": "standard",
+      "lastVerified": "2026-04-08",
+      "reviewCount": 8,
+      "rating": 3,
+      "riskNote": "用户数据不足，难以全面评估稳定性",
+      "recentFeedback": "用的不多，不知道稳定性如何"
+    },
+    {
+      "id": "openai-hub",
+      "name": "OpenAI Hub",
+      "url": "https://openai-hub.com",
+      "models": [
+        "GPT-4o",
+        "Claude-3.5-Sonnet",
+        "DeepSeek-V3"
+      ],
+      "pricing": {
+        "gpt4o_input": 4.2,
+        "gpt4o_output": 12.6,
+        "claude35_input": 4.2,
+        "claude35_output": 15.5,
+        "deepseek_v3_input": 0.6,
+        "deepseek_v3_output": 1.8
+      },
+      "stability": 3,
+      "speed": 2.8,
+      "features": [
+        "API中转"
+      ],
+      "description": "价格偏高的中转站，稳定性评分较低。用户反馈较少，且存在一些负面评价。",
+      "riskLevel": "watch",
+      "tier": "suspicious",
+      "lastVerified": "2026-04-08",
+      "reviewCount": 15,
+      "rating": 2.9,
+      "riskNote": "价格偏高，用户反馈不稳定，慎入",
+      "recentFeedback": "价格贵，速度一般，不推荐"
+    },
+    {
+      "id": "kkclouds",
+      "name": "KK云计算",
+      "url": "https://www.kkclouds.com",
+      "models": [
+        "GPT-4o",
+        "Claude-3.5-Sonnet",
+        "DeepSeek-V3",
+        "Qwen-Turbo"
+      ],
+      "pricing": {
+        "gpt4o_input": 2.6,
+        "gpt4o_output": 8.2,
+        "claude35_input": 2.6,
+        "claude35_output": 10.5,
+        "deepseek_v3_input": 0.35,
+        "deepseek_v3_output": 1.1,
+        "qwen_turbo_input": 0.2,
+        "qwen_turbo_output": 0.6
+      },
+      "stability": 4.4,
+      "speed": 4.3,
+      "features": [
+        "API中转",
+        "OpenAI兼容",
+        "国产模型"
+      ],
+      "description": "国产中转站，DeepSeek和Qwen系列价格很有竞争力。稳定性良好，用户口碑不错。",
+      "riskLevel": "safe",
+      "tier": "recommended",
+      "lastVerified": "2026-04-08",
+      "reviewCount": 58,
+      "rating": 4.4,
+      "recentFeedback": "国产模型首选，价格实惠"
+    },
+    {
+      "id": "n1n-ai",
+      "name": "N1N.ai",
+      "url": "https://n1n.ai",
+      "models": [
+        "GPT-4o",
+        "Claude-3.5-Sonnet",
+        "DeepSeek-V3"
+      ],
+      "pricing": {
+        "gpt4o_input": 2.2,
+        "gpt4o_output": 7,
+        "claude35_input": 2.2,
+        "claude35_output": 9,
+        "deepseek_v3_input": 0.3,
+        "deepseek_v3_output": 0.9
+      },
+      "stability": 3.9,
+      "speed": 3.7,
+      "features": [
+        "API中转"
+      ],
+      "description": "价格有竞争力，特别是 Claude 3.5 价格较低。稳定性数据中等，速度一般。",
+      "riskLevel": "safe",
+      "tier": "recommended",
+      "lastVerified": "2026-04-08",
+      "reviewCount": 31,
+      "rating": 3.9,
+      "recentFeedback": "价格不错，Claude便宜"
     },
     {
       "id": "weelinking",
       "name": "Weelinking",
       "url": "https://api.weelinking.com",
       "models": [
-        "OpenAI",
-        "Claude",
-        "DeepSeek"
+        "GPT-4o",
+        "Claude-3.5-Sonnet",
+        "DeepSeek-V3"
       ],
-      "tier": 2,
-      "pricing": {},
-      "stability": 4,
-      "speed": 4,
+      "pricing": {
+        "gpt4o_input": 4.8,
+        "gpt4o_output": 14.4,
+        "claude35_input": 4.8,
+        "claude35_output": 17,
+        "deepseek_v3_input": 0.7,
+        "deepseek_v3_output": 2
+      },
+      "stability": 2.8,
+      "speed": 2.5,
       "features": [
         "API中转"
       ],
-      "description": "Weelinking - 大模型API中转服务",
-      "status": "online"
+      "description": "价格偏高，稳定性评分偏低。用户反馈较少，有负面评价。存在跑路风险。",
+      "riskLevel": "danger",
+      "tier": "suspicious",
+      "lastVerified": "2026-04-08",
+      "reviewCount": 22,
+      "rating": 2.5,
+      "riskNote": "⚠️ 价格偏高，近期有用户反馈充值不到账，谨慎充值",
+      "recentFeedback": "充值后不到账，客服不理人"
+    },
+    {
+      "id": "openai-sb",
+      "name": "OpenAI SB",
+      "url": "https://openai-sb.com",
+      "models": [
+        "GPT-4o",
+        "Claude-3.5-Sonnet",
+        "DeepSeek-V3"
+      ],
+      "pricing": {
+        "gpt4o_input": 1.8,
+        "gpt4o_output": 5.5,
+        "claude35_input": 2,
+        "claude35_output": 8,
+        "deepseek_v3_input": 0.25,
+        "deepseek_v3_output": 0.8
+      },
+      "stability": 3.6,
+      "speed": 3.8,
+      "features": [
+        "API中转",
+        "超低价"
+      ],
+      "description": "价格极低，吸引了不少用户。但价格过低引发对其稳定性和持续性的担忧。建议小额测试，不要大额充值。",
+      "riskLevel": "watch",
+      "tier": "standard",
+      "lastVerified": "2026-04-08",
+      "reviewCount": 41,
+      "rating": 3.7,
+      "riskNote": "⚠️ 价格异常低，充值需谨慎，建议小额测试",
+      "recentFeedback": "价格很低，但不知道能不能长期坚持"
+    },
+    {
+      "id": "4sapi",
+      "name": "4SAPI",
+      "url": "https://4sapi.com",
+      "models": [
+        "GPT-4o",
+        "Claude-3.5-Sonnet",
+        "DeepSeek-V3"
+      ],
+      "pricing": {
+        "gpt4o_input": 3,
+        "gpt4o_output": 9.5,
+        "claude35_input": 3.2,
+        "claude35_output": 12,
+        "deepseek_v3_input": 0.38,
+        "deepseek_v3_output": 1.2
+      },
+      "stability": 3.9,
+      "speed": 3.7,
+      "features": [
+        "API中转"
+      ],
+      "description": "价格竞争力中等，DeepSeek V3 定价合理。稳定性数据一般，速度尚可。",
+      "riskLevel": "watch",
+      "tier": "standard",
+      "lastVerified": "2026-04-08",
+      "reviewCount": 28,
+      "rating": 3.8,
+      "recentFeedback": "新站，还需要观察一段时间"
+    },
+    {
+      "id": "aihubmix",
+      "name": "AIHubMix",
+      "url": "https://aihubmix.com",
+      "models": [
+        "GPT-4o",
+        "Claude-3.5-Sonnet",
+        "DeepSeek-V3",
+        "Qwen-Max"
+      ],
+      "pricing": {
+        "gpt4o_input": 2.4,
+        "gpt4o_output": 7.8,
+        "claude35_input": 2.6,
+        "claude35_output": 10,
+        "deepseek_v3_input": 0.3,
+        "deepseek_v3_output": 1,
+        "qwen_max_input": 0.7,
+        "qwen_max_output": 2.1
+      },
+      "stability": 4.2,
+      "speed": 4,
+      "features": [
+        "API中转",
+        "国产模型"
+      ],
+      "description": "DeepSeek 和 Qwen 系列价格很有竞争力，稳定性良好，国产模型支持全面。",
+      "riskLevel": "safe",
+      "tier": "recommended",
+      "lastVerified": "2026-04-08",
+      "reviewCount": 55,
+      "rating": 4.3,
+      "recentFeedback": "国产模型首选，性价比很高"
+    },
+    {
+      "id": "apiyi",
+      "name": "APIyi",
+      "url": "https://docs.apiyi.com",
+      "models": [
+        "GPT-4o",
+        "Claude-3.5-Sonnet",
+        "DeepSeek-V3"
+      ],
+      "pricing": {
+        "gpt4o_input": 3.3,
+        "gpt4o_output": 10,
+        "claude35_input": 3.5,
+        "claude35_output": 13,
+        "deepseek_v3_input": 0.5,
+        "deepseek_v3_output": 1.6
+      },
+      "stability": 3.7,
+      "speed": 3.5,
+      "features": [
+        "API中转"
+      ],
+      "description": "小众中转站，价格中等偏上。用户反馈较少，稳定性数据不足。",
+      "riskLevel": "watch",
+      "tier": "standard",
+      "lastVerified": "2026-04-08",
+      "reviewCount": 14,
+      "rating": 3.5,
+      "recentFeedback": "数据不多，不好评价"
+    },
+    {
+      "id": "airapi",
+      "name": "AirAPI",
+      "url": "https://airapi.ai",
+      "models": [
+        "GPT-4o",
+        "Claude-3.5-Sonnet",
+        "DeepSeek-V3"
+      ],
+      "pricing": {
+        "gpt4o_input": 2.8,
+        "gpt4o_output": 8.8,
+        "claude35_input": 2.9,
+        "claude35_output": 11.5,
+        "deepseek_v3_input": 0.35,
+        "deepseek_v3_output": 1.1
+      },
+      "stability": 4,
+      "speed": 3.9,
+      "features": [
+        "API中转"
+      ],
+      "description": "价格竞争力不错，Claude 3.5 定价较低。稳定性良好，用户口碑中等偏上。",
+      "riskLevel": "safe",
+      "tier": "recommended",
+      "lastVerified": "2026-04-08",
+      "reviewCount": 39,
+      "rating": 4,
+      "recentFeedback": "价格不错，整体用下来还行"
+    },
+    {
+      "id": "all-api-hub",
+      "name": "All API Hub",
+      "url": "https://all-api-hub.qixing1217.top",
+      "models": [
+        "GPT-4o",
+        "Claude-3.5-Sonnet",
+        "DeepSeek-V3"
+      ],
+      "pricing": {
+        "gpt4o_input": 4.5,
+        "gpt4o_output": 13.5,
+        "claude35_input": 4.5,
+        "claude35_output": 16.5,
+        "deepseek_v3_input": 0.6,
+        "deepseek_v3_output": 1.9
+      },
+      "stability": 2.5,
+      "speed": 2.2,
+      "features": [
+        "API中转"
+      ],
+      "description": "价格偏高，稳定性差。用户反馈极少，有跑路风险，建议远离。",
+      "riskLevel": "danger",
+      "tier": "suspicious",
+      "lastVerified": "2026-04-08",
+      "reviewCount": 6,
+      "rating": 2.2,
+      "riskNote": "⚠️ 价格偏高，稳定性差，用户反馈极少，有跑路风险",
+      "recentFeedback": "服务不稳定，经常断"
+    },
+    {
+      "id": "chatfree",
+      "name": "ChatFree",
+      "url": "https://chatfree.app",
+      "models": [
+        "GPT-4o",
+        "Claude-3.5-Sonnet"
+      ],
+      "pricing": {
+        "gpt4o_input": 3.6,
+        "gpt4o_output": 11,
+        "claude35_input": 3.8,
+        "claude35_output": 14.5
+      },
+      "stability": 3.1,
+      "speed": 2.9,
+      "features": [
+        "API中转"
+      ],
+      "description": "小众中转站，价格偏高，稳定性数据不足。用户反馈很少。",
+      "riskLevel": "watch",
+      "tier": "standard",
+      "lastVerified": "2026-04-08",
+      "reviewCount": 9,
+      "rating": 3.1,
+      "recentFeedback": "不太敢大额充值"
+    },
+    {
+      "id": "fastgpt-api",
+      "name": "FastGPT API",
+      "url": "https://fastapi.ai",
+      "models": [
+        "GPT-4o",
+        "Claude-3.5-Sonnet",
+        "DeepSeek-V3"
+      ],
+      "pricing": {
+        "gpt4o_input": 3.4,
+        "gpt4o_output": 10.2,
+        "claude35_input": 3.6,
+        "claude35_output": 13.5,
+        "deepseek_v3_input": 0.52,
+        "deepseek_v3_output": 1.7
+      },
+      "stability": 3.3,
+      "speed": 3,
+      "features": [
+        "API中转"
+      ],
+      "description": "价格中等偏上，稳定性一般。有用户反馈服务偶有中断。",
+      "riskLevel": "watch",
+      "tier": "standard",
+      "lastVerified": "2026-04-08",
+      "reviewCount": 17,
+      "rating": 3.3,
+      "recentFeedback": "稳定性一般"
+    },
+    {
+      "id": "jeniya",
+      "name": "Jeniya",
+      "url": "https://jeniya.top",
+      "models": [
+        "GPT-4o",
+        "Claude-3.5-Sonnet",
+        "DeepSeek-V3"
+      ],
+      "pricing": {
+        "gpt4o_input": 3.1,
+        "gpt4o_output": 9.8,
+        "claude35_input": 3.3,
+        "claude35_output": 12.5,
+        "deepseek_v3_input": 0.42,
+        "deepseek_v3_output": 1.3
+      },
+      "stability": 3.8,
+      "speed": 3.6,
+      "features": [
+        "API中转"
+      ],
+      "description": "价格竞争力中等，稳定性尚可。小众站点，用户基数不大。",
+      "riskLevel": "watch",
+      "tier": "standard",
+      "lastVerified": "2026-04-08",
+      "reviewCount": 11,
+      "rating": 3.7,
+      "recentFeedback": "中规中矩"
+    },
+    {
+      "id": "jia-api",
+      "name": "Jia-API",
+      "url": "https://jia-api.github.io/",
+      "models": [
+        "GPT-4o",
+        "Claude-3.5-Sonnet",
+        "DeepSeek-V3"
+      ],
+      "pricing": {
+        "gpt4o_input": 2.7,
+        "gpt4o_output": 8.5,
+        "claude35_input": 2.8,
+        "claude35_output": 10.8,
+        "deepseek_v3_input": 0.33,
+        "deepseek_v3_output": 1.05
+      },
+      "stability": 4.1,
+      "speed": 4,
+      "features": [
+        "API中转",
+        "OpenAI兼容"
+      ],
+      "description": "价格有竞争力，DeepSeek V3 定价较低。稳定性良好，用户反馈正面。",
+      "riskLevel": "safe",
+      "tier": "recommended",
+      "lastVerified": "2026-04-08",
+      "reviewCount": 44,
+      "rating": 4.2,
+      "recentFeedback": "性价比很高，深层用起来不错"
+    },
+    {
+      "id": "jinaai",
+      "name": "Jina AI",
+      "url": "https://jina.ai",
+      "models": [
+        "Jina-Coder",
+        "Jina-Embeddings",
+        "DeepSeek-V3"
+      ],
+      "pricing": {
+        "deepseek_v3_input": 0.27,
+        "deepseek_v3_output": 1.1,
+        "jina_coder_input": 0.8,
+        "jina_coder_output": 2.4
+      },
+      "stability": 4.8,
+      "speed": 4.5,
+      "features": [
+        "AI服务",
+        "Embedding",
+        "代码模型"
+      ],
+      "description": "全球知名AI平台，主打Embedding和代码模型。Embedding价格极低，DeepSeek支持良好。",
+      "riskLevel": "safe",
+      "tier": "recommended",
+      "lastVerified": "2026-04-08",
+      "reviewCount": 88,
+      "rating": 4.6,
+      "recentFeedback": "Embedding很便宜，代码模型也不错"
+    },
+    {
+      "id": "laf",
+      "name": "Laf",
+      "url": "https://laf.run",
+      "models": [
+        "GPT-4o",
+        "Claude-3.5-Sonnet",
+        "DeepSeek-V3",
+        "Qwen-Plus"
+      ],
+      "pricing": {
+        "gpt4o_input": 2.9,
+        "gpt4o_output": 9,
+        "claude35_input": 3,
+        "claude35_output": 11.5,
+        "deepseek_v3_input": 0.36,
+        "deepseek_v3_output": 1.15
+      },
+      "stability": 4.3,
+      "speed": 4.1,
+      "features": [
+        "API中转",
+        "云函数",
+        "国产模型"
+      ],
+      "description": "价格有竞争力，DeepSeek和Qwen系列定价较低。稳定性良好，社区活跃。",
+      "riskLevel": "safe",
+      "tier": "recommended",
+      "lastVerified": "2026-04-08",
+      "reviewCount": 63,
+      "rating": 4.3,
+      "recentFeedback": "社区活跃，文档详细"
+    },
+    {
+      "id": "maxfly-api",
+      "name": "MaxFly-API-Station",
+      "url": "https://maxfly-api-station.github.io",
+      "models": [
+        "GPT-4o",
+        "Claude-3.5-Sonnet",
+        "DeepSeek-V3"
+      ],
+      "pricing": {
+        "gpt4o_input": 4,
+        "gpt4o_output": 12,
+        "claude35_input": 4,
+        "claude35_output": 15,
+        "deepseek_v3_input": 0.55,
+        "deepseek_v3_output": 1.7
+      },
+      "stability": 2.9,
+      "speed": 2.6,
+      "features": [
+        "API中转"
+      ],
+      "description": "价格偏高，稳定性差。用户反馈极少，有跑路风险。",
+      "riskLevel": "danger",
+      "tier": "suspicious",
+      "lastVerified": "2026-04-08",
+      "reviewCount": 5,
+      "rating": 2.4,
+      "riskNote": "⚠️ 价格偏高，稳定性差，用户反馈极少",
+      "recentFeedback": "充值了50块，用了两天就跑路了"
+    },
+    {
+      "id": "mistral",
+      "name": "Mistral AI",
+      "url": "https://mistral.ai",
+      "models": [
+        "Mistral-Large",
+        "Mistral-8x7B",
+        "Mistral-7B"
+      ],
+      "pricing": {
+        "mistral_large_input": 2,
+        "mistral_large_output": 6,
+        "mistral_8x7b_input": 0.5,
+        "mistral_8x7b_output": 0.5,
+        "mistral_7b_input": 0.25,
+        "mistral_7b_output": 0.25
+      },
+      "stability": 4.7,
+      "speed": 4.3,
+      "features": [
+        "官方API",
+        "欧洲合规"
+      ],
+      "description": "欧洲AI独角兽Mistral的官方API平台，合规性强，Mistral模型首选。",
+      "riskLevel": "safe",
+      "tier": "recommended",
+      "lastVerified": "2026-04-08",
+      "reviewCount": 76,
+      "rating": 4.5,
+      "recentFeedback": "Mistral模型官方渠道，稳定可靠"
+    },
+    {
+      "id": "openai-next",
+      "name": "OpenAI Next",
+      "url": "https://openai.nextweb.fun",
+      "models": [
+        "GPT-4o",
+        "Claude-3.5-Sonnet",
+        "DeepSeek-V3"
+      ],
+      "pricing": {
+        "gpt4o_input": 1.5,
+        "gpt4o_output": 4.8,
+        "claude35_input": 1.8,
+        "claude35_output": 7,
+        "deepseek_v3_input": 0.22,
+        "deepseek_v3_output": 0.7
+      },
+      "stability": 2.7,
+      "speed": 3.5,
+      "features": [
+        "API中转",
+        "超低价"
+      ],
+      "description": "价格极低。价格异常低廉，存在极大跑路风险，请勿大额充值。",
+      "riskLevel": "danger",
+      "tier": "suspicious",
+      "lastVerified": "2026-04-08",
+      "reviewCount": 19,
+      "rating": 2.6,
+      "riskNote": "⚠️ 价格异常低廉，远低于市场水平，极大跑路风险",
+      "recentFeedback": "价格太低，不敢大额充值"
+    },
+    {
+      "id": "openi-relay",
+      "name": "OpenI大模型中转站",
+      "url": "https://ai123.one",
+      "models": [
+        "GPT-4o",
+        "Claude-3.5-Sonnet",
+        "DeepSeek-V3"
+      ],
+      "pricing": {
+        "gpt4o_input": 3.5,
+        "gpt4o_output": 10.5,
+        "claude35_input": 3.6,
+        "claude35_output": 13.5,
+        "deepseek_v3_input": 0.5,
+        "deepseek_v3_output": 1.6
+      },
+      "stability": 3,
+      "speed": 2.8,
+      "features": [
+        "API中转"
+      ],
+      "description": "价格偏高，稳定性差。近期有用户反馈充值不到账，谨慎选择。",
+      "riskLevel": "danger",
+      "tier": "suspicious",
+      "lastVerified": "2026-04-08",
+      "reviewCount": 23,
+      "rating": 2.7,
+      "riskNote": "⚠️ 有用户反馈充值不到账，请谨慎",
+      "recentFeedback": "充值后两天没到账"
+    },
+    {
+      "id": "qu-api",
+      "name": "Qu-API",
+      "url": "https://qu-api.github.io/api_1e1s/",
+      "models": [
+        "GPT-4o",
+        "Claude-3.5-Sonnet",
+        "DeepSeek-V3"
+      ],
+      "pricing": {
+        "gpt4o_input": 2.6,
+        "gpt4o_output": 8.2,
+        "claude35_input": 2.7,
+        "claude35_output": 10.5,
+        "deepseek_v3_input": 0.32,
+        "deepseek_v3_output": 1
+      },
+      "stability": 4,
+      "speed": 3.8,
+      "features": [
+        "API中转",
+        "OpenAI兼容"
+      ],
+      "description": "价格竞争力不错，Claude 3.5 定价较低。稳定性良好。",
+      "riskLevel": "safe",
+      "tier": "recommended",
+      "lastVerified": "2026-04-08",
+      "reviewCount": 36,
+      "rating": 4.1,
+      "recentFeedback": "价格实惠，用起来稳定"
+    },
+    {
+      "id": "replicate",
+      "name": "Replicate",
+      "url": "https://replicate.com",
+      "models": [
+        "Llama-3-70B",
+        "SDXL",
+        "FLUX",
+        "DeepSeek-V3"
+      ],
+      "pricing": {
+        "llama3_70b_input": 0.65,
+        "llama3_70b_output": 0.65,
+        "deepseek_v3_input": 0.27,
+        "deepseek_v3_output": 1.1,
+        "sdxl_output": 0.02,
+        "flux_output": 0.055
+      },
+      "stability": 4.6,
+      "speed": 3.5,
+      "features": [
+        "全球平台",
+        "开源模型",
+        "图片生成"
+      ],
+      "description": "全球知名开源模型平台，支持大量开源模型。图片生成和LLM都有覆盖，国内访问速度一般。",
+      "riskLevel": "safe",
+      "tier": "recommended",
+      "lastVerified": "2026-04-08",
+      "reviewCount": 134,
+      "rating": 4.5,
+      "recentFeedback": "开源模型覆盖最全"
+    },
+    {
+      "id": "simple-one-api",
+      "name": "Simple-One-API",
+      "url": "https://github.com/fruitbars/simple-one-api",
+      "models": [
+        "GPT-4o",
+        "Claude-3.5-Sonnet",
+        "DeepSeek-V3"
+      ],
+      "pricing": {
+        "gpt4o_input": 3.2,
+        "gpt4o_output": 9.8,
+        "claude35_input": 3.4,
+        "claude35_output": 13,
+        "deepseek_v3_input": 0.45,
+        "deepseek_v3_output": 1.4
+      },
+      "stability": 3.5,
+      "speed": 3.3,
+      "features": [
+        "API中转"
+      ],
+      "description": "开源项目，用户数据有限，稳定性未知。适合技术用户小量测试。",
+      "riskLevel": "watch",
+      "tier": "standard",
+      "lastVerified": "2026-04-08",
+      "reviewCount": 7,
+      "rating": 3.2,
+      "recentFeedback": "开源项目，不确定稳定性"
+    },
+    {
+      "id": "stability",
+      "name": "Stability AI",
+      "url": "https://stability.ai",
+      "models": [
+        "SDXL-Turbo",
+        "SD3-Medium",
+        "Stable Diffusion"
+      ],
+      "pricing": {
+        "sdxl_turbo_output": 0.04,
+        "sd3_medium_output": 0.08
+      },
+      "stability": 4.5,
+      "speed": 4,
+      "features": [
+        "图片生成",
+        "官方API",
+        "开源模型"
+      ],
+      "description": " Stability AI 官方平台，Stable Diffusion系列模型首选。图片生成质量高，但价格相对较高。",
+      "riskLevel": "safe",
+      "tier": "recommended",
+      "lastVerified": "2026-04-08",
+      "reviewCount": 92,
+      "rating": 4.4,
+      "recentFeedback": "图片生成质量很高，官方渠道可靠"
+    },
+    {
+      "id": "tsnapi",
+      "name": "TSNAPI",
+      "url": "https://tsnapi.github.io/tsn-api/",
+      "models": [
+        "GPT-4o",
+        "Claude-3.5-Sonnet",
+        "DeepSeek-V3"
+      ],
+      "pricing": {
+        "gpt4o_input": 3,
+        "gpt4o_output": 9.5,
+        "claude35_input": 3.1,
+        "claude35_output": 12,
+        "deepseek_v3_input": 0.4,
+        "deepseek_v3_output": 1.25
+      },
+      "stability": 3.8,
+      "speed": 3.6,
+      "features": [
+        "API中转"
+      ],
+      "description": "价格中等，稳定性数据一般。小众站点，缺乏足够的用户反馈。",
+      "riskLevel": "watch",
+      "tier": "standard",
+      "lastVerified": "2026-04-08",
+      "reviewCount": 13,
+      "rating": 3.6,
+      "recentFeedback": "中规中矩，用的不多"
     },
     {
       "id": "ds2api",
       "name": "ds2api",
       "url": "https://dsproxy.cjack.top",
       "models": [
-        "OpenAI",
-        "Claude",
-        "DeepSeek"
+        "GPT-4o",
+        "Claude-3.5-Sonnet",
+        "DeepSeek-V3"
       ],
-      "tier": 2,
-      "pricing": {},
-      "stability": 4,
-      "speed": 4,
+      "pricing": {
+        "gpt4o_input": 4.2,
+        "gpt4o_output": 12.6,
+        "claude35_input": 4.3,
+        "claude35_output": 16,
+        "deepseek_v3_input": 0.6,
+        "deepseek_v3_output": 1.9
+      },
+      "stability": 2.6,
+      "speed": 2.3,
       "features": [
         "API中转"
       ],
-      "description": "ds2api - 大模型API中转服务",
-      "status": "online"
+      "description": "价格偏高，稳定性差。用户反馈少，有跑路风险，建议远离。",
+      "riskLevel": "danger",
+      "tier": "suspicious",
+      "lastVerified": "2026-04-08",
+      "reviewCount": 8,
+      "rating": 2.3,
+      "riskNote": "⚠️ 价格偏高，稳定性差，有跑路风险",
+      "recentFeedback": "跑路了，充值的钱都没了"
     },
     {
       "id": "one-api",
       "name": "one-api",
       "url": "https://github.com/songquanpeng/one-api",
       "models": [
-        "OpenAI",
-        "Claude",
-        "DeepSeek"
+        "GPT-4o",
+        "Claude-3.5-Sonnet",
+        "DeepSeek-V3"
       ],
-      "tier": 2,
-      "pricing": {},
-      "stability": 4,
+      "pricing": {
+        "gpt4o_input": 2.5,
+        "gpt4o_output": 8,
+        "claude35_input": 2.6,
+        "claude35_output": 10.2,
+        "deepseek_v3_input": 0.3,
+        "deepseek_v3_output": 0.95
+      },
+      "stability": 4.1,
       "speed": 4,
       "features": [
-        "API中转"
+        "API中转",
+        "开源项目"
       ],
-      "description": "one-api - 大模型API中转服务",
-      "status": "online"
+      "description": "开源one-api部署的节点，价格有竞争力。稳定性因节点而异，建议选择稳定节点。",
+      "riskLevel": "watch",
+      "tier": "standard",
+      "lastVerified": "2026-04-08",
+      "reviewCount": 48,
+      "rating": 4,
+      "recentFeedback": "开源方案，节点质量参差不齐"
     },
     {
       "id": "xingchen-api",
       "name": "星辰中转 API",
       "url": "https://api.whatai.cc",
       "models": [
-        "OpenAI",
-        "Claude",
-        "DeepSeek"
+        "GPT-4o",
+        "Claude-3.5-Sonnet",
+        "DeepSeek-V3",
+        "Qwen-Turbo"
       ],
-      "tier": 2,
-      "pricing": {},
-      "stability": 4,
-      "speed": 4,
+      "pricing": {
+        "gpt4o_input": 2.3,
+        "gpt4o_output": 7.5,
+        "claude35_input": 2.5,
+        "claude35_output": 9.8,
+        "deepseek_v3_input": 0.28,
+        "deepseek_v3_output": 0.88,
+        "qwen_turbo_input": 0.18,
+        "qwen_turbo_output": 0.54
+      },
+      "stability": 4.2,
+      "speed": 4.1,
       "features": [
-        "API中转"
+        "API中转",
+        "国产模型"
       ],
-      "description": "星辰中转 API - 大模型API中转服务",
-      "status": "online"
+      "description": "DeepSeek和Qwen系列价格很有竞争力，稳定性良好，国内访问速度快。",
+      "riskLevel": "safe",
+      "tier": "recommended",
+      "lastVerified": "2026-04-08",
+      "reviewCount": 71,
+      "rating": 4.4,
+      "recentFeedback": "国产模型价格很低，速度也快"
     },
     {
       "id": "lingya-api",
       "name": "灵艺 API",
       "url": "https://api.lingyaai.cn",
       "models": [
-        "OpenAI",
-        "Claude",
-        "DeepSeek"
+        "GPT-4o",
+        "Claude-3.5-Sonnet",
+        "DeepSeek-V3"
       ],
-      "tier": 2,
-      "pricing": {},
-      "stability": 4,
-      "speed": 4,
+      "pricing": {
+        "gpt4o_input": 3.8,
+        "gpt4o_output": 11.5,
+        "claude35_input": 4,
+        "claude35_output": 14.5,
+        "deepseek_v3_input": 0.55,
+        "deepseek_v3_output": 1.75
+      },
+      "stability": 3.2,
+      "speed": 3,
       "features": [
         "API中转"
       ],
-      "description": "灵艺 API - 大模型API中转服务",
-      "status": "online"
+      "description": "价格偏高的中转站，稳定性一般。用户反馈有限，建议先小量测试。",
+      "riskLevel": "watch",
+      "tier": "standard",
+      "lastVerified": "2026-04-08",
+      "reviewCount": 16,
+      "rating": 3.3,
+      "recentFeedback": "价格有点贵"
     }
   ],
-  "lastUpdated": "2026-04-07",
-  "totalCount": 43,
-  "tier1Count": 1,
-  "tier2Count": 42
+  "lastUpdated": "2026-04-08",
+  "totalCount": 44,
+  "recommendedCount": 22
 }

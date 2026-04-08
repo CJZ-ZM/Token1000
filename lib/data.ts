@@ -12,38 +12,55 @@ export function getProviderById(id: string): Provider | undefined {
   return providers.find(p => p.id === id);
 }
 
-export function filterProviders(model?: string, search?: string): Provider[] {
+export function filterProviders(
+  model?: string,
+  search?: string,
+  tier?: string
+): Provider[] {
   let providers = loadProviders();
-  
-  if (model && model !== '全部') {
-    providers = providers.filter(p => p.models.includes(model));
+
+  if (tier && tier !== 'all') {
+    providers = providers.filter(p => p.tier === tier);
   }
-  
-  if (search) {
-    const searchLower = search.toLowerCase();
-    providers = providers.filter(p => 
-      p.name.toLowerCase().includes(searchLower) ||
-      p.models.some(m => m.toLowerCase().includes(searchLower))
+
+  if (model && model !== '全部') {
+    providers = providers.filter(p =>
+      p.models.some(m => m.toLowerCase().includes(model.toLowerCase()))
     );
   }
-  
+
+  if (search) {
+    const searchLower = search.toLowerCase();
+    providers = providers.filter(
+      p =>
+        p.name.toLowerCase().includes(searchLower) ||
+        p.models.some(m => m.toLowerCase().includes(searchLower))
+    );
+  }
+
   return providers;
 }
 
-export function sortProviders(providers: Provider[], sortBy: 'stability' | 'speed' | 'price'): Provider[] {
+export function sortProviders(
+  providers: Provider[],
+  sortBy: 'stability' | 'speed' | 'price' | 'rating'
+): Provider[] {
   const sorted = [...providers];
-  
+
   switch (sortBy) {
     case 'stability':
       return sorted.sort((a, b) => b.stability - a.stability);
     case 'speed':
       return sorted.sort((a, b) => b.speed - a.speed);
-    case 'price':
+    case 'rating':
+      return sorted.sort((a, b) => (b.rating ?? 0) - (a.rating ?? 0));
+    case 'price': {
       return sorted.sort((a, b) => {
         const aPrice = a.pricing.gpt4o_input ?? Infinity;
         const bPrice = b.pricing.gpt4o_input ?? Infinity;
         return aPrice - bPrice;
       });
+    }
     default:
       return sorted;
   }
@@ -56,11 +73,22 @@ export function getAllModels(): string[] {
   return Array.from(modelsSet).sort();
 }
 
-export function getPriceForModel(provider: Provider, modelKey: string): { input?: number; output?: number } {
+export function getPriceForModel(
+  provider: Provider,
+  modelKey: string
+): { input?: number; output?: number } {
   const inputKey = `${modelKey}_input`;
   const outputKey = `${modelKey}_output`;
   return {
     input: provider.pricing[inputKey],
     output: provider.pricing[outputKey],
   };
+}
+
+export function getRecommendedProviders(): Provider[] {
+  return loadProviders().filter(p => p.tier === 'recommended');
+}
+
+export function getDangerProviders(): Provider[] {
+  return loadProviders().filter(p => p.riskLevel === 'danger' || p.riskLevel === 'watch');
 }

@@ -1,178 +1,287 @@
-import { notFound } from 'next/navigation';
+'use client';
+
+import { useEffect, useState } from 'react';
 import Link from 'next/link';
-import { loadProviders, getProviderById, getPriceForModel } from '@/lib/data';
-import { ProviderStatus } from '@/components/ProviderStatus';
-import type { Metadata } from 'next';
+import { notFound } from 'next/navigation';
+import { getProviderById } from '@/lib/data';
+import { Provider } from '@/types';
 
-interface Props {
-  params: Promise<{ id: string }>;
-}
-
-export async function generateMetadata({ params }: Props): Promise<Metadata> {
-  const { id } = await params;
-  const provider = getProviderById(id);
-  if (!provider) return { title: '未找到' };
-  return {
-    title: `${provider.name} - Token1000`,
-    description: `${provider.name} API 中转站详情，包含价格、支持的模型、稳定性评分等信息`,
-  };
-}
-
-export async function generateStaticParams() {
-  const providers = loadProviders();
-  return providers.map((p) => ({ id: p.id }));
-}
-
-function StarRating({ rating }: { rating: number }) {
+function RiskBadge({ level }: { level: Provider['riskLevel'] }) {
+  if (level === 'danger') {
+    return (
+      <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-sm font-semibold bg-red-100 text-red-700 border border-red-200">
+        <span className="w-2 h-2 rounded-full bg-red-500 animate-pulse" />
+        🚨 勿入 — 存在高风险
+      </span>
+    );
+  }
+  if (level === 'watch') {
+    return (
+      <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-sm font-semibold bg-yellow-100 text-yellow-700 border border-yellow-200">
+        <span className="w-2 h-2 rounded-full bg-yellow-500" />
+        ⚠️ 观察 — 存在一定风险
+      </span>
+    );
+  }
   return (
-    <div className="flex items-center gap-0.5">
-      {[1, 2, 3, 4, 5].map((star) => (
-        <svg
-          key={star}
-          className={`w-5 h-5 ${star <= rating ? 'text-yellow-400' : 'text-gray-300'}`}
-          fill="currentColor"
-          viewBox="0 0 20 20"
-        >
-          <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-        </svg>
-      ))}
-      <span className="ml-2 text-gray-600">{rating}.0</span>
-    </div>
+    <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-sm font-semibold bg-green-100 text-green-700 border border-green-200">
+      <span className="w-2 h-2 rounded-full bg-green-500" />
+      ✅ 安全 — 暂无已知风险
+    </span>
   );
 }
 
-export default async function ProviderDetailPage({ params }: Props) {
-  const { id } = await params;
-  const provider = getProviderById(id);
+function TierBadge({ tier }: { tier: Provider['tier'] }) {
+  if (tier === 'recommended') {
+    return (
+      <span className="inline-flex items-center gap-1 px-2.5 py-1 rounded-full text-xs font-semibold bg-blue-100 text-blue-700 border border-blue-200">
+        ⭐ Token1000 推荐
+      </span>
+    );
+  }
+  if (tier === 'suspicious') {
+    return (
+      <span className="inline-flex items-center gap-1 px-2.5 py-1 rounded-full text-xs font-semibold bg-gray-100 text-gray-600 border border-gray-200">
+        ❓ 可疑
+      </span>
+    );
+  }
+  return null;
+}
 
-  if (!provider) {
+interface PageProps {
+  params: Promise<{ id: string }>;
+}
+
+export default function ProviderDetailPage({ params }: PageProps) {
+  const [provider, setProvider] = useState<Provider | null>(null);
+  const [resolvedParams, setResolvedParams] = useState<{ id: string } | null>(null);
+
+  useEffect(() => {
+    params.then(p => setResolvedParams(p));
+  }, [params]);
+
+  useEffect(() => {
+    if (resolvedParams) {
+      const p = getProviderById(resolvedParams.id);
+      setProvider(p ?? null);
+    }
+  }, [resolvedParams]);
+
+  if (!resolvedParams) return null;
+
+  if (provider === null) {
     notFound();
   }
 
-  // Get unique pricing keys
-  const pricingKeys = new Set<string>();
-  Object.keys(provider.pricing).forEach(key => {
-    const base = key.replace('_input', '').replace('_output', '');
-    pricingKeys.add(base);
-  });
+  if (!provider) return null;
+
+  const pricingEntries = Object.entries(provider.pricing).filter(([, v]) => v !== undefined);
 
   return (
     <div className="bg-gray-50 min-h-screen">
-      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-        {/* Back Link */}
-        <Link href="/zhan" className="inline-flex items-center gap-1 text-blue-500 hover:text-blue-600 mb-6">
-          <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
-          </svg>
-          返回中转站目录
-        </Link>
+      {/* Header */}
+      <div className={`border-b ${provider.riskLevel === 'danger' ? 'bg-red-50 border-red-200' : provider.riskLevel === 'watch' ? 'bg-yellow-50 border-yellow-200' : 'bg-white border-gray-200'}`}>
+        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+          <div className="mb-4">
+            <Link href="/zhan" className="text-sm text-gray-500 hover:text-blue-500 flex items-center gap-1">
+              ← 返回中转站目录
+            </Link>
+          </div>
 
-        {/* Provider Header */}
-        <div className="bg-white rounded-xl shadow-sm p-8 mb-8">
           <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-4">
             <div>
-              <div className="flex items-center gap-3 mb-2">
+              <div className="flex flex-wrap items-center gap-2 mb-3">
                 <h1 className="text-3xl font-bold text-gray-900">{provider.name}</h1>
-                <ProviderStatus providerId={provider.id} />
+                <TierBadge tier={provider.tier} />
               </div>
-              <p className="text-gray-600 mb-4">{provider.description}</p>
-              
-              <div className="flex flex-wrap gap-4 text-sm">
-                <div className="flex items-center gap-2">
-                  <span className="text-gray-500">稳定性：</span>
-                  <StarRating rating={provider.stability} />
+
+              <div className="flex flex-wrap items-center gap-3 mb-4">
+                <RiskBadge level={provider.riskLevel} />
+                {provider.tier === 'recommended' && (
+                  <span className="text-sm text-gray-500">
+                    ★ {provider.rating?.toFixed(1)} · {provider.reviewCount}条评价
+                  </span>
+                )}
+              </div>
+
+              {provider.riskNote && (
+                <div className="mb-4 p-4 bg-red-50 border border-red-200 rounded-xl">
+                  <p className="text-sm text-red-700 font-medium">⚠️ {provider.riskNote}</p>
                 </div>
-                <div className="flex items-center gap-2">
-                  <span className="text-gray-500">速度：</span>
-                  <StarRating rating={provider.speed} />
-                </div>
+              )}
+
+              <p className="text-gray-600 mb-4 max-w-2xl">{provider.description}</p>
+
+              <div className="flex flex-wrap gap-3">
+                <a
+                  href={provider.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 px-5 py-2.5 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition-colors font-medium"
+                >
+                  访问官网 →
+                </a>
+                {provider.affiliateUrl && (
+                  <a
+                    href={provider.affiliateUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 px-5 py-2.5 bg-green-500 text-white rounded-lg hover:bg-green-600 transition-colors font-medium"
+                  >
+                    🔗 通过Token1000注册（支持我们）
+                  </a>
+                )}
               </div>
             </div>
 
-            <a
-              href={provider.url}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 px-6 py-3 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition-colors font-medium"
-            >
-              访问官网
-              <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
-              </svg>
-            </a>
-          </div>
-        </div>
-
-        {/* Supported Models */}
-        <div className="bg-white rounded-xl shadow-sm p-6 mb-8">
-          <h2 className="text-xl font-semibold text-gray-900 mb-4">支持的模型</h2>
-          <div className="flex flex-wrap gap-2">
-            {provider.models.map((model) => (
-              <span
-                key={model}
-                className="inline-flex items-center px-3 py-1.5 rounded-lg text-sm font-medium bg-blue-50 text-blue-700"
-              >
-                {model}
-              </span>
-            ))}
-          </div>
-        </div>
-
-        {/* Pricing */}
-        <div className="bg-white rounded-xl shadow-sm p-6 mb-8">
-          <h2 className="text-xl font-semibold text-gray-900 mb-4">价格明细</h2>
-          <div className="overflow-x-auto">
-            <table className="w-full">
-              <thead>
-                <tr className="bg-gray-50">
-                  <th className="px-4 py-3 text-left text-sm font-semibold text-gray-900">模型</th>
-                  <th className="px-4 py-3 text-center text-sm font-semibold text-gray-900">输入价格<br /><span className="text-xs font-normal text-gray-500">(¥/K)</span></th>
-                  <th className="px-4 py-3 text-center text-sm font-semibold text-gray-900">输出价格<br /><span className="text-xs font-normal text-gray-500">(¥/K)</span></th>
-                </tr>
-              </thead>
-              <tbody className="divide-y divide-gray-200">
-                {Array.from(pricingKeys).map((modelKey) => {
-                  const prices = getPriceForModel(provider, modelKey);
-                  const displayName = modelKey.replace(/_/g, '-');
-                  
-                  return (
-                    <tr key={modelKey}>
-                      <td className="px-4 py-4 font-medium text-gray-900">{displayName}</td>
-                      <td className="px-4 py-4 text-center text-gray-900">
-                        {prices.input !== undefined ? `¥${prices.input.toFixed(2)}` : '-'}
-                      </td>
-                      <td className="px-4 py-4 text-center text-gray-900">
-                        {prices.output !== undefined ? `¥${prices.output.toFixed(2)}` : '-'}
-                      </td>
-                    </tr>
-                  );
-                })}
-              </tbody>
-            </table>
-          </div>
-        </div>
-
-        {/* Features */}
-        <div className="bg-white rounded-xl shadow-sm p-6 mb-8">
-          <h2 className="text-xl font-semibold text-gray-900 mb-4">特点</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-            {provider.features.map((feature) => (
-              <div key={feature} className="flex items-center gap-3">
-                <svg className="w-5 h-5 text-green-500 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                  <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
-                </svg>
-                <span className="text-gray-700">{feature}</span>
+            {/* Quick Stats */}
+            <div className="grid grid-cols-3 gap-4 shrink-0">
+              <div className="text-center bg-white rounded-xl border border-gray-200 p-4 min-w-[90px]">
+                <div className="text-2xl font-bold text-blue-600">{provider.stability.toFixed(1)}</div>
+                <div className="text-xs text-gray-500 mt-1">稳定性</div>
               </div>
-            ))}
+              <div className="text-center bg-white rounded-xl border border-gray-200 p-4 min-w-[90px]">
+                <div className="text-2xl font-bold text-blue-600">{provider.speed.toFixed(1)}</div>
+                <div className="text-xs text-gray-500 mt-1">速度</div>
+              </div>
+              <div className="text-center bg-white rounded-xl border border-gray-200 p-4 min-w-[90px]">
+                <div className="text-2xl font-bold text-blue-600">{provider.reviewCount ?? 0}</div>
+                <div className="text-xs text-gray-500 mt-1">评价</div>
+              </div>
+            </div>
           </div>
         </div>
+      </div>
 
-        {/* Quick Compare */}
-        <div className="bg-gray-100 rounded-xl p-6">
-          <h3 className="font-semibold text-gray-900 mb-3">💡 快速对比</h3>
-          <p className="text-sm text-gray-600">
-            想和其他中转站比较价格？<Link href="/jiage" className="text-blue-500 hover:underline">查看价格对比表</Link>
-          </p>
+      <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+          {/* Main Content */}
+          <div className="lg:col-span-2 space-y-8">
+            {/* 支持模型 */}
+            <div className="bg-white rounded-xl border border-gray-200 p-6">
+              <h2 className="text-lg font-semibold text-gray-900 mb-4">支持模型</h2>
+              <div className="flex flex-wrap gap-2">
+                {provider.models.map(model => (
+                  <span
+                    key={model}
+                    className="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-blue-50 text-blue-700"
+                  >
+                    {model}
+                  </span>
+                ))}
+              </div>
+            </div>
+
+            {/* 价格表 */}
+            {pricingEntries.length > 0 && (
+              <div className="bg-white rounded-xl border border-gray-200 p-6">
+                <h2 className="text-lg font-semibold text-gray-900 mb-4">价格明细</h2>
+                <div className="overflow-x-auto">
+                  <table className="w-full">
+                    <thead>
+                      <tr className="bg-gray-50 text-sm">
+                        <th className="px-4 py-2 text-left font-semibold text-gray-700 rounded-l-lg">模型</th>
+                        <th className="px-4 py-2 text-right font-semibold text-gray-700 rounded-r-lg">输入 ¥/K</th>
+                        <th className="px-4 py-2 text-right font-semibold text-gray-700 rounded-r-lg">输出 ¥/K</th>
+                      </tr>
+                    </thead>
+                    <tbody className="divide-y divide-gray-100">
+                      {pricingEntries.map(([key, value]) => {
+                        const label = key.replace(/_input$|_output$/, '').replace(/_/g, ' ');
+                        const isInput = key.endsWith('_input');
+                        const modelLabel = isInput ? label : label;
+                        const outputKey = key.replace('_input', '_output');
+                        const outputVal = provider.pricing[outputKey];
+
+                        if (!isInput) return null;
+
+                        return (
+                          <tr key={key}>
+                            <td className="px-4 py-3 text-sm font-medium text-gray-900 capitalize">{modelLabel}</td>
+                            <td className="px-4 py-3 text-sm text-right text-gray-900 font-semibold">
+                              ¥{value!.toFixed(2)}
+                            </td>
+                            <td className="px-4 py-3 text-sm text-right text-gray-900 font-semibold">
+                              {outputVal !== undefined ? `¥${outputVal.toFixed(2)}` : '-'}
+                            </td>
+                          </tr>
+                        );
+                      })}
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            )}
+
+            {/* 最新用户反馈 */}
+            {provider.recentFeedback && (
+              <div className="bg-white rounded-xl border border-gray-200 p-6">
+                <h2 className="text-lg font-semibold text-gray-900 mb-4">用户评价摘要</h2>
+                <blockquote className="text-gray-600 italic border-l-4 border-blue-300 pl-4">
+                  「{provider.recentFeedback}」
+                </blockquote>
+              </div>
+            )}
+          </div>
+
+          {/* Sidebar */}
+          <div className="space-y-6">
+            {/* 基本信息 */}
+            <div className="bg-white rounded-xl border border-gray-200 p-6">
+              <h3 className="text-sm font-semibold text-gray-900 mb-4 uppercase tracking-wide">基本信息</h3>
+              <dl className="space-y-3 text-sm">
+                <div className="flex justify-between">
+                  <dt className="text-gray-500">官网</dt>
+                  <dd className="text-gray-900">
+                    <a href={provider.url} target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:text-blue-600">
+                      访问 →
+                    </a>
+                  </dd>
+                </div>
+                {provider.affiliateUrl && (
+                  <div className="flex justify-between">
+                    <dt className="text-gray-500">Token1000链接</dt>
+                    <dd className="text-green-600 font-medium">⭐ 推荐</dd>
+                  </div>
+                )}
+                <div className="flex justify-between">
+                  <dt className="text-gray-500">验证时间</dt>
+                  <dd className="text-gray-900">{provider.lastVerified ?? '-'}</dd>
+                </div>
+                <div className="flex justify-between">
+                  <dt className="text-gray-500">功能</dt>
+                  <dd className="text-gray-900 text-right">{provider.features.join('、')}</dd>
+                </div>
+              </dl>
+            </div>
+
+            {/* 安全提示 */}
+            {provider.riskLevel === 'danger' || provider.riskLevel === 'watch' ? (
+              <div className={`rounded-xl border p-6 ${provider.riskLevel === 'danger' ? 'bg-red-50 border-red-200' : 'bg-yellow-50 border-yellow-200'}`}>
+                <h3 className={`text-sm font-semibold mb-3 ${provider.riskLevel === 'danger' ? 'text-red-700' : 'text-yellow-700'}`}>
+                  {provider.riskLevel === 'danger' ? '🚨 安全警告' : '⚠️ 风险提示'}
+                </h3>
+                <p className={`text-sm ${provider.riskLevel === 'danger' ? 'text-red-600' : 'text-yellow-700'}`}>
+                  {provider.riskNote ?? '请谨慎使用，建议先小量测试。'}
+                </p>
+              </div>
+            ) : null}
+
+            {/* 避坑指南 */}
+            <div className="bg-white rounded-xl border border-gray-200 p-6">
+              <h3 className="text-sm font-semibold text-gray-900 mb-4 uppercase tracking-wide">避坑指南</h3>
+              <ul className="space-y-2 text-sm text-gray-600">
+                <li>• 首次充值不超过 50 元</li>
+                <li>• 先测试稳定性再大规模使用</li>
+                <li>• 关注 Token1000 预警通知</li>
+                <li>• 发现问题第一时间反馈给我们</li>
+              </ul>
+              <Link href="/bikeng" className="mt-4 inline-flex items-center gap-1 text-sm text-blue-500 hover:text-blue-600 font-medium">
+                查看全部避坑记录 →
+              </Link>
+            </div>
+          </div>
         </div>
       </div>
     </div>
