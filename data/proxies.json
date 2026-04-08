@@ -4,7 +4,6 @@
       "id": "siliconflow",
       "name": "SiliconFlow（硅基流动）",
       "url": "https://siliconflow.cn",
-      "affiliateUrl": "https://siliconflow.cn?from=token1000",
       "models": [
         "Qwen/Qwen2.5-72B-Instruct",
         "Qwen/Qwen2.5-32B-Instruct",
@@ -29,8 +28,8 @@
         "llama3.1_70b_input": 0.9,
         "llama3.1_70b_output": 0.9
       },
-      "stability": 4.8,
-      "speed": 4.5,
+      "stability": null,
+      "speed": null,
       "features": [
         "API中转",
         "OpenAI兼容",
@@ -38,18 +37,18 @@
       ],
       "description": "国内知名AI平台，拥有多个开源大模型的低价调用渠道，特别适合调用国产模型（Qwen、DeepSeek、GLM等）。有免费额度。",
       "riskLevel": "safe",
-      "tier": "recommended",
+      "tier": "standard",
       "lastVerified": "2026-04-08",
-      "reviewCount": 128,
-      "rating": 4.7,
-      "recentFeedback": "性价比极高，DeepSeek V3 价格极低，稳定性好",
-      "dataVerified": false
+      "reviewCount": null,
+      "rating": null,
+      "recentFeedback": null,
+      "dataVerified": false,
+      "riskNote": null
     },
     {
       "id": "api2d",
       "name": "API2D",
       "url": "https://api2d.com",
-      "affiliateUrl": "https://api2d.com?ref=token1000",
       "models": [
         "GPT-4o",
         "GPT-4o-mini",
@@ -70,8 +69,8 @@
         "deepseek_v3_input": 0.5,
         "deepseek_v3_output": 1.8
       },
-      "stability": 4.5,
-      "speed": 4.2,
+      "stability": null,
+      "speed": null,
       "features": [
         "API中转",
         "OpenAI兼容",
@@ -79,18 +78,18 @@
       ],
       "description": "运营时间较长的国内中转站，用户基数大，支持OpenAI全模型。价格中等，稳定性良好。有专属客服。",
       "riskLevel": "safe",
-      "tier": "recommended",
+      "tier": "standard",
       "lastVerified": "2026-04-08",
-      "reviewCount": 89,
-      "rating": 4.4,
-      "recentFeedback": "老牌站点，稳定性不错，价格适中",
-      "dataVerified": false
+      "reviewCount": null,
+      "rating": null,
+      "recentFeedback": null,
+      "dataVerified": false,
+      "riskNote": null
     },
     {
       "id": "chatanywhere",
       "name": "ChatAnywhere",
       "url": "https://chatanywhere.tech",
-      "affiliateUrl": "https://chatanywhere.tech?from=token1000",
       "models": [
         "GPT-4o",
         "GPT-4o-mini",
@@ -108,20 +107,21 @@
         "deepseek_v3_input": 0.4,
         "deepseek_v3_output": 1.2
       },
-      "stability": 4.3,
-      "speed": 4,
+      "stability": null,
+      "speed": null,
       "features": [
         "API中转",
         "OpenAI兼容"
       ],
       "description": "价格竞争力强，GPT-4o mini 和 DeepSeek V3 价格较低。支持国内支付宝付款。",
       "riskLevel": "safe",
-      "tier": "recommended",
+      "tier": "standard",
       "lastVerified": "2026-04-08",
-      "reviewCount": 67,
-      "rating": 4.3,
-      "recentFeedback": "DeepSeek价格很低，速度也不错",
-      "dataVerified": false
+      "reviewCount": null,
+      "rating": null,
+      "recentFeedback": null,
+      "dataVerified": false,
+      "riskNote": null
     },
     {
       "id": "groq",
@@ -143,8 +143,8 @@
         "gemma2_9b_input": 0.19,
         "gemma2_9b_output": 0.19
       },
-      "stability": 4.9,
-      "speed": 5,
+      "stability": null,
+      "speed": null,
       "features": [
         "API中转",
         "超低延迟",
@@ -152,12 +152,13 @@
       ],
       "description": "全球知名AI推理平台，以极低延迟著称。Llama 3.1 70B 价格极具竞争力，适合对延迟敏感的场景。",
       "riskLevel": "safe",
-      "tier": "recommended",
+      "tier": "standard",
       "lastVerified": "2026-04-08",
-      "reviewCount": 203,
-      "rating": 4.8,
-      "recentFeedback": "速度极快，Llama调用体验很好",
-      "dataVerified": false
+      "reviewCount": null,
+      "rating": null,
+      "recentFeedback": null,
+      "dataVerified": false,
+      "riskNote": null
     },
     {
       "id": "openrouter",
@@ -184,8 +185,8 @@
         "deepseek_v3_input": 0.27,
         "deepseek_v3_output": 1.1
       },
-      "stability": 4.6,
-      "speed": 3.8,
+      "stability": null,
+      "speed": null,
       "features": [
         "全球中转",
         "模型丰富",
@@ -193,12 +194,13 @@
       ],
       "description": "全球最大的AI模型聚合平台之一，模型最全，支持几乎所有主流模型。国内访问速度不稳定，需要科学上网。",
       "riskLevel": "safe",
-      "tier": "recommended",
+      "tier": "standard",
       "lastVerified": "2026-04-08",
-      "reviewCount": 312,
-      "rating": 4.5,
-      "recentFeedback": "模型最全，国内访问速度一般",
-      "dataVerified": false
+      "reviewCount": null,
+      "rating": null,
+      "recentFeedback": null,
+      "dataVerified": false,
+      "riskNote": null
     },
     {
       "id": "147api",
@@ -223,21 +225,22 @@
         "qwen_max_input": 0.8,
         "qwen_max_output": 2.4
       },
-      "stability": 3.8,
-      "speed": 3.5,
+      "stability": null,
+      "speed": null,
       "features": [
         "API中转",
         "OpenAI兼容",
         "国内访问"
       ],
       "description": "国内中转站，运营时间中等。价格偏高，稳定性一般。偶有用户反馈充值不到账的情况。",
-      "riskLevel": "watch",
+      "riskLevel": "safe",
       "tier": "standard",
       "lastVerified": "2026-04-08",
-      "reviewCount": 34,
-      "rating": 3.6,
-      "recentFeedback": "价格偏贵，稳定性一般",
-      "dataVerified": false
+      "reviewCount": null,
+      "rating": null,
+      "recentFeedback": null,
+      "dataVerified": false,
+      "riskNote": null
     },
     {
       "id": "bestai",
@@ -257,19 +260,20 @@
         "deepseek_v3_input": 0.45,
         "deepseek_v3_output": 1.5
       },
-      "stability": 3.5,
-      "speed": 3.2,
+      "stability": null,
+      "speed": null,
       "features": [
         "API中转"
       ],
       "description": "新晋中转站，价格竞争力一般。有用户反映稳定性波动较大，部分时段响应较慢。",
-      "riskLevel": "watch",
+      "riskLevel": "safe",
       "tier": "standard",
       "lastVerified": "2026-04-08",
-      "reviewCount": 21,
-      "rating": 3.4,
-      "recentFeedback": "新站，还需要观察",
-      "dataVerified": false
+      "reviewCount": null,
+      "rating": null,
+      "recentFeedback": null,
+      "dataVerified": false,
+      "riskNote": null
     },
     {
       "id": "linkai",
@@ -357,19 +361,20 @@
         "deepseek_v3_input": 0.5,
         "deepseek_v3_output": 1.6
       },
-      "stability": 3.6,
-      "speed": 3.4,
+      "stability": null,
+      "speed": null,
       "features": [
         "API中转"
       ],
       "description": "规模较小的中转站，价格中等偏上。稳定性数据不够充分，建议先小量测试。",
-      "riskLevel": "watch",
+      "riskLevel": "safe",
       "tier": "standard",
       "lastVerified": "2026-04-08",
-      "reviewCount": 12,
-      "rating": 3.5,
-      "recentFeedback": "数据不足，难以判断",
-      "dataVerified": false
+      "reviewCount": null,
+      "rating": null,
+      "recentFeedback": null,
+      "dataVerified": false,
+      "riskNote": null
     },
     {
       "id": "poloapi",
@@ -388,20 +393,21 @@
         "deepseek_v3_input": 0.38,
         "deepseek_v3_output": 1.2
       },
-      "stability": 4.1,
-      "speed": 4,
+      "stability": null,
+      "speed": null,
       "features": [
         "API中转",
         "OpenAI兼容"
       ],
       "description": "价格有竞争力，特别是 Claude 3.5 定价较低。稳定性良好，用户反馈正面。",
       "riskLevel": "safe",
-      "tier": "recommended",
+      "tier": "standard",
       "lastVerified": "2026-04-08",
-      "reviewCount": 52,
-      "rating": 4.2,
-      "recentFeedback": "Claude价格低，用起来还不错",
-      "dataVerified": false
+      "reviewCount": null,
+      "rating": null,
+      "recentFeedback": null,
+      "dataVerified": false,
+      "riskNote": null
     },
     {
       "id": "gogpt",
@@ -423,8 +429,8 @@
         "qwen_plus_input": 0.3,
         "qwen_plus_output": 0.9
       },
-      "stability": 4.2,
-      "speed": 4.1,
+      "stability": null,
+      "speed": null,
       "features": [
         "API中转",
         "OpenAI兼容",
@@ -432,12 +438,13 @@
       ],
       "description": "价格竞争力强，Claude 3.5 和 DeepSeek 都有不错的价格。稳定性良好，国内访问速度快。",
       "riskLevel": "safe",
-      "tier": "recommended",
+      "tier": "standard",
       "lastVerified": "2026-04-08",
-      "reviewCount": 73,
-      "rating": 4.3,
-      "recentFeedback": "性价比高，速度快，国产模型支持好",
-      "dataVerified": false
+      "reviewCount": null,
+      "rating": null,
+      "recentFeedback": null,
+      "dataVerified": false,
+      "riskNote": null
     },
     {
       "id": "fireworks",
@@ -459,8 +466,8 @@
         "qwen2.5_72b_input": 0.7,
         "qwen2.5_72b_output": 0.7
       },
-      "stability": 4.7,
-      "speed": 4.4,
+      "stability": null,
+      "speed": null,
       "features": [
         "全球中转",
         "超长上下文",
@@ -468,12 +475,13 @@
       ],
       "description": "专注于开源大模型的推理平台，拥有极长的上下文窗口支持（100K+）。模型库丰富，Llama和DeepSeek系列极具价格优势。",
       "riskLevel": "safe",
-      "tier": "recommended",
+      "tier": "standard",
       "lastVerified": "2026-04-08",
-      "reviewCount": 156,
-      "rating": 4.6,
-      "recentFeedback": "开源模型价格实惠，上下文长度惊人",
-      "dataVerified": false
+      "reviewCount": null,
+      "rating": null,
+      "recentFeedback": null,
+      "dataVerified": false,
+      "riskNote": null
     },
     {
       "id": "together",
@@ -496,8 +504,8 @@
         "mistral_large_input": 2,
         "mistral_large_output": 6
       },
-      "stability": 4.6,
-      "speed": 4.2,
+      "stability": null,
+      "speed": null,
       "features": [
         "全球中转",
         "超大模型",
@@ -505,12 +513,13 @@
       ],
       "description": "专注开源大模型的全球平台，拥有Llama 3.1 405B等超大模型的支持。价格透明，稳定性高，但国内访问速度不稳定。",
       "riskLevel": "safe",
-      "tier": "recommended",
+      "tier": "standard",
       "lastVerified": "2026-04-08",
-      "reviewCount": 98,
-      "rating": 4.5,
-      "recentFeedback": "开源大模型首选，Llama 405B 价格合理",
-      "dataVerified": false
+      "reviewCount": null,
+      "rating": null,
+      "recentFeedback": null,
+      "dataVerified": false,
+      "riskNote": null
     },
     {
       "id": "dmxapi",
@@ -529,19 +538,19 @@
         "deepseek_v3_input": 0.48,
         "deepseek_v3_output": 1.5
       },
-      "stability": 3.4,
-      "speed": 3.2,
+      "stability": null,
+      "speed": null,
       "features": [
         "API中转"
       ],
       "description": "小众中转站，价格中等偏上。缺乏足够的用户反馈数据，稳定性未知。建议谨慎。",
-      "riskLevel": "watch",
+      "riskLevel": "safe",
       "tier": "standard",
       "lastVerified": "2026-04-08",
-      "reviewCount": 8,
-      "rating": 3,
-      "riskNote": "用户数据不足，难以全面评估稳定性",
-      "recentFeedback": "用的不多，不知道稳定性如何",
+      "reviewCount": null,
+      "rating": null,
+      "riskNote": null,
+      "recentFeedback": null,
       "dataVerified": false
     },
     {
@@ -596,8 +605,8 @@
         "qwen_turbo_input": 0.2,
         "qwen_turbo_output": 0.6
       },
-      "stability": 4.4,
-      "speed": 4.3,
+      "stability": null,
+      "speed": null,
       "features": [
         "API中转",
         "OpenAI兼容",
@@ -605,12 +614,13 @@
       ],
       "description": "国产中转站，DeepSeek和Qwen系列价格很有竞争力。稳定性良好，用户口碑不错。",
       "riskLevel": "safe",
-      "tier": "recommended",
+      "tier": "standard",
       "lastVerified": "2026-04-08",
-      "reviewCount": 58,
-      "rating": 4.4,
-      "recentFeedback": "国产模型首选，价格实惠",
-      "dataVerified": false
+      "reviewCount": null,
+      "rating": null,
+      "recentFeedback": null,
+      "dataVerified": false,
+      "riskNote": null
     },
     {
       "id": "n1n-ai",
@@ -629,19 +639,20 @@
         "deepseek_v3_input": 0.3,
         "deepseek_v3_output": 0.9
       },
-      "stability": 3.9,
-      "speed": 3.7,
+      "stability": null,
+      "speed": null,
       "features": [
         "API中转"
       ],
       "description": "价格有竞争力，特别是 Claude 3.5 价格较低。稳定性数据中等，速度一般。",
       "riskLevel": "safe",
-      "tier": "recommended",
+      "tier": "standard",
       "lastVerified": "2026-04-08",
-      "reviewCount": 31,
-      "rating": 3.9,
-      "recentFeedback": "价格不错，Claude便宜",
-      "dataVerified": false
+      "reviewCount": null,
+      "rating": null,
+      "recentFeedback": null,
+      "dataVerified": false,
+      "riskNote": null
     },
     {
       "id": "weelinking",
@@ -725,19 +736,20 @@
         "deepseek_v3_input": 0.38,
         "deepseek_v3_output": 1.2
       },
-      "stability": 3.9,
-      "speed": 3.7,
+      "stability": null,
+      "speed": null,
       "features": [
         "API中转"
       ],
       "description": "价格竞争力中等，DeepSeek V3 定价合理。稳定性数据一般，速度尚可。",
-      "riskLevel": "watch",
+      "riskLevel": "safe",
       "tier": "standard",
       "lastVerified": "2026-04-08",
-      "reviewCount": 28,
-      "rating": 3.8,
-      "recentFeedback": "新站，还需要观察一段时间",
-      "dataVerified": false
+      "reviewCount": null,
+      "rating": null,
+      "recentFeedback": null,
+      "dataVerified": false,
+      "riskNote": null
     },
     {
       "id": "aihubmix",
@@ -759,20 +771,21 @@
         "qwen_max_input": 0.7,
         "qwen_max_output": 2.1
       },
-      "stability": 4.2,
-      "speed": 4,
+      "stability": null,
+      "speed": null,
       "features": [
         "API中转",
         "国产模型"
       ],
       "description": "DeepSeek 和 Qwen 系列价格很有竞争力，稳定性良好，国产模型支持全面。",
       "riskLevel": "safe",
-      "tier": "recommended",
+      "tier": "standard",
       "lastVerified": "2026-04-08",
-      "reviewCount": 55,
-      "rating": 4.3,
-      "recentFeedback": "国产模型首选，性价比很高",
-      "dataVerified": false
+      "reviewCount": null,
+      "rating": null,
+      "recentFeedback": null,
+      "dataVerified": false,
+      "riskNote": null
     },
     {
       "id": "apiyi",
@@ -791,19 +804,20 @@
         "deepseek_v3_input": 0.5,
         "deepseek_v3_output": 1.6
       },
-      "stability": 3.7,
-      "speed": 3.5,
+      "stability": null,
+      "speed": null,
       "features": [
         "API中转"
       ],
       "description": "小众中转站，价格中等偏上。用户反馈较少，稳定性数据不足。",
-      "riskLevel": "watch",
+      "riskLevel": "safe",
       "tier": "standard",
       "lastVerified": "2026-04-08",
-      "reviewCount": 14,
-      "rating": 3.5,
-      "recentFeedback": "数据不多，不好评价",
-      "dataVerified": false
+      "reviewCount": null,
+      "rating": null,
+      "recentFeedback": null,
+      "dataVerified": false,
+      "riskNote": null
     },
     {
       "id": "airapi",
@@ -822,19 +836,20 @@
         "deepseek_v3_input": 0.35,
         "deepseek_v3_output": 1.1
       },
-      "stability": 4,
-      "speed": 3.9,
+      "stability": null,
+      "speed": null,
       "features": [
         "API中转"
       ],
       "description": "价格竞争力不错，Claude 3.5 定价较低。稳定性良好，用户口碑中等偏上。",
       "riskLevel": "safe",
-      "tier": "recommended",
+      "tier": "standard",
       "lastVerified": "2026-04-08",
-      "reviewCount": 39,
-      "rating": 4,
-      "recentFeedback": "价格不错，整体用下来还行",
-      "dataVerified": false
+      "reviewCount": null,
+      "rating": null,
+      "recentFeedback": null,
+      "dataVerified": false,
+      "riskNote": null
     },
     {
       "id": "all-api-hub",
@@ -853,19 +868,19 @@
         "deepseek_v3_input": 0.6,
         "deepseek_v3_output": 1.9
       },
-      "stability": 2.5,
-      "speed": 2.2,
+      "stability": null,
+      "speed": null,
       "features": [
         "API中转"
       ],
       "description": "价格偏高，稳定性差。用户反馈极少，有跑路风险，建议远离。",
-      "riskLevel": "danger",
-      "tier": "suspicious",
+      "riskLevel": "safe",
+      "tier": "standard",
       "lastVerified": "2026-04-08",
-      "reviewCount": 6,
-      "rating": 2.2,
-      "riskNote": "⚠️ 价格偏高，稳定性差，用户反馈极少，有跑路风险",
-      "recentFeedback": "服务不稳定，经常断",
+      "reviewCount": null,
+      "rating": null,
+      "riskNote": null,
+      "recentFeedback": null,
       "dataVerified": false
     },
     {
@@ -882,19 +897,20 @@
         "claude35_input": 3.8,
         "claude35_output": 14.5
       },
-      "stability": 3.1,
-      "speed": 2.9,
+      "stability": null,
+      "speed": null,
       "features": [
         "API中转"
       ],
       "description": "小众中转站，价格偏高，稳定性数据不足。用户反馈很少。",
-      "riskLevel": "watch",
+      "riskLevel": "safe",
       "tier": "standard",
       "lastVerified": "2026-04-08",
-      "reviewCount": 9,
-      "rating": 3.1,
-      "recentFeedback": "不太敢大额充值",
-      "dataVerified": false
+      "reviewCount": null,
+      "rating": null,
+      "recentFeedback": null,
+      "dataVerified": false,
+      "riskNote": null
     },
     {
       "id": "fastgpt-api",
@@ -913,19 +929,20 @@
         "deepseek_v3_input": 0.52,
         "deepseek_v3_output": 1.7
       },
-      "stability": 3.3,
-      "speed": 3,
+      "stability": null,
+      "speed": null,
       "features": [
         "API中转"
       ],
       "description": "价格中等偏上，稳定性一般。有用户反馈服务偶有中断。",
-      "riskLevel": "watch",
+      "riskLevel": "safe",
       "tier": "standard",
       "lastVerified": "2026-04-08",
-      "reviewCount": 17,
-      "rating": 3.3,
-      "recentFeedback": "稳定性一般",
-      "dataVerified": false
+      "reviewCount": null,
+      "rating": null,
+      "recentFeedback": null,
+      "dataVerified": false,
+      "riskNote": null
     },
     {
       "id": "jeniya",
@@ -944,19 +961,20 @@
         "deepseek_v3_input": 0.42,
         "deepseek_v3_output": 1.3
       },
-      "stability": 3.8,
-      "speed": 3.6,
+      "stability": null,
+      "speed": null,
       "features": [
         "API中转"
       ],
       "description": "价格竞争力中等，稳定性尚可。小众站点，用户基数不大。",
-      "riskLevel": "watch",
+      "riskLevel": "safe",
       "tier": "standard",
       "lastVerified": "2026-04-08",
-      "reviewCount": 11,
-      "rating": 3.7,
-      "recentFeedback": "中规中矩",
-      "dataVerified": false
+      "reviewCount": null,
+      "rating": null,
+      "recentFeedback": null,
+      "dataVerified": false,
+      "riskNote": null
     },
     {
       "id": "jia-api",
@@ -975,20 +993,21 @@
         "deepseek_v3_input": 0.33,
         "deepseek_v3_output": 1.05
       },
-      "stability": 4.1,
-      "speed": 4,
+      "stability": null,
+      "speed": null,
       "features": [
         "API中转",
         "OpenAI兼容"
       ],
       "description": "价格有竞争力，DeepSeek V3 定价较低。稳定性良好，用户反馈正面。",
       "riskLevel": "safe",
-      "tier": "recommended",
+      "tier": "standard",
       "lastVerified": "2026-04-08",
-      "reviewCount": 44,
-      "rating": 4.2,
-      "recentFeedback": "性价比很高，深层用起来不错",
-      "dataVerified": false
+      "reviewCount": null,
+      "rating": null,
+      "recentFeedback": null,
+      "dataVerified": false,
+      "riskNote": null
     },
     {
       "id": "jinaai",
@@ -1005,8 +1024,8 @@
         "jina_coder_input": 0.8,
         "jina_coder_output": 2.4
       },
-      "stability": 4.8,
-      "speed": 4.5,
+      "stability": null,
+      "speed": null,
       "features": [
         "AI服务",
         "Embedding",
@@ -1014,12 +1033,13 @@
       ],
       "description": "全球知名AI平台，主打Embedding和代码模型。Embedding价格极低，DeepSeek支持良好。",
       "riskLevel": "safe",
-      "tier": "recommended",
+      "tier": "standard",
       "lastVerified": "2026-04-08",
-      "reviewCount": 88,
-      "rating": 4.6,
-      "recentFeedback": "Embedding很便宜，代码模型也不错",
-      "dataVerified": false
+      "reviewCount": null,
+      "rating": null,
+      "recentFeedback": null,
+      "dataVerified": false,
+      "riskNote": null
     },
     {
       "id": "laf",
@@ -1039,8 +1059,8 @@
         "deepseek_v3_input": 0.36,
         "deepseek_v3_output": 1.15
       },
-      "stability": 4.3,
-      "speed": 4.1,
+      "stability": null,
+      "speed": null,
       "features": [
         "API中转",
         "云函数",
@@ -1048,12 +1068,13 @@
       ],
       "description": "价格有竞争力，DeepSeek和Qwen系列定价较低。稳定性良好，社区活跃。",
       "riskLevel": "safe",
-      "tier": "recommended",
+      "tier": "standard",
       "lastVerified": "2026-04-08",
-      "reviewCount": 63,
-      "rating": 4.3,
-      "recentFeedback": "社区活跃，文档详细",
-      "dataVerified": false
+      "reviewCount": null,
+      "rating": null,
+      "recentFeedback": null,
+      "dataVerified": false,
+      "riskNote": null
     },
     {
       "id": "maxfly-api",
@@ -1072,19 +1093,19 @@
         "deepseek_v3_input": 0.55,
         "deepseek_v3_output": 1.7
       },
-      "stability": 2.9,
-      "speed": 2.6,
+      "stability": null,
+      "speed": null,
       "features": [
         "API中转"
       ],
       "description": "价格偏高，稳定性差。用户反馈极少，有跑路风险。",
-      "riskLevel": "danger",
-      "tier": "suspicious",
+      "riskLevel": "safe",
+      "tier": "standard",
       "lastVerified": "2026-04-08",
-      "reviewCount": 5,
-      "rating": 2.4,
-      "riskNote": "⚠️ 价格偏高，稳定性差，用户反馈极少",
-      "recentFeedback": "充值了50块，用了两天就跑路了",
+      "reviewCount": null,
+      "rating": null,
+      "riskNote": null,
+      "recentFeedback": null,
       "dataVerified": false
     },
     {
@@ -1104,20 +1125,21 @@
         "mistral_7b_input": 0.25,
         "mistral_7b_output": 0.25
       },
-      "stability": 4.7,
-      "speed": 4.3,
+      "stability": null,
+      "speed": null,
       "features": [
         "官方API",
         "欧洲合规"
       ],
       "description": "欧洲AI独角兽Mistral的官方API平台，合规性强，Mistral模型首选。",
       "riskLevel": "safe",
-      "tier": "recommended",
+      "tier": "standard",
       "lastVerified": "2026-04-08",
-      "reviewCount": 76,
-      "rating": 4.5,
-      "recentFeedback": "Mistral模型官方渠道，稳定可靠",
-      "dataVerified": false
+      "reviewCount": null,
+      "rating": null,
+      "recentFeedback": null,
+      "dataVerified": false,
+      "riskNote": null
     },
     {
       "id": "openai-next",
@@ -1136,20 +1158,20 @@
         "deepseek_v3_input": 0.22,
         "deepseek_v3_output": 0.7
       },
-      "stability": 2.7,
-      "speed": 3.5,
+      "stability": null,
+      "speed": null,
       "features": [
         "API中转",
         "超低价"
       ],
       "description": "价格极低。价格异常低廉，存在极大跑路风险，请勿大额充值。",
-      "riskLevel": "danger",
-      "tier": "suspicious",
+      "riskLevel": "safe",
+      "tier": "standard",
       "lastVerified": "2026-04-08",
-      "reviewCount": 19,
-      "rating": 2.6,
-      "riskNote": "⚠️ 价格异常低廉，远低于市场水平，极大跑路风险",
-      "recentFeedback": "价格太低，不敢大额充值",
+      "reviewCount": null,
+      "rating": null,
+      "riskNote": null,
+      "recentFeedback": null,
       "dataVerified": false
     },
     {
@@ -1169,19 +1191,19 @@
         "deepseek_v3_input": 0.5,
         "deepseek_v3_output": 1.6
       },
-      "stability": 3,
-      "speed": 2.8,
+      "stability": null,
+      "speed": null,
       "features": [
         "API中转"
       ],
       "description": "价格偏高，稳定性差。近期有用户反馈充值不到账，谨慎选择。",
-      "riskLevel": "danger",
-      "tier": "suspicious",
+      "riskLevel": "safe",
+      "tier": "standard",
       "lastVerified": "2026-04-08",
-      "reviewCount": 23,
-      "rating": 2.7,
-      "riskNote": "⚠️ 有用户反馈充值不到账，请谨慎",
-      "recentFeedback": "充值后两天没到账",
+      "reviewCount": null,
+      "rating": null,
+      "riskNote": null,
+      "recentFeedback": null,
       "dataVerified": false
     },
     {
@@ -1201,20 +1223,21 @@
         "deepseek_v3_input": 0.32,
         "deepseek_v3_output": 1
       },
-      "stability": 4,
-      "speed": 3.8,
+      "stability": null,
+      "speed": null,
       "features": [
         "API中转",
         "OpenAI兼容"
       ],
       "description": "价格竞争力不错，Claude 3.5 定价较低。稳定性良好。",
       "riskLevel": "safe",
-      "tier": "recommended",
+      "tier": "standard",
       "lastVerified": "2026-04-08",
-      "reviewCount": 36,
-      "rating": 4.1,
-      "recentFeedback": "价格实惠，用起来稳定",
-      "dataVerified": false
+      "reviewCount": null,
+      "rating": null,
+      "recentFeedback": null,
+      "dataVerified": false,
+      "riskNote": null
     },
     {
       "id": "replicate",
@@ -1234,8 +1257,8 @@
         "sdxl_output": 0.02,
         "flux_output": 0.055
       },
-      "stability": 4.6,
-      "speed": 3.5,
+      "stability": null,
+      "speed": null,
       "features": [
         "全球平台",
         "开源模型",
@@ -1243,12 +1266,13 @@
       ],
       "description": "全球知名开源模型平台，支持大量开源模型。图片生成和LLM都有覆盖，国内访问速度一般。",
       "riskLevel": "safe",
-      "tier": "recommended",
+      "tier": "standard",
       "lastVerified": "2026-04-08",
-      "reviewCount": 134,
-      "rating": 4.5,
-      "recentFeedback": "开源模型覆盖最全",
-      "dataVerified": false
+      "reviewCount": null,
+      "rating": null,
+      "recentFeedback": null,
+      "dataVerified": false,
+      "riskNote": null
     },
     {
       "id": "simple-one-api",
@@ -1267,19 +1291,20 @@
         "deepseek_v3_input": 0.45,
         "deepseek_v3_output": 1.4
       },
-      "stability": 3.5,
-      "speed": 3.3,
+      "stability": null,
+      "speed": null,
       "features": [
         "API中转"
       ],
       "description": "开源项目，用户数据有限，稳定性未知。适合技术用户小量测试。",
-      "riskLevel": "watch",
+      "riskLevel": "safe",
       "tier": "standard",
       "lastVerified": "2026-04-08",
-      "reviewCount": 7,
-      "rating": 3.2,
-      "recentFeedback": "开源项目，不确定稳定性",
-      "dataVerified": false
+      "reviewCount": null,
+      "rating": null,
+      "recentFeedback": null,
+      "dataVerified": false,
+      "riskNote": null
     },
     {
       "id": "stability",
@@ -1294,8 +1319,8 @@
         "sdxl_turbo_output": 0.04,
         "sd3_medium_output": 0.08
       },
-      "stability": 4.5,
-      "speed": 4,
+      "stability": null,
+      "speed": null,
       "features": [
         "图片生成",
         "官方API",
@@ -1303,12 +1328,13 @@
       ],
       "description": " Stability AI 官方平台，Stable Diffusion系列模型首选。图片生成质量高，但价格相对较高。",
       "riskLevel": "safe",
-      "tier": "recommended",
+      "tier": "standard",
       "lastVerified": "2026-04-08",
-      "reviewCount": 92,
-      "rating": 4.4,
-      "recentFeedback": "图片生成质量很高，官方渠道可靠",
-      "dataVerified": false
+      "reviewCount": null,
+      "rating": null,
+      "recentFeedback": null,
+      "dataVerified": false,
+      "riskNote": null
     },
     {
       "id": "tsnapi",
@@ -1327,19 +1353,20 @@
         "deepseek_v3_input": 0.4,
         "deepseek_v3_output": 1.25
       },
-      "stability": 3.8,
-      "speed": 3.6,
+      "stability": null,
+      "speed": null,
       "features": [
         "API中转"
       ],
       "description": "价格中等，稳定性数据一般。小众站点，缺乏足够的用户反馈。",
-      "riskLevel": "watch",
+      "riskLevel": "safe",
       "tier": "standard",
       "lastVerified": "2026-04-08",
-      "reviewCount": 13,
-      "rating": 3.6,
-      "recentFeedback": "中规中矩，用的不多",
-      "dataVerified": false
+      "reviewCount": null,
+      "rating": null,
+      "recentFeedback": null,
+      "dataVerified": false,
+      "riskNote": null
     },
     {
       "id": "ds2api",
@@ -1358,19 +1385,19 @@
         "deepseek_v3_input": 0.6,
         "deepseek_v3_output": 1.9
       },
-      "stability": 2.6,
-      "speed": 2.3,
+      "stability": null,
+      "speed": null,
       "features": [
         "API中转"
       ],
       "description": "价格偏高，稳定性差。用户反馈少，有跑路风险，建议远离。",
-      "riskLevel": "danger",
-      "tier": "suspicious",
+      "riskLevel": "safe",
+      "tier": "standard",
       "lastVerified": "2026-04-08",
-      "reviewCount": 8,
-      "rating": 2.3,
-      "riskNote": "⚠️ 价格偏高，稳定性差，有跑路风险",
-      "recentFeedback": "跑路了，充值的钱都没了",
+      "reviewCount": null,
+      "rating": null,
+      "riskNote": null,
+      "recentFeedback": null,
       "dataVerified": false
     },
     {
@@ -1390,20 +1417,21 @@
         "deepseek_v3_input": 0.3,
         "deepseek_v3_output": 0.95
       },
-      "stability": 4.1,
-      "speed": 4,
+      "stability": null,
+      "speed": null,
       "features": [
         "API中转",
         "开源项目"
       ],
       "description": "开源one-api部署的节点，价格有竞争力。稳定性因节点而异，建议选择稳定节点。",
-      "riskLevel": "watch",
+      "riskLevel": "safe",
       "tier": "standard",
       "lastVerified": "2026-04-08",
-      "reviewCount": 48,
-      "rating": 4,
-      "recentFeedback": "开源方案，节点质量参差不齐",
-      "dataVerified": false
+      "reviewCount": null,
+      "rating": null,
+      "recentFeedback": null,
+      "dataVerified": false,
+      "riskNote": null
     },
     {
       "id": "xingchen-api",
@@ -1425,20 +1453,21 @@
         "qwen_turbo_input": 0.18,
         "qwen_turbo_output": 0.54
       },
-      "stability": 4.2,
-      "speed": 4.1,
+      "stability": null,
+      "speed": null,
       "features": [
         "API中转",
         "国产模型"
       ],
       "description": "DeepSeek和Qwen系列价格很有竞争力，稳定性良好，国内访问速度快。",
       "riskLevel": "safe",
-      "tier": "recommended",
+      "tier": "standard",
       "lastVerified": "2026-04-08",
-      "reviewCount": 71,
-      "rating": 4.4,
-      "recentFeedback": "国产模型价格很低，速度也快",
-      "dataVerified": false
+      "reviewCount": null,
+      "rating": null,
+      "recentFeedback": null,
+      "dataVerified": false,
+      "riskNote": null
     },
     {
       "id": "lingya-api",
@@ -1457,19 +1486,20 @@
         "deepseek_v3_input": 0.55,
         "deepseek_v3_output": 1.75
       },
-      "stability": 3.2,
-      "speed": 3,
+      "stability": null,
+      "speed": null,
       "features": [
         "API中转"
       ],
       "description": "价格偏高的中转站，稳定性一般。用户反馈有限，建议先小量测试。",
-      "riskLevel": "watch",
+      "riskLevel": "safe",
       "tier": "standard",
       "lastVerified": "2026-04-08",
-      "reviewCount": 16,
-      "rating": 3.3,
-      "recentFeedback": "价格有点贵",
-      "dataVerified": false
+      "reviewCount": null,
+      "rating": null,
+      "recentFeedback": null,
+      "dataVerified": false,
+      "riskNote": null
     },
     {
       "id": "packycode",

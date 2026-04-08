@@ -57,6 +57,8 @@ export default function ProviderCard({ provider }: ProviderCardProps) {
       .catch(() => setStatus('unknown'));
   }, [provider.id]);
 
+  const hasVerifiedRating = provider.rating !== null && provider.rating !== undefined;
+
   return (
     <Link href={`/zhan/${provider.id}`} className="block group">
       <div className={`bg-white rounded-xl border p-6 hover:shadow-lg transition-all duration-200 ${
@@ -76,13 +78,19 @@ export default function ProviderCard({ provider }: ProviderCardProps) {
             <RiskBadge level={provider.riskLevel} />
             {!provider.dataVerified && (
               <span className="inline-flex items-center px-2 py-0.5 rounded-full text-xs font-medium bg-gray-100 text-gray-500 border border-gray-200">
-                ⚠️ 待验证
+                ⚠️ 待核实
               </span>
             )}
           </div>
           <div className="flex items-center gap-1 text-sm text-gray-500 shrink-0">
-            <span className="text-yellow-400">★</span>
-            <span className="font-medium">{provider.rating?.toFixed(1) ?? provider.stability.toFixed(1)}</span>
+            {hasVerifiedRating ? (
+              <>
+                <span className="text-yellow-400">★</span>
+                <span className="font-medium">{provider.rating!.toFixed(1)}</span>
+              </>
+            ) : (
+              <span className="text-gray-400">★ -</span>
+            )}
           </div>
         </div>
 
@@ -115,20 +123,28 @@ export default function ProviderCard({ provider }: ProviderCardProps) {
           )}
         </div>
 
-        {/* Trust indicators */}
+        {/* Trust indicators - only show if verified */}
         <div className="flex flex-wrap gap-3 text-xs text-gray-500 mb-4">
-          <span className="flex items-center gap-1">
-            <span className="text-green-500">●</span>
-            稳定 {provider.stability.toFixed(1)}
-          </span>
-          <span className="flex items-center gap-1">
-            ⚡ 速度 {provider.speed.toFixed(1)}
-          </span>
-          {provider.reviewCount !== undefined && (
+          {provider.stability !== null ? (
+            <span className="flex items-center gap-1">
+              <span className="text-green-500">●</span>
+              稳定 {provider.stability.toFixed(1)}
+            </span>
+          ) : (
+            <span className="flex items-center gap-1 text-gray-400">
+              稳定 -
+            </span>
+          )}
+          {provider.speed !== null ? (
+            <span className="flex items-center gap-1">
+              ⚡ 速度 {provider.speed.toFixed(1)}
+            </span>
+          ) : null}
+          {provider.reviewCount !== null && provider.reviewCount !== undefined ? (
             <span className="flex items-center gap-1">
               💬 {provider.reviewCount}条评价
             </span>
-          )}
+          ) : null}
         </div>
 
         {/* CTA Footer */}

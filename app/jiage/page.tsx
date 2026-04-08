@@ -42,7 +42,7 @@ export default function JiagePage() {
           const bVal = b.input ?? Infinity;
           return aVal - bVal;
         }
-        if (sortBy === 'stability') return b.provider.stability - a.provider.stability;
+        if (sortBy === 'stability') return (b.provider.stability ?? 0) - (a.provider.stability ?? 0);
         if (sortBy === 'rating') return (b.provider.rating ?? 0) - (a.provider.rating ?? 0);
         return 0;
       });
@@ -157,10 +157,10 @@ export default function JiagePage() {
                           {p.riskLevel === 'danger' && <span className="text-xs text-red-600 font-medium">🚨危险</span>}
                         </td>
                         <td className="px-4 py-4 text-center text-sm text-gray-600">
-                          {p.stability.toFixed(1)}
+                          {p.stability !== null ? p.stability.toFixed(1) : '-'}
                         </td>
                         <td className="px-4 py-4 text-center text-sm text-gray-600">
-                          {p.rating?.toFixed(1) ?? '-'}
+                          {p.rating !== null && p.rating !== undefined ? p.rating.toFixed(1) : '-'}
                         </td>
                         <td className="px-4 py-4 text-center">
                           {row.input !== undefined ? (
