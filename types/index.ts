@@ -21,6 +21,8 @@ export interface Provider {
   riskLevel: RiskLevel;
   /** 平台推荐等级：recommended=推荐 | standard=普通 | suspicious=可疑 */
   tier: Tier;
+  /** 数据是否已通过真实调研验证 */
+  dataVerified: boolean;
   /** 最后人工验证时间 */
   lastVerified?: string;
   /** 用户评价数量 */

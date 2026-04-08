@@ -42,7 +42,8 @@
       "lastVerified": "2026-04-08",
       "reviewCount": 128,
       "rating": 4.7,
-      "recentFeedback": "性价比极高，DeepSeek V3 价格极低，稳定性好"
+      "recentFeedback": "性价比极高，DeepSeek V3 价格极低，稳定性好",
+      "dataVerified": false
     },
     {
       "id": "api2d",
@@ -82,7 +83,8 @@
       "lastVerified": "2026-04-08",
       "reviewCount": 89,
       "rating": 4.4,
-      "recentFeedback": "老牌站点，稳定性不错，价格适中"
+      "recentFeedback": "老牌站点，稳定性不错，价格适中",
+      "dataVerified": false
     },
     {
       "id": "chatanywhere",
@@ -118,7 +120,8 @@
       "lastVerified": "2026-04-08",
       "reviewCount": 67,
       "rating": 4.3,
-      "recentFeedback": "DeepSeek价格很低，速度也不错"
+      "recentFeedback": "DeepSeek价格很低，速度也不错",
+      "dataVerified": false
     },
     {
       "id": "groq",
@@ -153,7 +156,8 @@
       "lastVerified": "2026-04-08",
       "reviewCount": 203,
       "rating": 4.8,
-      "recentFeedback": "速度极快，Llama调用体验很好"
+      "recentFeedback": "速度极快，Llama调用体验很好",
+      "dataVerified": false
     },
     {
       "id": "openrouter",
@@ -193,7 +197,8 @@
       "lastVerified": "2026-04-08",
       "reviewCount": 312,
       "rating": 4.5,
-      "recentFeedback": "模型最全，国内访问速度一般"
+      "recentFeedback": "模型最全，国内访问速度一般",
+      "dataVerified": false
     },
     {
       "id": "147api",
@@ -231,7 +236,8 @@
       "lastVerified": "2026-04-08",
       "reviewCount": 34,
       "rating": 3.6,
-      "recentFeedback": "价格偏贵，稳定性一般"
+      "recentFeedback": "价格偏贵，稳定性一般",
+      "dataVerified": false
     },
     {
       "id": "bestai",
@@ -262,7 +268,8 @@
       "lastVerified": "2026-04-08",
       "reviewCount": 21,
       "rating": 3.4,
-      "recentFeedback": "新站，还需要观察"
+      "recentFeedback": "新站，还需要观察",
+      "dataVerified": false
     },
     {
       "id": "linkai",
@@ -290,14 +297,15 @@
         "API中转",
         "SDK支持"
       ],
-      "description": "价格偏高的中转站，稳定性数据不佳。近期有用户反馈服务不稳定，建议谨慎选择。",
+      "description": "价格偏高的中转站，稳定性评分较低。用户反馈较少，近期有用户反馈服务不稳定，建议谨慎选择。",
       "riskLevel": "watch",
       "tier": "standard",
       "lastVerified": "2026-04-08",
       "reviewCount": 18,
       "rating": 3.2,
       "riskNote": "价格偏高，稳定性评分偏低，近期有负面反馈",
-      "recentFeedback": "价格太贵了，同等价格有更好的选择"
+      "recentFeedback": "根据现有用户反馈，价格偏高，稳定性一般",
+      "dataVerified": true
     },
     {
       "id": "ohmygpt",
@@ -323,13 +331,14 @@
         "API中转",
         "OpenAI兼容"
       ],
-      "description": "价格有竞争力，DeepSeek V3 定价较低。稳定性中等，速度一般。性价比较好。",
+      "description": "价格有竞争力，DeepSeek V3 定价较低。稳定性中等，速度一般。性价比较好。用户反馈正面。",
       "riskLevel": "safe",
       "tier": "recommended",
       "lastVerified": "2026-04-08",
       "reviewCount": 45,
       "rating": 4.1,
-      "recentFeedback": "DeepSeek价格不错，整体性价比可以"
+      "recentFeedback": "根据 v2ex 用户 zzsting88 评测（2026-04-08），价格实惠，整体性价比可以",
+      "dataVerified": true
     },
     {
       "id": "cloudai",
@@ -359,7 +368,8 @@
       "lastVerified": "2026-04-08",
       "reviewCount": 12,
       "rating": 3.5,
-      "recentFeedback": "数据不足，难以判断"
+      "recentFeedback": "数据不足，难以判断",
+      "dataVerified": false
     },
     {
       "id": "poloapi",
@@ -390,7 +400,8 @@
       "lastVerified": "2026-04-08",
       "reviewCount": 52,
       "rating": 4.2,
-      "recentFeedback": "Claude价格低，用起来还不错"
+      "recentFeedback": "Claude价格低，用起来还不错",
+      "dataVerified": false
     },
     {
       "id": "gogpt",
@@ -425,7 +436,8 @@
       "lastVerified": "2026-04-08",
       "reviewCount": 73,
       "rating": 4.3,
-      "recentFeedback": "性价比高，速度快，国产模型支持好"
+      "recentFeedback": "性价比高，速度快，国产模型支持好",
+      "dataVerified": false
     },
     {
       "id": "fireworks",
@@ -460,7 +472,8 @@
       "lastVerified": "2026-04-08",
       "reviewCount": 156,
       "rating": 4.6,
-      "recentFeedback": "开源模型价格实惠，上下文长度惊人"
+      "recentFeedback": "开源模型价格实惠，上下文长度惊人",
+      "dataVerified": false
     },
     {
       "id": "together",
@@ -496,7 +509,8 @@
       "lastVerified": "2026-04-08",
       "reviewCount": 98,
       "rating": 4.5,
-      "recentFeedback": "开源大模型首选，Llama 405B 价格合理"
+      "recentFeedback": "开源大模型首选，Llama 405B 价格合理",
+      "dataVerified": false
     },
     {
       "id": "dmxapi",
@@ -527,7 +541,8 @@
       "reviewCount": 8,
       "rating": 3,
       "riskNote": "用户数据不足，难以全面评估稳定性",
-      "recentFeedback": "用的不多，不知道稳定性如何"
+      "recentFeedback": "用的不多，不知道稳定性如何",
+      "dataVerified": false
     },
     {
       "id": "openai-hub",
@@ -558,7 +573,8 @@
       "reviewCount": 15,
       "rating": 2.9,
       "riskNote": "价格偏高，用户反馈不稳定，慎入",
-      "recentFeedback": "价格贵，速度一般，不推荐"
+      "recentFeedback": "zzsting88 评测：价格贵，速度一般，不推荐",
+      "dataVerified": true
     },
     {
       "id": "kkclouds",
@@ -593,7 +609,8 @@
       "lastVerified": "2026-04-08",
       "reviewCount": 58,
       "rating": 4.4,
-      "recentFeedback": "国产模型首选，价格实惠"
+      "recentFeedback": "国产模型首选，价格实惠",
+      "dataVerified": false
     },
     {
       "id": "n1n-ai",
@@ -623,7 +640,8 @@
       "lastVerified": "2026-04-08",
       "reviewCount": 31,
       "rating": 3.9,
-      "recentFeedback": "价格不错，Claude便宜"
+      "recentFeedback": "价格不错，Claude便宜",
+      "dataVerified": false
     },
     {
       "id": "weelinking",
@@ -647,14 +665,15 @@
       "features": [
         "API中转"
       ],
-      "description": "价格偏高，稳定性评分偏低。用户反馈较少，有负面评价。存在跑路风险。",
+      "description": "价格偏高，稳定性评分偏低。用户反馈较少，且存在一些负面评价。存在跑路风险。",
       "riskLevel": "danger",
       "tier": "suspicious",
       "lastVerified": "2026-04-08",
       "reviewCount": 22,
       "rating": 2.5,
-      "riskNote": "⚠️ 价格偏高，近期有用户反馈充值不到账，谨慎充值",
-      "recentFeedback": "充值后不到账，客服不理人"
+      "riskNote": "⚠️ 有用户反馈充值不到账，客服失联，谨慎充值",
+      "recentFeedback": "zzsting88 评测（2026-04-08）：有用户反馈充值不到账，客服不理人",
+      "dataVerified": true
     },
     {
       "id": "openai-sb",
@@ -685,8 +704,9 @@
       "lastVerified": "2026-04-08",
       "reviewCount": 41,
       "rating": 3.7,
-      "riskNote": "⚠️ 价格异常低，充值需谨慎，建议小额测试",
-      "recentFeedback": "价格很低，但不知道能不能长期坚持"
+      "riskNote": "⚠️ 价格异常低廉，低于市场正常水平，需持续观察稳定性",
+      "recentFeedback": "zzsting88 评测（2026-04-08）：价格很低，但不确定能不能长期坚持，充值需谨慎",
+      "dataVerified": true
     },
     {
       "id": "4sapi",
@@ -716,7 +736,8 @@
       "lastVerified": "2026-04-08",
       "reviewCount": 28,
       "rating": 3.8,
-      "recentFeedback": "新站，还需要观察一段时间"
+      "recentFeedback": "新站，还需要观察一段时间",
+      "dataVerified": false
     },
     {
       "id": "aihubmix",
@@ -750,7 +771,8 @@
       "lastVerified": "2026-04-08",
       "reviewCount": 55,
       "rating": 4.3,
-      "recentFeedback": "国产模型首选，性价比很高"
+      "recentFeedback": "国产模型首选，性价比很高",
+      "dataVerified": false
     },
     {
       "id": "apiyi",
@@ -780,7 +802,8 @@
       "lastVerified": "2026-04-08",
       "reviewCount": 14,
       "rating": 3.5,
-      "recentFeedback": "数据不多，不好评价"
+      "recentFeedback": "数据不多，不好评价",
+      "dataVerified": false
     },
     {
       "id": "airapi",
@@ -810,7 +833,8 @@
       "lastVerified": "2026-04-08",
       "reviewCount": 39,
       "rating": 4,
-      "recentFeedback": "价格不错，整体用下来还行"
+      "recentFeedback": "价格不错，整体用下来还行",
+      "dataVerified": false
     },
     {
       "id": "all-api-hub",
@@ -841,7 +865,8 @@
       "reviewCount": 6,
       "rating": 2.2,
       "riskNote": "⚠️ 价格偏高，稳定性差，用户反馈极少，有跑路风险",
-      "recentFeedback": "服务不稳定，经常断"
+      "recentFeedback": "服务不稳定，经常断",
+      "dataVerified": false
     },
     {
       "id": "chatfree",
@@ -868,7 +893,8 @@
       "lastVerified": "2026-04-08",
       "reviewCount": 9,
       "rating": 3.1,
-      "recentFeedback": "不太敢大额充值"
+      "recentFeedback": "不太敢大额充值",
+      "dataVerified": false
     },
     {
       "id": "fastgpt-api",
@@ -898,7 +924,8 @@
       "lastVerified": "2026-04-08",
       "reviewCount": 17,
       "rating": 3.3,
-      "recentFeedback": "稳定性一般"
+      "recentFeedback": "稳定性一般",
+      "dataVerified": false
     },
     {
       "id": "jeniya",
@@ -928,7 +955,8 @@
       "lastVerified": "2026-04-08",
       "reviewCount": 11,
       "rating": 3.7,
-      "recentFeedback": "中规中矩"
+      "recentFeedback": "中规中矩",
+      "dataVerified": false
     },
     {
       "id": "jia-api",
@@ -959,7 +987,8 @@
       "lastVerified": "2026-04-08",
       "reviewCount": 44,
       "rating": 4.2,
-      "recentFeedback": "性价比很高，深层用起来不错"
+      "recentFeedback": "性价比很高，深层用起来不错",
+      "dataVerified": false
     },
     {
       "id": "jinaai",
@@ -989,7 +1018,8 @@
       "lastVerified": "2026-04-08",
       "reviewCount": 88,
       "rating": 4.6,
-      "recentFeedback": "Embedding很便宜，代码模型也不错"
+      "recentFeedback": "Embedding很便宜，代码模型也不错",
+      "dataVerified": false
     },
     {
       "id": "laf",
@@ -1022,7 +1052,8 @@
       "lastVerified": "2026-04-08",
       "reviewCount": 63,
       "rating": 4.3,
-      "recentFeedback": "社区活跃，文档详细"
+      "recentFeedback": "社区活跃，文档详细",
+      "dataVerified": false
     },
     {
       "id": "maxfly-api",
@@ -1053,7 +1084,8 @@
       "reviewCount": 5,
       "rating": 2.4,
       "riskNote": "⚠️ 价格偏高，稳定性差，用户反馈极少",
-      "recentFeedback": "充值了50块，用了两天就跑路了"
+      "recentFeedback": "充值了50块，用了两天就跑路了",
+      "dataVerified": false
     },
     {
       "id": "mistral",
@@ -1084,7 +1116,8 @@
       "lastVerified": "2026-04-08",
       "reviewCount": 76,
       "rating": 4.5,
-      "recentFeedback": "Mistral模型官方渠道，稳定可靠"
+      "recentFeedback": "Mistral模型官方渠道，稳定可靠",
+      "dataVerified": false
     },
     {
       "id": "openai-next",
@@ -1116,7 +1149,8 @@
       "reviewCount": 19,
       "rating": 2.6,
       "riskNote": "⚠️ 价格异常低廉，远低于市场水平，极大跑路风险",
-      "recentFeedback": "价格太低，不敢大额充值"
+      "recentFeedback": "价格太低，不敢大额充值",
+      "dataVerified": false
     },
     {
       "id": "openi-relay",
@@ -1147,7 +1181,8 @@
       "reviewCount": 23,
       "rating": 2.7,
       "riskNote": "⚠️ 有用户反馈充值不到账，请谨慎",
-      "recentFeedback": "充值后两天没到账"
+      "recentFeedback": "充值后两天没到账",
+      "dataVerified": false
     },
     {
       "id": "qu-api",
@@ -1178,7 +1213,8 @@
       "lastVerified": "2026-04-08",
       "reviewCount": 36,
       "rating": 4.1,
-      "recentFeedback": "价格实惠，用起来稳定"
+      "recentFeedback": "价格实惠，用起来稳定",
+      "dataVerified": false
     },
     {
       "id": "replicate",
@@ -1211,7 +1247,8 @@
       "lastVerified": "2026-04-08",
       "reviewCount": 134,
       "rating": 4.5,
-      "recentFeedback": "开源模型覆盖最全"
+      "recentFeedback": "开源模型覆盖最全",
+      "dataVerified": false
     },
     {
       "id": "simple-one-api",
@@ -1241,7 +1278,8 @@
       "lastVerified": "2026-04-08",
       "reviewCount": 7,
       "rating": 3.2,
-      "recentFeedback": "开源项目，不确定稳定性"
+      "recentFeedback": "开源项目，不确定稳定性",
+      "dataVerified": false
     },
     {
       "id": "stability",
@@ -1269,7 +1307,8 @@
       "lastVerified": "2026-04-08",
       "reviewCount": 92,
       "rating": 4.4,
-      "recentFeedback": "图片生成质量很高，官方渠道可靠"
+      "recentFeedback": "图片生成质量很高，官方渠道可靠",
+      "dataVerified": false
     },
     {
       "id": "tsnapi",
@@ -1299,7 +1338,8 @@
       "lastVerified": "2026-04-08",
       "reviewCount": 13,
       "rating": 3.6,
-      "recentFeedback": "中规中矩，用的不多"
+      "recentFeedback": "中规中矩，用的不多",
+      "dataVerified": false
     },
     {
       "id": "ds2api",
@@ -1330,7 +1370,8 @@
       "reviewCount": 8,
       "rating": 2.3,
       "riskNote": "⚠️ 价格偏高，稳定性差，有跑路风险",
-      "recentFeedback": "跑路了，充值的钱都没了"
+      "recentFeedback": "跑路了，充值的钱都没了",
+      "dataVerified": false
     },
     {
       "id": "one-api",
@@ -1361,7 +1402,8 @@
       "lastVerified": "2026-04-08",
       "reviewCount": 48,
       "rating": 4,
-      "recentFeedback": "开源方案，节点质量参差不齐"
+      "recentFeedback": "开源方案，节点质量参差不齐",
+      "dataVerified": false
     },
     {
       "id": "xingchen-api",
@@ -1395,7 +1437,8 @@
       "lastVerified": "2026-04-08",
       "reviewCount": 71,
       "rating": 4.4,
-      "recentFeedback": "国产模型价格很低，速度也快"
+      "recentFeedback": "国产模型价格很低，速度也快",
+      "dataVerified": false
     },
     {
       "id": "lingya-api",
@@ -1425,7 +1468,8 @@
       "lastVerified": "2026-04-08",
       "reviewCount": 16,
       "rating": 3.3,
-      "recentFeedback": "价格有点贵"
+      "recentFeedback": "价格有点贵",
+      "dataVerified": false
     }
   ],
   "lastUpdated": "2026-04-08",

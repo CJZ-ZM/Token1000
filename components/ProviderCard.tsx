@@ -74,6 +74,11 @@ export default function ProviderCard({ provider }: ProviderCardProps) {
             </h3>
             <TierBadge tier={provider.tier} />
             <RiskBadge level={provider.riskLevel} />
+            {!provider.dataVerified && (
+              <span className="inline-flex items-center px-2 py-0.5 rounded-full text-xs font-medium bg-gray-100 text-gray-500 border border-gray-200">
+                ⚠️ 待验证
+              </span>
+            )}
           </div>
           <div className="flex items-center gap-1 text-sm text-gray-500 shrink-0">
             <span className="text-yellow-400">★</span>
