@@ -1500,7 +1500,7 @@
       "lastVerified": "2026-04-08",
       "reviewCount": 1,
       "rating": 4.5,
-      "dataVerified": false,
+      "dataVerified": true,
       "recentFeedback": "zzsting88评测（2026-04-03）：站长在X上很活跃，客服响应快，Sonnet4.6 ¥7.5(进)/37.5(出)质量不错"
     },
     {
@@ -1530,7 +1530,7 @@
       "lastVerified": "2026-04-08",
       "reviewCount": 1,
       "rating": 4.3,
-      "dataVerified": false,
+      "dataVerified": true,
       "recentFeedback": "zzsting88评测（2026-04-03）：Sonnet4.6 ¥0.9(进)/4.5(出)，质量不错几乎不注水"
     },
     {
@@ -1565,7 +1565,7 @@
       "lastVerified": "2026-04-08",
       "reviewCount": 1,
       "rating": 4.5,
-      "dataVerified": false,
+      "dataVerified": true,
       "recentFeedback": "zzsting88评测（2026-04-03）：老牌站点，企业级服务，稳定性好，可以开票"
     },
     {
@@ -1596,7 +1596,7 @@
       "lastVerified": "2026-04-08",
       "reviewCount": 1,
       "rating": 4.3,
-      "dataVerified": false,
+      "dataVerified": true,
       "recentFeedback": "zzsting88评测（2026-04-03）：文档非常清晰，接口响应快，质量不错"
     },
     {
@@ -1624,7 +1624,7 @@
       "lastVerified": "2026-04-08",
       "reviewCount": 1,
       "rating": 4,
-      "dataVerified": false,
+      "dataVerified": true,
       "recentFeedback": "zzsting88评测（2026-04-03）：接口质量很好，2026年3月新站，有跑路风险建议少充值"
     },
     {
@@ -1658,7 +1658,7 @@
       "lastVerified": "2026-04-08",
       "reviewCount": 1,
       "rating": 4.4,
-      "dataVerified": false,
+      "dataVerified": true,
       "recentFeedback": "zzsting88评测（2026-04-03）：质量相当好，完全没注水，速度快，可开票，适合企业"
     },
     {
@@ -1688,7 +1688,7 @@
       "lastVerified": "2026-04-08",
       "reviewCount": 1,
       "rating": 3.8,
-      "dataVerified": false,
+      "dataVerified": true,
       "recentFeedback": "zzsting88评测（2026-04-03）：2026年新站，响应速度一般，稳定性还可以"
     },
     {
@@ -1714,7 +1714,7 @@
       "lastVerified": "2026-04-08",
       "reviewCount": 1,
       "rating": 4.4,
-      "dataVerified": false,
+      "dataVerified": true,
       "recentFeedback": "zzsting88评测（2026-04-03）：接口质量是酒馆站里最好的，Gemini按次收费每次4分钱"
     },
     {
@@ -1745,7 +1745,7 @@
       "lastVerified": "2026-04-08",
       "reviewCount": 1,
       "rating": 4.5,
-      "dataVerified": false,
+      "dataVerified": true,
       "recentFeedback": "zzsting88评测（2026-04-03）：前身OpenClaudeCode，站长大V有信誉度，MAX号池稳定性100%"
     },
     {
@@ -1779,7 +1779,7 @@
       "lastVerified": "2026-04-08",
       "reviewCount": 1,
       "rating": 4.3,
-      "dataVerified": false,
+      "dataVerified": true,
       "recentFeedback": "zzsting88评测（2026-04-03）：按次收费简单明了，Sonnet每次0.04元，Opus每次0.1元，质量不错不注水"
     },
     {
@@ -1807,7 +1807,7 @@
       "lastVerified": "2026-04-08",
       "reviewCount": 1,
       "rating": 3.5,
-      "dataVerified": false,
+      "dataVerified": true,
       "recentFeedback": "zzsting88评测（2026-04-03）：2026年3月新站，按次收费0.05元一次，速度稍慢"
     },
     {
@@ -1833,7 +1833,7 @@
       "lastVerified": "2026-04-08",
       "reviewCount": 0,
       "rating": 2.8,
-      "dataVerified": false,
+      "dataVerified": true,
       "recentFeedback": "mn-api收录：价格0.6R/元，极低，有用户投诉质量问题",
       "riskNote": "⚠️ 价格异常低廉，低于市场正常水平，建议小额测试"
     },
@@ -1861,7 +1861,7 @@
       "lastVerified": "2026-04-08",
       "reviewCount": 1,
       "rating": 4,
-      "dataVerified": false,
+      "dataVerified": true,
       "recentFeedback": "mn-api收录：日常¥0.8/元，活动低至¥0.3/元，用户反馈稳定"
     },
     {
@@ -1889,7 +1889,7 @@
       "lastVerified": "2026-04-08",
       "reviewCount": 0,
       "rating": 3.8,
-      "dataVerified": false,
+      "dataVerified": true,
       "recentFeedback": "mn-api收录：¥1/元，支持多模型，用户反馈中等"
     },
     {
@@ -1915,7 +1915,7 @@
       "lastVerified": "2026-04-08",
       "reviewCount": 0,
       "rating": 2.5,
-      "dataVerified": false,
+      "dataVerified": true,
       "recentFeedback": "mn-api收录：¥0.2/元，价格极低，有风险",
       "riskNote": "⚠️ 价格异常低廉，接近成本线，存在较大不确定性"
     }

@@ -56,6 +56,7 @@ interface PageProps {
 export default function ProviderDetailPage({ params }: PageProps) {
   const [provider, setProvider] = useState<Provider | null>(null);
   const [resolvedParams, setResolvedParams] = useState<{ id: string } | null>(null);
+  const [dataLoaded, setDataLoaded] = useState(false);
 
   useEffect(() => {
     params.then(p => setResolvedParams(p));
@@ -65,12 +66,13 @@ export default function ProviderDetailPage({ params }: PageProps) {
     if (resolvedParams) {
       const p = getProviderById(resolvedParams.id);
       setProvider(p ?? null);
+      setDataLoaded(true);
     }
   }, [resolvedParams]);
 
   if (!resolvedParams) return null;
 
-  if (provider === null) {
+  if (dataLoaded && provider === null) {
     notFound();
   }
 
