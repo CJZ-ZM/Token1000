@@ -1470,9 +1470,457 @@
       "rating": 3.3,
       "recentFeedback": "价格有点贵",
       "dataVerified": false
+    },
+    {
+      "id": "packycode",
+      "name": "PackyCode",
+      "url": "https://www.packyapi.com",
+      "models": [
+        "Claude-3.5-Sonnet",
+        "Claude-3-Opus",
+        "GPT-4o",
+        "Gemini-1.5-Pro",
+        "Codex"
+      ],
+      "pricing": {
+        "claude35_input": 7.5,
+        "claude35_output": 37.5,
+        "gpt4o_input": 2.4,
+        "gpt4o_output": 12
+      },
+      "stability": 4.5,
+      "speed": 4.2,
+      "features": [
+        "API中转",
+        "Claude优化"
+      ],
+      "description": "24年底开始活跃，国内较早针对Claude Code优化的供应商。与开源社区互动频繁，客服响应快，目前已是多家中转站的上游。",
+      "riskLevel": "safe",
+      "tier": "recommended",
+      "lastVerified": "2026-04-08",
+      "reviewCount": 1,
+      "rating": 4.5,
+      "dataVerified": false,
+      "recentFeedback": "zzsting88评测（2026-04-03）：站长在X上很活跃，客服响应快，Sonnet4.6 ¥7.5(进)/37.5(出)质量不错"
+    },
+    {
+      "id": "aipaibox",
+      "name": "AI派",
+      "url": "https://api.aipaibox.com",
+      "models": [
+        "Claude-3.5-Sonnet",
+        "Claude-3-Opus",
+        "GPT-4o",
+        "Gemini-1.5-Pro"
+      ],
+      "pricing": {
+        "claude35_input": 0.9,
+        "claude35_output": 4.5,
+        "gemini15_pro_input": 1.8,
+        "gemini15_pro_output": 10
+      },
+      "stability": 4.3,
+      "speed": 4,
+      "features": [
+        "API中转"
+      ],
+      "description": "较新的网站，只支持Claude、GPT、Gemini。自营号池价格极低，质量不错。",
+      "riskLevel": "safe",
+      "tier": "recommended",
+      "lastVerified": "2026-04-08",
+      "reviewCount": 1,
+      "rating": 4.3,
+      "dataVerified": false,
+      "recentFeedback": "zzsting88评测（2026-04-03）：Sonnet4.6 ¥0.9(进)/4.5(出)，质量不错几乎不注水"
+    },
+    {
+      "id": "yunwu",
+      "name": "云雾AI",
+      "url": "https://yunwu.ai",
+      "models": [
+        "Claude-3.5-Sonnet",
+        "Claude-3-Opus",
+        "GPT-4o",
+        "Gemini-1.5-Pro",
+        "DeepSeek-V3",
+        "Qwen",
+        "Doubao",
+        "Midjourney",
+        "Kling"
+      ],
+      "pricing": {
+        "claude35_input": 6,
+        "claude35_output": 30
+      },
+      "stability": 4.6,
+      "speed": 4,
+      "features": [
+        "API中转",
+        "企业服务",
+        "多模型"
+      ],
+      "description": "老牌中转站，支持模型很多，覆盖Claude/GPT/Gemini/DeepSeek/国产模型。上新模型快，面向企业，稳定性好，可开票。",
+      "riskLevel": "safe",
+      "tier": "recommended",
+      "lastVerified": "2026-04-08",
+      "reviewCount": 1,
+      "rating": 4.5,
+      "dataVerified": false,
+      "recentFeedback": "zzsting88评测（2026-04-03）：老牌站点，企业级服务，稳定性好，可以开票"
+    },
+    {
+      "id": "rightcodes",
+      "name": "RightCode",
+      "url": "https://www.right.codes",
+      "models": [
+        "Claude-3.5-Sonnet",
+        "Claude-3-Opus",
+        "GPT-4o",
+        "Gemini"
+      ],
+      "pricing": {
+        "claude35_input": 4.5,
+        "claude35_output": 22.5,
+        "gpt4o_input": 1.25,
+        "gpt4o_output": 7.5
+      },
+      "stability": 4.2,
+      "speed": 4.3,
+      "features": [
+        "API中转",
+        "编程优化"
+      ],
+      "description": "专为编程设计的站点，只支持Claude/Gemini/GPT接口。Sonnet4.6 ¥4.5(进)/22.5(出)，质量对得起价格。文档清晰，响应速度快。",
+      "riskLevel": "safe",
+      "tier": "recommended",
+      "lastVerified": "2026-04-08",
+      "reviewCount": 1,
+      "rating": 4.3,
+      "dataVerified": false,
+      "recentFeedback": "zzsting88评测（2026-04-03）：文档非常清晰，接口响应快，质量不错"
+    },
+    {
+      "id": "chintao",
+      "name": "Chintao AI",
+      "url": "https://chintao.cn",
+      "models": [
+        "Claude-3.5-Sonnet",
+        "Claude-3-Opus"
+      ],
+      "pricing": {
+        "claude35_input": 3.6,
+        "claude35_output": 18,
+        "claude_opus_input": 4.8,
+        "claude_opus_output": 24
+      },
+      "stability": 4,
+      "speed": 3.8,
+      "features": [
+        "API中转"
+      ],
+      "description": "2026年3月新开的站点。接口质量稳定，Sonnet4.6 ¥3.6(进)/18(出)。风险提示：新站，少充点以防跑路。",
+      "riskLevel": "watch",
+      "tier": "standard",
+      "lastVerified": "2026-04-08",
+      "reviewCount": 1,
+      "rating": 4,
+      "dataVerified": false,
+      "recentFeedback": "zzsting88评测（2026-04-03）：接口质量很好，2026年3月新站，有跑路风险建议少充值"
+    },
+    {
+      "id": "poixe",
+      "name": "Poixe AI",
+      "url": "https://poixe.com",
+      "models": [
+        "GPT-4o",
+        "Claude-3.5-Sonnet",
+        "Gemini",
+        "DeepSeek-V3",
+        "Doubao",
+        "Qwen",
+        "Grok"
+      ],
+      "pricing": {
+        "gpt4o_input": 16.8,
+        "gpt4o_output": 84,
+        "claude35_input": 16.8,
+        "claude35_output": 84
+      },
+      "stability": 4.5,
+      "speed": 4.5,
+      "features": [
+        "API中转",
+        "多模型"
+      ],
+      "description": "从2024年开始运营，是较老的中转站。风格独特非NewAPI风格。支持多模型。价格偏高但质量很好，完全不注水，速度快。可开票。适合企业用户。",
+      "riskLevel": "safe",
+      "tier": "recommended",
+      "lastVerified": "2026-04-08",
+      "reviewCount": 1,
+      "rating": 4.4,
+      "dataVerified": false,
+      "recentFeedback": "zzsting88评测（2026-04-03）：质量相当好，完全没注水，速度快，可开票，适合企业"
+    },
+    {
+      "id": "dawcode",
+      "name": "DawCode",
+      "url": "https://dawclaudecode.com",
+      "models": [
+        "Claude-3.5-Sonnet",
+        "Claude-3-Opus",
+        "GPT-4o",
+        "Gemini"
+      ],
+      "pricing": {
+        "claude_opus_input": 7.5,
+        "claude_opus_output": 37.5,
+        "gpt4o_input": 1,
+        "gpt4o_output": 6
+      },
+      "stability": 4,
+      "speed": 3.5,
+      "features": [
+        "API中转"
+      ],
+      "description": "2026年新开站点，提供Claude/GPT/Gemini三种接口。Opus4.6 ¥7.5(进)/37.5(出)。提供多个线路，响应速度一般，稳定性尚可。有签到送额度。",
+      "riskLevel": "watch",
+      "tier": "standard",
+      "lastVerified": "2026-04-08",
+      "reviewCount": 1,
+      "rating": 3.8,
+      "dataVerified": false,
+      "recentFeedback": "zzsting88评测（2026-04-03）：2026年新站，响应速度一般，稳定性还可以"
+    },
+    {
+      "id": "ekan8",
+      "name": "Ekan8",
+      "url": "https://api.ekan8.com",
+      "models": [
+        "Claude-3-Opus",
+        "Gemini"
+      ],
+      "pricing": {
+        "claude_opus_input": 3.5,
+        "claude_opus_output": 17.5
+      },
+      "stability": 4.4,
+      "speed": 4.2,
+      "features": [
+        "API中转"
+      ],
+      "description": "只支持Claude Opus和Gemini。Opus4.6 ¥3.5(进)/17.5(出)，按次收费每次0.15元。是「酒馆」类站点里质量价格比最高的。",
+      "riskLevel": "safe",
+      "tier": "recommended",
+      "lastVerified": "2026-04-08",
+      "reviewCount": 1,
+      "rating": 4.4,
+      "dataVerified": false,
+      "recentFeedback": "zzsting88评测（2026-04-03）：接口质量是酒馆站里最好的，Gemini按次收费每次4分钱"
+    },
+    {
+      "id": "openclaudecode",
+      "name": "米醋AI",
+      "url": "https://www.openclaudecode.cn",
+      "models": [
+        "Claude-3.5-Sonnet",
+        "Claude-3-Opus",
+        "GPT-4o",
+        "Gemini",
+        "Grok"
+      ],
+      "pricing": {
+        "claude35_input": 3.6,
+        "claude35_output": 18,
+        "claude_opus_input": 1,
+        "claude_opus_output": 5
+      },
+      "stability": 4.5,
+      "speed": 4.3,
+      "features": [
+        "API中转"
+      ],
+      "description": "前身是OpenClaudeCode，之前风波里表现良好重新开张。站长是大V有信誉度。支持Claude/GPT/Gemini/Grok，无包月。Opus4.6 ¥1(进)/5(出)有逆向渠道，MAX号池¥6(进)/30(出)。",
+      "riskLevel": "safe",
+      "tier": "recommended",
+      "lastVerified": "2026-04-08",
+      "reviewCount": 1,
+      "rating": 4.5,
+      "dataVerified": false,
+      "recentFeedback": "zzsting88评测（2026-04-03）：前身OpenClaudeCode，站长大V有信誉度，MAX号池稳定性100%"
+    },
+    {
+      "id": "youseapi",
+      "name": "鸡哥API",
+      "url": "https://api.yousebaby.com",
+      "models": [
+        "Claude-3.5-Sonnet",
+        "Claude-3-Opus",
+        "Gemini",
+        "DeepSeek-V3",
+        "Minimax"
+      ],
+      "pricing": {
+        "claude35_input": 0.04,
+        "claude35_output": 0.04,
+        "claude_opus_input": 0.1,
+        "claude_opus_output": 0.1,
+        "gemini15_pro_input": 0.05,
+        "gemini15_pro_output": 0.05
+      },
+      "stability": 4.3,
+      "speed": 4.1,
+      "features": [
+        "API中转",
+        "按次计费"
+      ],
+      "description": "在玩酒馆的用户中较常见。支持Claude/Gemini/DeepSeek/Minimax。按次计费，Sonnet4.6每次0.04元，Opus4.6每次0.1元。收费模式简单，质量不错不注水。",
+      "riskLevel": "safe",
+      "tier": "recommended",
+      "lastVerified": "2026-04-08",
+      "reviewCount": 1,
+      "rating": 4.3,
+      "dataVerified": false,
+      "recentFeedback": "zzsting88评测（2026-04-03）：按次收费简单明了，Sonnet每次0.04元，Opus每次0.1元，质量不错不注水"
+    },
+    {
+      "id": "findcg",
+      "name": "发现AI",
+      "url": "https://www.findcg.com",
+      "models": [
+        "GPT-4o",
+        "Claude-3.5-Sonnet",
+        "Claude-3-Opus",
+        "Gemini"
+      ],
+      "pricing": {
+        "gpt4o_input": 0.63,
+        "gpt4o_output": 3.8
+      },
+      "stability": 3.5,
+      "speed": 3,
+      "features": [
+        "API中转"
+      ],
+      "description": "2026年3月上线，支持GPT/Claude/Gemini。按次收费每次0.05元。Codex(GPT5.4) ¥0.63(进)/3.8(出)。注册送0.1元。新站，速度稍慢。",
+      "riskLevel": "watch",
+      "tier": "standard",
+      "lastVerified": "2026-04-08",
+      "reviewCount": 1,
+      "rating": 3.5,
+      "dataVerified": false,
+      "recentFeedback": "zzsting88评测（2026-04-03）：2026年3月新站，按次收费0.05元一次，速度稍慢"
+    },
+    {
+      "id": "gptgod",
+      "name": "GPTGod",
+      "url": "https://gptgod.cloud",
+      "models": [
+        "GPT-4o",
+        "Claude-3.5-Sonnet"
+      ],
+      "pricing": {
+        "gpt4o_input": 0.6,
+        "gpt4o_output": 0.6
+      },
+      "stability": 2.5,
+      "speed": 3.5,
+      "features": [
+        "API中转"
+      ],
+      "description": "价格极低，¥0.6/元。但口碑不稳，曾有用户投诉质量问题。价格低到异常，需谨慎。",
+      "riskLevel": "danger",
+      "tier": "suspicious",
+      "lastVerified": "2026-04-08",
+      "reviewCount": 0,
+      "rating": 2.8,
+      "dataVerified": false,
+      "recentFeedback": "mn-api收录：价格0.6R/元，极低，有用户投诉质量问题",
+      "riskNote": "⚠️ 价格异常低廉，低于市场正常水平，建议小额测试"
+    },
+    {
+      "id": "azapi",
+      "name": "AZAPI",
+      "url": "https://azapi.com.cn",
+      "models": [
+        "GPT-4o",
+        "Claude-3.5-Sonnet",
+        "Gemini"
+      ],
+      "pricing": {
+        "gpt4o_input": 0.8,
+        "gpt4o_output": 0.8
+      },
+      "stability": 4,
+      "speed": 4,
+      "features": [
+        "API中转"
+      ],
+      "description": "日常价格¥0.8/元，活动时低至¥0.3/元。支持GPT/Claude/Gemini全模型。中等规模，用户反馈稳定。",
+      "riskLevel": "safe",
+      "tier": "recommended",
+      "lastVerified": "2026-04-08",
+      "reviewCount": 1,
+      "rating": 4,
+      "dataVerified": false,
+      "recentFeedback": "mn-api收录：日常¥0.8/元，活动低至¥0.3/元，用户反馈稳定"
+    },
+    {
+      "id": "nio",
+      "name": "Nio API",
+      "url": "https://api.nio.gs",
+      "models": [
+        "GPT-4o",
+        "Claude-3.5-Sonnet",
+        "Gemini"
+      ],
+      "pricing": {
+        "gpt4o_input": 1,
+        "gpt4o_output": 1
+      },
+      "stability": 3.8,
+      "speed": 3.8,
+      "features": [
+        "API中转",
+        "多模型"
+      ],
+      "description": "¥1/元，支持GPT/Claude/Gemini及其他模型。规模中等，用户反馈尚可。",
+      "riskLevel": "safe",
+      "tier": "standard",
+      "lastVerified": "2026-04-08",
+      "reviewCount": 0,
+      "rating": 3.8,
+      "dataVerified": false,
+      "recentFeedback": "mn-api收录：¥1/元，支持多模型，用户反馈中等"
+    },
+    {
+      "id": "kfcv50",
+      "name": "KFCV50 API",
+      "url": "https://kfcv50.link",
+      "models": [
+        "GPT-4o",
+        "Claude-3.5-Sonnet"
+      ],
+      "pricing": {
+        "gpt4o_input": 0.2,
+        "gpt4o_output": 0.2
+      },
+      "stability": 2.8,
+      "speed": 3.2,
+      "features": [
+        "API中转"
+      ],
+      "description": "价格极低，¥0.2/元（AZ部分分组）。价格低到异常，风险较高。",
+      "riskLevel": "danger",
+      "tier": "suspicious",
+      "lastVerified": "2026-04-08",
+      "reviewCount": 0,
+      "rating": 2.5,
+      "dataVerified": false,
+      "recentFeedback": "mn-api收录：¥0.2/元，价格极低，有风险",
+      "riskNote": "⚠️ 价格异常低廉，接近成本线，存在较大不确定性"
     }
   ],
   "lastUpdated": "2026-04-08",
-  "totalCount": 44,
-  "recommendedCount": 22
+  "totalCount": 59,
+  "recommendedCount": 31
 }
