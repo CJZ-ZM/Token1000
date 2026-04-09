@@ -22,10 +22,6 @@ export {
   getDangerProviders,
 } from './data';
 
-// Import Provider type for local use
-import type { Provider as ProviderType, ProvidersData } from '@/types';
-export type { ProviderType as Provider, ProvidersData };
-
 // Database placeholder functions - return null/empty when DB not configured
 export async function getProviderHealth(_slug: string): Promise<null> {
   return null;
