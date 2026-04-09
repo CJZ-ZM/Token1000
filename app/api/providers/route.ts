@@ -19,15 +19,16 @@ export async function GET(request: NextRequest) {
       providers = await sortProviders(providers, sortBy);
     }
 
-    // Optionally include health data
+    // Optionally include health data (only when database is configured)
     if (includeHealth) {
       const healthData = await getAllProviderHealth();
-      const healthMap = new Map(healthData.map(h => [h.slug, h]));
-
-      providers = providers.map(p => ({
-        ...p,
-        health: healthMap.get(p.id) || null,
-      }));
+      if (healthData && healthData.length > 0) {
+        const healthMap = new Map(healthData.map((h: any) => [h.slug, h]));
+        providers = providers.map(p => ({
+          ...p,
+          health: healthMap.get(p.id) || null,
+        }));
+      }
     }
 
     return NextResponse.json({
