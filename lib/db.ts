@@ -10,12 +10,7 @@
  * 3. Update this file to use the actual database client
  */
 
-// Database client module - see comments below for enabling
-
-// Re-export types from types/index
-export type { Provider, ProvidersData } from '@/types';
-
-// Re-export all functions from data.ts
+// Re-export everything from data.ts
 export {
   loadProviders,
   getProviderById,
@@ -27,12 +22,16 @@ export {
   getDangerProviders,
 } from './data';
 
+// Import Provider type for local use
+import type { Provider as ProviderType, ProvidersData } from '@/types';
+export type { ProviderType as Provider, ProvidersData };
+
 // Database placeholder functions - return null/empty when DB not configured
-export async function getProviderHealth(slug: string): Promise<null> {
+export async function getProviderHealth(_slug: string): Promise<null> {
   return null;
 }
 
-export async function getAllProviderHealth(): Promise<[]> {
+export async function getAllProviderHealth(): Promise<any[]> {
   return [];
 }
 
@@ -54,7 +53,7 @@ export async function recordTestResult(_result: {
 export async function getRecentTestResults(
   _providerId: string,
   _limit: number = 10
-): Promise<[]> {
+): Promise<any[]> {
   return [];
 }
 
@@ -70,7 +69,7 @@ export async function submitPriceUpdate(_data: {
   return { id: 'disabled', status: 'disabled' };
 }
 
-export async function getPendingSubmissions(): Promise<[]> {
+export async function getPendingSubmissions(): Promise<any[]> {
   return [];
 }
 
