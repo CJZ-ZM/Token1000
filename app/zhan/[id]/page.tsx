@@ -5,6 +5,8 @@ import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import { getProviderById } from '@/lib/data';
 import { Provider } from '@/types';
+import PriceSubmitForm from '@/components/PriceSubmitForm';
+import AffiliateLink from '@/components/AffiliateLink';
 
 function RiskBadge({ level }: { level: Provider['riskLevel'] }) {
   if (level === 'danger') {
@@ -140,11 +142,11 @@ export default function ProviderDetailPage({ params }: PageProps) {
             {/* Quick Stats */}
             <div className="grid grid-cols-3 gap-4 shrink-0">
               <div className="text-center bg-white rounded-xl border border-gray-200 p-4 min-w-[90px]">
-                <div className="text-2xl font-bold text-blue-600">{provider.stability.toFixed(1)}</div>
+                <div className="text-2xl font-bold text-blue-600">{provider.stability?.toFixed(1) ?? '-'}</div>
                 <div className="text-xs text-gray-500 mt-1">稳定性</div>
               </div>
               <div className="text-center bg-white rounded-xl border border-gray-200 p-4 min-w-[90px]">
-                <div className="text-2xl font-bold text-blue-600">{provider.speed.toFixed(1)}</div>
+                <div className="text-2xl font-bold text-blue-600">{provider.speed?.toFixed(1) ?? '-'}</div>
                 <div className="text-xs text-gray-500 mt-1">速度</div>
               </div>
               <div className="text-center bg-white rounded-xl border border-gray-200 p-4 min-w-[90px]">
@@ -236,9 +238,15 @@ export default function ProviderDetailPage({ params }: PageProps) {
                 <div className="flex justify-between">
                   <dt className="text-gray-500">官网</dt>
                   <dd className="text-gray-900">
-                    <a href={provider.url} target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:text-blue-600">
+                    <AffiliateLink
+                      providerId={provider.id}
+                      providerName={provider.name}
+                      targetUrl={provider.affiliateUrl || provider.url}
+                      variant="link"
+                      className="text-blue-500 hover:text-blue-600"
+                    >
                       访问 →
-                    </a>
+                    </AffiliateLink>
                   </dd>
                 </div>
                 {provider.affiliateUrl && (
@@ -257,6 +265,21 @@ export default function ProviderDetailPage({ params }: PageProps) {
                 </div>
               </dl>
             </div>
+
+            {/* 联盟佣金透明度提示 */}
+            {provider.affiliateUrl && (
+              <div className="bg-green-50 rounded-xl border border-green-200 p-4">
+                <div className="flex items-start gap-3">
+                  <span className="text-lg">💚</span>
+                  <div>
+                    <div className="font-medium text-green-800 text-sm">支持 Token1000 继续运营</div>
+                    <p className="text-xs text-green-600 mt-1">
+                      您通过此链接访问并充值时，我们会获得一点佣金分成。这不会影响您的实际支付价格，也不会收取任何额外费用。
+                    </p>
+                  </div>
+                </div>
+              </div>
+            )}
 
             {/* 安全提示 */}
             {provider.riskLevel === 'danger' || provider.riskLevel === 'watch' ? (
@@ -283,6 +306,9 @@ export default function ProviderDetailPage({ params }: PageProps) {
                 查看全部避坑记录 →
               </Link>
             </div>
+
+            {/* 价格提交 */}
+            <PriceSubmitForm provider={provider} />
           </div>
         </div>
       </div>

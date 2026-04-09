@@ -6,6 +6,12 @@ import { Provider } from '@/types';
 
 interface ProviderCardProps {
   provider: Provider;
+  healthData?: {
+    success_rate_24h: number | null;
+    success_rate_7d: number | null;
+    avg_latency_24h: number | null;
+    last_test_at: string | null;
+  } | null;
 }
 
 function RiskBadge({ level }: { level: Provider['riskLevel'] }) {
@@ -44,17 +50,150 @@ function TierBadge({ tier }: { tier: Provider['tier'] }) {
   return null;
 }
 
-export default function ProviderCard({ provider }: ProviderCardProps) {
+function DataSourceBadge({ source }: { source?: string }) {
+  if (source === 'official') {
+    return (
+      <span className="inline-flex items-center gap-0.5 px-1.5 py-0.5 rounded text-xs font-medium bg-green-50 text-green-700 border border-green-200" title="官方数据">
+        官方
+      </span>
+    );
+  }
+  if (source === 'automated') {
+    return (
+      <span className="inline-flex items-center gap-0.5 px-1.5 py-0.5 rounded text-xs font-medium bg-blue-50 text-blue-700 border border-blue-200" title="自动化测试">
+        自动
+      </span>
+    );
+  }
+  if (source === 'verified') {
+    return (
+      <span className="inline-flex items-center gap-0.5 px-1.5 py-0.5 rounded text-xs font-medium bg-purple-50 text-purple-700 border border-purple-200" title="人工核实">
+        核实
+      </span>
+    );
+  }
+  return (
+    <span className="inline-flex items-center gap-0.5 px-1.5 py-0.5 rounded text-xs font-medium bg-gray-100 text-gray-500 border border-gray-200" title="社区提交">
+      社区
+    </span>
+  );
+}
+
+function HealthIndicator({ healthData }: { healthData: ProviderCardProps['healthData'] }) {
+  if (!healthData) {
+    return (
+      <span className="text-xs text-gray-400 flex items-center gap-1">
+        <span className="w-2 h-2 rounded-full bg-gray-300"></span>
+        暂无数据
+      </span>
+    );
+  }
+
+  const { success_rate_24h, success_rate_7d, avg_latency_24h, last_test_at } = healthData;
+
+  // Determine status color based on 24h rate
+  let statusColor = 'bg-gray-400';
+  let statusText = '未知';
+
+  if (success_rate_24h !== null && success_rate_24h !== undefined) {
+    if (success_rate_24h >= 95) {
+      statusColor = 'bg-green-500';
+      statusText = `${success_rate_24h}%`;
+    } else if (success_rate_24h >= 80) {
+      statusColor = 'bg-yellow-500';
+      statusText = `${success_rate_24h}%`;
+    } else {
+      statusColor = 'bg-red-500';
+      statusText = `${success_rate_24h}%`;
+    }
+  }
+
+  // Format last test time
+  let lastTestText = '';
+  if (last_test_at) {
+    const lastTest = new Date(last_test_at);
+    const now = new Date();
+    const diffMs = now.getTime() - lastTest.getTime();
+    const diffMins = Math.floor(diffMs / 60000);
+    const diffHours = Math.floor(diffMs / 3600000);
+    const diffDays = Math.floor(diffMs / 86400000);
+
+    if (diffMins < 60) {
+      lastTestText = `${diffMins}分钟前`;
+    } else if (diffHours < 24) {
+      lastTestText = `${diffHours}小时前`;
+    } else {
+      lastTestText = `${diffDays}天前`;
+    }
+  }
+
+  return (
+    <div className="flex items-center gap-3 text-xs">
+      {/* Success rate (24h) */}
+      <div className="flex items-center gap-1" title="24小时成功率">
+        <span className={`w-2 h-2 rounded-full ${statusColor}`}></span>
+        <span className={success_rate_24h !== null ? 'text-gray-700' : 'text-gray-400'}>
+          {statusText}
+        </span>
+      </div>
+
+      {/* 7-day success rate */}
+      {success_rate_7d !== null && success_rate_7d !== undefined && (
+        <div className="flex items-center gap-1 text-gray-500" title="7天成功率">
+          <span className="text-gray-400">7天</span>
+          <span className={success_rate_7d >= 95 ? 'text-green-600' : success_rate_7d >= 80 ? 'text-yellow-600' : 'text-red-600'}>
+            {success_rate_7d}%
+          </span>
+        </div>
+      )}
+
+      {/* Latency */}
+      {avg_latency_24h !== null && avg_latency_24h !== undefined && (
+        <div className="flex items-center gap-1 text-gray-500" title="平均延迟">
+          <span>⚡</span>
+          <span>{avg_latency_24h}ms</span>
+        </div>
+      )}
+
+      {/* Last test */}
+      {lastTestText && (
+        <div className="text-gray-400" title="最后测试">
+          {lastTestText}
+        </div>
+      )}
+    </div>
+  );
+}
+
+export default function ProviderCard({ provider, healthData: initialHealth }: ProviderCardProps) {
+  const [healthData, setHealthData] = useState(initialHealth);
   const [status, setStatus] = useState<'online' | 'offline' | 'unknown'>('unknown');
 
   useEffect(() => {
-    fetch('/api/health')
+    // Fetch health data from API
+    fetch(`/api/health?type=dns&includeDbHealth=false`)
       .then(res => res.json())
       .then(data => {
         const found = data.results?.find((r: { key: string }) => r.key === provider.id);
-        if (found) setStatus(found.status);
+        if (found) {
+          setStatus(found.status);
+        }
       })
       .catch(() => setStatus('unknown'));
+
+    // If we have database health data, use it
+    if (!healthData) {
+      fetch(`/api/providers/${provider.id}`)
+        .then(res => res.json())
+        .then(data => {
+          if (data.health) {
+            setHealthData(data.health);
+          }
+        })
+        .catch(() => {
+          // Ignore
+        });
+    }
   }, [provider.id]);
 
   const hasVerifiedRating = provider.rating !== null && provider.rating !== undefined;
@@ -76,11 +215,7 @@ export default function ProviderCard({ provider }: ProviderCardProps) {
             </h3>
             <TierBadge tier={provider.tier} />
             <RiskBadge level={provider.riskLevel} />
-            {!provider.dataVerified && (
-              <span className="inline-flex items-center px-2 py-0.5 rounded-full text-xs font-medium bg-gray-100 text-gray-500 border border-gray-200">
-                ⚠️ 待核实
-              </span>
-            )}
+            <DataSourceBadge source="community" />
           </div>
           <div className="flex items-center gap-1 text-sm text-gray-500 shrink-0">
             {hasVerifiedRating ? (
@@ -92,6 +227,16 @@ export default function ProviderCard({ provider }: ProviderCardProps) {
               <span className="text-gray-400">★ -</span>
             )}
           </div>
+        </div>
+
+        {/* Health Status Bar */}
+        <div className="bg-gray-50 rounded-lg px-3 py-2 mb-3 flex items-center justify-between">
+          <HealthIndicator healthData={healthData} />
+          {provider.lastVerified && (
+            <span className="text-xs text-gray-400">
+              核实于 {provider.lastVerified}
+            </span>
+          )}
         </div>
 
         {/* Risk Note */}
@@ -125,7 +270,7 @@ export default function ProviderCard({ provider }: ProviderCardProps) {
 
         {/* Trust indicators - only show if verified */}
         <div className="flex flex-wrap gap-3 text-xs text-gray-500 mb-4">
-          {provider.stability !== null ? (
+          {provider.stability !== null && provider.stability !== undefined ? (
             <span className="flex items-center gap-1">
               <span className="text-green-500">●</span>
               稳定 {provider.stability.toFixed(1)}
@@ -135,7 +280,7 @@ export default function ProviderCard({ provider }: ProviderCardProps) {
               稳定 -
             </span>
           )}
-          {provider.speed !== null ? (
+          {provider.speed !== null && provider.speed !== undefined ? (
             <span className="flex items-center gap-1">
               ⚡ 速度 {provider.speed.toFixed(1)}
             </span>

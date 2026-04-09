@@ -49,9 +49,9 @@ export function sortProviders(
 
   switch (sortBy) {
     case 'stability':
-      return sorted.sort((a, b) => b.stability - a.stability);
+      return sorted.sort((a, b) => (b.stability ?? 0) - (a.stability ?? 0));
     case 'speed':
-      return sorted.sort((a, b) => b.speed - a.speed);
+      return sorted.sort((a, b) => (b.speed ?? 0) - (a.speed ?? 0));
     case 'rating':
       return sorted.sort((a, b) => (b.rating ?? 0) - (a.rating ?? 0));
     case 'price': {
