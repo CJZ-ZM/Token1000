@@ -2,8 +2,9 @@ import Link from 'next/link';
 import { guides } from '@/lib/guides';
 import { notFound } from 'next/navigation';
 
-export default function GuidePage({ params }: { params: { id: string } }) {
-  const guide = guides.find(g => g.id === params.id);
+export default async function GuidePage({ params }: { params: Promise<{ id: string }> }) {
+  const { id } = await params;
+  const guide = guides.find(g => g.id === id);
   if (!guide) notFound();
   
   return (

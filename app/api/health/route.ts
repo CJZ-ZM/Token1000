@@ -58,6 +58,7 @@ async function checkHttpEndpoint(key: string, url: string, apiKey?: string): Pro
 }> {
   return new Promise((resolve) => {
     const startTime = Date.now();
+    // eslint-disable-next-line prefer-const
     let timeoutId: NodeJS.Timeout;
 
     const cleanup = () => {

@@ -26,7 +26,7 @@ function ZhanContent() {
   const allModels = getAllModels();
   
   const providers = useMemo(() => {
-    let filtered = filterProviders(
+    const filtered = filterProviders(
       selectedModel !== '全部' ? selectedModel : undefined,
       search || undefined,
       tierFilter !== 'all' ? tierFilter : undefined
