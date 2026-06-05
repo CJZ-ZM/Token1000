@@ -1948,6 +1948,50 @@
       "dataVerified": true,
       "recentFeedback": "mn-api收录：¥0.2/元，价格极低，有风险",
       "riskNote": "⚠️ 价格异常低廉，接近成本线，存在较大不确定性"
+    },
+    {
+      "id": "coderplan",
+      "name": "CoderPlan",
+      "url": "https://coderplan.ai",
+      "models": [
+        "Claude-Sonnet-4.6",
+        "Claude-Opus-4.7",
+        "Claude-Haiku-4.5",
+        "GPT-5.5",
+        "GPT-4.1",
+        "Gemini-3.1-Pro",
+        "DeepSeek-V3",
+        "DeepSeek-R1",
+        "Grok-3"
+      ],
+      "pricing": {
+        "claude_sonnet_input": 1.2,
+        "claude_sonnet_output": 6.0,
+        "gpt41_input": 0.8,
+        "gpt41_output": 3.2,
+        "deepseek_v3_input": 0.3,
+        "deepseek_v3_output": 0.8
+      },
+      "stability": null,
+      "speed": null,
+      "features": [
+        "API中转",
+        "OpenAI兼容",
+        "Claude Code支持",
+        "Codex CLI支持",
+        "Gemini CLI支持",
+        "微信支付",
+        "支付宝"
+      ],
+      "description": "OpenAI兼容API中转站，支持Claude/GPT/Gemini/DeepSeek/Grok全系列模型。按量付费，新用户注册送体验余额。微信/支付宝支付，¥10起充。一行配置接入Claude Code/Codex CLI等开发工具。",
+      "riskLevel": "safe",
+      "tier": "standard",
+      "lastVerified": "2026-06-06",
+      "reviewCount": null,
+      "rating": null,
+      "recentFeedback": null,
+      "dataVerified": false,
+      "riskNote": null
     }
   ],
   "lastUpdated": "2026-04-08",
